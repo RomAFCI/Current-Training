@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(45, 107, 165);text-align: center;
+}
+#p1 {
+    color: grey;text-align: center;
+}
+h2 {
+    color:rgb(45, 107, 165)
+}
+.class1 {
+    color: rgba(83, 85, 85, 0.788);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+.class2 {
+margin-left: 20px; border-left:solid 5px;border-color: rgba(69, 69, 75, 0.5);    
+}
