@@ -12,5 +12,5 @@ h2 {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 .class2 {
-margin-left: 20px; border-left:solid 5px;border-color: rgba(69, 69, 75, 0.5);margin-left: 20px;   
+margin-left: 20px; border-left:solid 5px;border-color: rgba(69, 69, 75, 0.5);padding-left: 10px;
 }
