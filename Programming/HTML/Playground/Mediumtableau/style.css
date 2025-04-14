@@ -26,26 +26,26 @@ th {
     line-height: 200%;
 }
 .bold {
-    line-height: 200%;
+    line-height: 250%;
     padding-left: 20px;
     font-weight: bold;
     text-align: justify;
 }
 .prochi {
-    line-height: 200%;
+    line-height: 250%;
     padding-left: 20px;
     text-align:left;
     white-space:nowrap;
 }
 .total {
-    line-height: 200%;
+    line-height: 250%;
     padding-left: 20px;
     text-align: right;
     font-weight: bold;
     padding-right: 5%;
 }
 .tot {
-    line-height: 200%;
+    line-height: 250%;
     padding-left: 20px;
     text-align: left;
     font-weight: bold;
