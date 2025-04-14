@@ -1,16 +1,27 @@
+body {margin: 2% 1% 2% 1%;padding:2% 1% 2% 1% ; line-height: 225%;}  
 h1 {
-    color: rgb(45, 107, 165);text-align: center;
+    color: rgb(45, 107, 165);text-align: center; 
 }
 #p1 {
-    color: grey;text-align: center;
+    color: grey;text-align: center; 
 }
 h2 {
-    color:rgb(45, 107, 165)
+    color:rgb(45, 107, 165); 
 }
+hr{color: rgb(0, 0, 0);}
 .class1 {
     color: rgba(83, 85, 85, 0.788);
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+h3 {color: rgb(6, 98, 134);}     
 .class2 {
-margin-left: 20px; border-left:solid 5px;border-color: rgba(69, 69, 75, 0.5);padding-left: 10px;
+border-left:solid 5px;border-color: rgba(69, 69, 75, 0.5);padding-left: 10px;
 }
+#p2 {font-style: italic;}
+#p3 {color: rgba(128, 128, 128, 0.589);font-style: italic;}
+span {font-weight:bold;}
+#p4 {font-family: 'Courier New', Courier, monospace ; text-transform: uppercase;}
+#p5 {letter-spacing: 2px;}
+#p6{line-height: 16px;}
+#p7{text-align: center;}
+#p8{text-decoration: blue wavy underline;}
+#p9{color: grey; text-align: center;}
