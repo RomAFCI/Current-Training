@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Source Code Pro ExtraLight';
-    src: url("../Exercice_medium/fonts/Source_Code_Pro.zip") format("truetype")
+    font-family: 'Source Code Pro';
+    src: url("./fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype")
 }
 body {margin: 2% 1% 2% 1%;padding:2% 1% 2% 1% ; line-height: 225%;}  
 h1 {
@@ -10,7 +10,7 @@ h1 {
     color: grey;text-align: center; 
 }
 h2 {
-    color:rgb(45, 107, 165); font-family: 'Source Code Pro ExtraLight';
+    color:rgb(45, 107, 165); font-family: 'Source Code Pro';
 }
 hr{color: rgb(0, 0, 0);}
 .class1 {
