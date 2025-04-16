@@ -16,37 +16,37 @@
 
     <div>
         <label for="prénom">Prénom</label>
-        <input type="text" id="prénom" name="prénom" required>
+        <input class="widinput" type="text" id="prénom" name="prénom" required>
     </div>
 
     <div>
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" required>
+        <input class="widinput" type="text" id="nom" name="nom" required>
     </div>
 
     <div>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input class="widinput" type="email" id="email" name="email" required>
     </div>
 
     <div>
         <label for="password">Mot de passe</label>
-        <input type="password" id="password" name="password" required>
+        <input class="widinput" type="password" id="password" name="password" required>
         <p>Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre</p>
     </div>
 
     <div>
         <label for="password">Confirmer le mot de passe</label>
-        <input type="password" id="password" name="password" required>
+        <input class="widinput" type="password" id="password" name="password" required>
     </div>
 
     <div>
         <label for="date">Date de naissance</label>
-        <input type="date" id="date" name="date" required>
+        <input class="widinput" type="date" id="date" name="date" required>
     </div>
 
-    <div>
-        <label>Genre:</label>
+    <div class="a">
+        <label>Genre</label>
         <label><input type="radio" name="gender" value="male"> Homme</label>
         <label><input type="radio" name="gender" value="female"> Femme</label>
         <label><input type="radio" name="gender" value="other"> Autre</label>
@@ -54,7 +54,7 @@
 
     <div>
         <label for="pays">Pays</label>
-        <select id="pays" name="pays">
+        <select class="widinput" id="pays" name="pays">
             <option value="">Choisissez un pays</option>
             <option value="fr">France</option>
             <option value="be">Belgique</option>
@@ -64,10 +64,18 @@
     </div>
 
     <div>
-        
+        <label>
+            <input type="checkbox" name="terms" required>
+            J'accepte les conditions d'utilisation
+          </label>
     </div>
 
-    
+    <div>
+        <label>
+          <input type="checkbox" name="newsletter">
+          Je souhaite recevoir la newsletter
+        </label>
+      </div>
     
     
 

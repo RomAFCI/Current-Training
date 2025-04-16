@@ -1,27 +1,40 @@
 .backgroundform {
-  background-color: rgba(226, 220, 226, 0.432);
-  margin: 2em 3em 2em 3em;
+  background-color: rgba(255, 255, 255, 0.432);
+  margin: 5% 30% 5% 30%;
   padding: 1em 0.5em 1em 0.5em;
-  width: min-100%;
   height: min-100vh;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgb(83, 81, 81);
+  box-shadow: 0px 0px 5px 0px rgb(83, 81, 81);
 }
 
 h1 {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-label {
+label, {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: block;
+  line-height: 3em;
 }
 
-input, select {
+p {
+    text-transform: lowercase;
+    opacity: 0.33;
+}
+
+.widinput {
     width: 100%;
-    text-align: left;
+     
 }
 
+.a {
+display: inline-block;
+}
 
+input {
+    border: rgb(255, 136, 0),solid,0.5px;
+}
 
 
 
