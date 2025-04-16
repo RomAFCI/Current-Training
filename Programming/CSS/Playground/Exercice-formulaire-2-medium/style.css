@@ -1,7 +1,7 @@
 .backgroundform {
   background-color: rgba(255, 255, 255, 0.432);
-  margin: 5% 30% 5% 30%;
-  padding: 1em 0.5em 1em 0.5em;
+  margin: 5% 20% 5% 20%;
+  padding: 1em 1em 1em 1em;
   height: min-100vh;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgb(83, 81, 81);
@@ -9,46 +9,45 @@
 
 h1 {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-label, {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: block;
-  line-height: 3em;
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 2em;
 }
 
 p {
-    text-transform: lowercase;
-    opacity: 0.33;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: lowercase;
+  opacity: 0.33;
 }
 
 .widinput {
-    width: 100%;
-     
-}
-
-.a {
-display: inline-block;
+  width: 100%;
 }
 
 input {
-    border: rgb(255, 136, 0),solid,0.5px;
+  border: rgb(255, 136, 0), solid, 0.5px;
 }
 
+span {
+  color: rgb(0, 119, 255);
+}
 
+select {
+  border: solid, 0.5px, white;
+}
 
+button {
+  margin: 2em 0em 2em 0em;
+  border-radius: 3px;
+}
 
-
-
-
-
-
-
-<label for="genre">Genre</label>
-        <input type="radio" name="gender" value="male">
-        <label>Homme</label>
-        <input type="radio" name="gender" value="female">
-        <label>Femme</label>
-        <input type="radio" name="gender" value="other">
-        <label>Autre</label>
+.bu {
+  width: 100%;
+  margin: 2em 0em 2em 0em;
+  border-radius: 3px;
+  background-color: #4377e9;
+  color: rgb(255, 255, 255);
+}

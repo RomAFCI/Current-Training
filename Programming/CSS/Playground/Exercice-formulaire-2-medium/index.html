@@ -45,17 +45,19 @@
         <input class="widinput" type="date" id="date" name="date" required>
     </div>
 
-    <div class="a">
+    <div>
         <label>Genre</label>
-        <label><input type="radio" name="gender" value="male"> Homme</label>
-        <label><input type="radio" name="gender" value="female"> Femme</label>
-        <label><input type="radio" name="gender" value="other"> Autre</label>
+        <div>
+            <label><input type="radio" name="gender" value="male"> Homme</label>
+            <label><input type="radio" name="gender" value="female"> Femme</label>
+            <label><input type="radio" name="gender" value="other"> Autre</label>
+        </div>
     </div>
 
     <div>
         <label for="pays">Pays</label>
         <select class="widinput" id="pays" name="pays">
-            <option value="">Choisissez un pays</option>
+            <option value="">Sélectionnez votre pays</option>
             <option value="fr">France</option>
             <option value="be">Belgique</option>
             <option value="ch">Suisse</option>
@@ -66,7 +68,7 @@
     <div>
         <label>
             <input type="checkbox" name="terms" required>
-            J'accepte les conditions d'utilisation
+            J'accepte les <span>conditions d'utilisation</span> et la <span>politique de confidentialité</span>
           </label>
     </div>
 
@@ -77,8 +79,12 @@
         </label>
       </div>
     
+      <div>
+        <button type="submit">Réinitialiser</button>
+        <button class="bu" type="reset">S'inscrire</button>
+      </div>
     
-
+    
 </form>
 </body>
 </html>
