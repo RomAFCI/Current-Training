@@ -71,10 +71,67 @@ h2 {
 }
 
 @font-face {
-  font-family: "Open Sans Light";
-  src: url(/Programming/CSS/Playground/Exercice-selecteur-3-hard/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: "opensansregular";
+  src: url(/fonts/Open_Sans/static/OpenSans-Regular.ttf) format("truetype");
 }
 
 .opensansregular {
-  font-family: "open sans light";
+  font-family: "opensansregular";
+}
+
+@font-face {
+  font-family: "opensansbold";
+  src: url(/fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+.opensansbold {
+  font-family: "opensansbold";
+}
+
+@font-face {
+  font-family: "montserratregular";
+  src: url(/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+.montserratregular {
+  font-family: "montserratregular";
+}
+
+@font-face {
+  font-family: "montserratbold";
+  src: url(/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+.montserratbold {
+  font-family: "montserratbold";
+}
+
+.box2 {
+  display: block;
+  vertical-align: top;
+  max-width: 100%;
+  min-height: 100px;
+  background: white;
+  margin: 1em;
+  padding: 1em;
+}
+
+.typo1 {
+  letter-spacing: 0.5em;
+}
+
+.typo2 {
+  line-height: 2em;
+}
+
+.typo3 {
+  column-count: 3;
+}
+
+.p4::first-letter {
+  color: violet;
+}
+
+.p5::first-line {
+  text-transform: uppercase;
 }
