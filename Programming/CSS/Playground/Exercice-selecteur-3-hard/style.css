@@ -69,3 +69,12 @@ h2 {
   font-weight: 200;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(/Programming/CSS/Playground/Exercice-selecteur-3-hard/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.opensansregular {
+  font-family: "open sans light";
+}
