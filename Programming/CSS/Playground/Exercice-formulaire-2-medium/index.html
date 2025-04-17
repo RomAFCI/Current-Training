@@ -15,8 +15,8 @@
     </div>
 
     <div>
-        <label for="prénom">Prénom</label>
-        <input class="widinput" type="text" id="prénom" name="prénom" required>
+        <label for="prenom">Prénom</label>
+        <input class="widinput" type="text" id="prenom" name="prenom" required>
     </div>
 
     <div>
@@ -31,13 +31,13 @@
 
     <div>
         <label for="password">Mot de passe</label>
-        <input class="widinput" type="password" id="password" name="password" required>
+        <input class="widinput" type="password" id="password" pattern="{majuscule}{minuscule}{chiffre}" minlength="8" name="password" required>
         <p>Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre</p>
     </div>
 
     <div>
         <label for="confirmpassword">Confirmer le mot de passe</label>
-        <input class="widinput" type="password" id="confirmpassword" name="password" required>
+        <input class="widinput" type="password" id="confirmpassword" pattern="{majuscule}{minuscule}{chiffre}" minlength="8" name="password" required>
     </div>
 
     <div>
@@ -79,10 +79,8 @@
     </div>
     
       <div>
-        <button class="button1" type="reset">Réinitialiser</button>
-      </div>
-      <div>
-        <button class="button2" type="submit">S'inscrire</button>
+        <button class="button button1" type="reset">Réinitialiser</button>
+        <button class="button button2" type="submit">S'inscrire</button>
       </div>
     
     

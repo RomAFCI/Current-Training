@@ -1,0 +1,32 @@
+header {
+  background: linear-gradient(to right, rgb(245, 218, 91), rgb(239, 156, 63));
+}
+
+h1 {
+  padding-top: 1em;
+  text-align: center;
+  color: azure;
+}
+
+span {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+#phead {
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+  color: azure;
+}
+
+h2 {
+  color: #3f90d1;
+  border-bottom: #3f90d1 solid 1px;
+}
+
+.sect1 {
+  margin: 0% 20% 0% 20%;
+  background-color: #eceaea;
+  background: transparent;
+}
