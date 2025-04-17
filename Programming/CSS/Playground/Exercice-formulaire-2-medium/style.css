@@ -41,14 +41,21 @@ select {
 }
 
 button {
-  margin: 2em 0em 2em 0em;
-  border-radius: 3px;
+  display: inline;
 }
 
-.bu {
-  width: 100%;
+.button1 {
+  text-align: center;
   margin: 2em 0em 2em 0em;
-  border-radius: 3px;
+  border-radius: 3px, white;
+  min-width: 10%;
+}
+
+.button2 {
+  text-align: center;
+  min-width: 80%;
+  margin: 2em 0em 2em 0em;
+  border-radius: 3px, white;
   background-color: #4377e9;
   color: rgb(255, 255, 255);
 }
