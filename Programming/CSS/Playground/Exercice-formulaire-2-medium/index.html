@@ -36,8 +36,8 @@
     </div>
 
     <div>
-        <label for="password">Confirmer le mot de passe</label>
-        <input class="widinput" type="password" id="password" name="password" required>
+        <label for="confirmpassword">Confirmer le mot de passe</label>
+        <input class="widinput" type="password" id="confirmpassword" name="password" required>
     </div>
 
     <div>
@@ -46,17 +46,20 @@
     </div>
 
     <div>
-        <label>Genre</label>
+        <label for="genre">Genre</label>
         <div>
-            <label><input type="radio" name="gender" value="male"> Homme</label>
-            <label><input type="radio" name="gender" value="female"> Femme</label>
-            <label><input type="radio" name="gender" value="other"> Autre</label>
+            <input type="radio" id="genre1" name="gender" value="Homme" required>
+            <label for="genre1">Homme</label>
+            <input type="radio" id="genre2" name="gender" value="Femme" required>
+            <label for="genre2">Femme</label>
+            <input type="radio" id="genre3" name="gender" value="Autre" required>
+            <label for="genre3">Autre</label>
         </div>
     </div>
 
     <div>
         <label for="pays">Pays</label>
-        <select class="widinput" id="pays" name="pays">
+        <select class="widinput" id="pays" name="pays" required>
             <option value="">Sélectionnez votre pays</option>
             <option value="fr">France</option>
             <option value="be">Belgique</option>
@@ -65,23 +68,19 @@
           </select>
     </div>
 
-    <div>
-        <label>
-            <input type="checkbox" name="terms" required>
-            J'accepte les <span>conditions d'utilisation</span> et la <span>politique de confidentialité</span>
-          </label>
+    <div>    
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">J'accepte les <span>conditions d'utilisation</span> et la <span>politique de confidentialité</span></label>
     </div>
 
     <div>
-        <label>
-          <input type="checkbox" name="newsletter">
-          Je souhaite recevoir la newsletter
-        </label>
-      </div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Je souhaite recevoir la newsletter</label>
+    </div>
     
       <div>
-        <button type="submit">Réinitialiser</button>
-        <button class="bu" type="reset">S'inscrire</button>
+        <button type="reset">Réinitialiser</button>
+        <button class="bu" type="submit">S'inscrire</button>
       </div>
     
     

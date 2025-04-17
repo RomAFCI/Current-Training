@@ -12,7 +12,8 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-label {
+label,
+select {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 2em;
 }
