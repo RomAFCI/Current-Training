@@ -3,6 +3,7 @@ header {
 }
 
 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 1em;
   text-align: center;
   color: azure;
@@ -14,6 +15,7 @@ span {
 }
 
 #phead {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 1em;
   padding-top: 0.5em;
   text-align: center;
@@ -21,6 +23,7 @@ span {
 }
 
 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3f90d1;
   border-bottom: #3f90d1 solid 1px;
 }
@@ -34,6 +37,7 @@ h2 {
 
 .pbox {
   color: rgb(99, 99, 99);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .box {
@@ -118,20 +122,30 @@ h2 {
 
 .typo1 {
   letter-spacing: 0.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .typo2 {
   line-height: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .typo3 {
   column-count: 3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .p4::first-letter {
   color: violet;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.p4::first-line {
+  text-transform: uppercase;
 }
 
-.p5::first-line {
-  text-transform: uppercase;
+.p5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: rgb(4, 0, 255) 2px 5px;
+  background: linear-gradient(to right, red, orange);
+  -webkit-text-stroke: rgb(0, 255, 0) 1px;
 }
