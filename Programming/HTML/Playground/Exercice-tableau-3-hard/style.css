@@ -1,0 +1,41 @@
+.table1 {
+  margin: 1em;
+  padding: 1em;
+  width: 90%;
+  height: 20%;
+}
+
+.head1 {
+  padding: 1em 0em 1em 0em;
+  color: #4371a1;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.head2 {
+  padding: 1em 0em 1em 0em;
+  color: #c41717;
+  text-align: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.column1 {
+  text-align: left;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column2 {
+  text-align: right;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column3 {
+  text-align: right;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
