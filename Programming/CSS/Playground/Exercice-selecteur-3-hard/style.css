@@ -140,10 +140,13 @@ h2 {
 
 .p4::first-letter {
   color: violet;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .p4::first-line {
   text-transform: uppercase;
+}
+
+.p4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .p5 {
@@ -151,4 +154,14 @@ h2 {
   text-shadow: rgb(4, 0, 255) 2px 5px;
   background: linear-gradient(to right, red, orange);
   -webkit-text-stroke: rgb(0, 255, 0) 1px;
+}
+
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.p6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+  margin-left: 1em;
 }
