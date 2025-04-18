@@ -39,3 +39,32 @@
   color: grey;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.table2 {
+  margin: 1em;
+  padding: 1em;
+  width: 90%;
+  height: 20%;
+}
+.head3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: grey;
+  text-align: left;
+}
+
+.backgroundtr {
+  border: aqua;
+  border-collapse: collapse;
+  padding-left: 1em;
+  border-radius: left 3px blue;
+  background-color: aqua;
+  text-align: left;
+}
+
+.table3 {
+  margin: 1em;
+  padding: 1em;
+  width: 90%;
+  height: 20%;
+}
