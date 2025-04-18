@@ -1,7 +1,8 @@
 .table1 {
+  border-collapse: collapse;
   margin: 1em;
   padding: 1em;
-  width: 90%;
+  width: 95%;
   height: 20%;
 }
 
@@ -40,12 +41,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.table2 {
-  margin: 1em;
-  padding: 1em;
-  width: 90%;
-  height: 20%;
-}
 .head3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
@@ -54,17 +49,31 @@
 }
 
 .backgroundtr {
-  border: aqua;
-  border-collapse: collapse;
-  padding-left: 1em;
-  border-radius: left 3px blue;
-  background-color: aqua;
+  background-color: rgba(20, 171, 230, 0.233);
+  text-align: left;
+  padding-left: 0.75em;
+  border-left: #4371a1 solid 3px;
+}
+
+.backgroundtr1 {
+  border-top-left-radius: 20px 20px;
+  background-color: rgba(20, 171, 230, 0.233);
+  text-align: left;
+  padding-left: 0.75em;
+}
+
+.backgroundtr2 {
+  border-bottom-left-radius: 20px 20px;
+  background-color: rgba(20, 171, 230, 0.233);
+  text-align: left;
+  padding-left: 0.75em;
+}
+
+.texttab {
   text-align: left;
 }
 
-.table3 {
-  margin: 1em;
-  padding: 1em;
-  width: 90%;
-  height: 20%;
+.texttab2 {
+  width: 5%;
+  text-align: center;
 }
