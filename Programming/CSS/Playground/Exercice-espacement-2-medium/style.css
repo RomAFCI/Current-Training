@@ -1,8 +1,9 @@
 body {
-  background-image: url("/images/galaxy_2.png");
+  background-image: url("./images/galaxy_2.png");
   background-repeat: no-repeat;
-  width: 100%;
+  min-width: 100%;
   background-size: cover;
+  background-position: center;
   font-size: 16px;
 }
 

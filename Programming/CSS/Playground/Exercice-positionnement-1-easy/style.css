@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.backvideo {
+  object-fit: cover;
+  object-position: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.position {
+  line-height: 3em;
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+a {
+  padding: 0.5em;
+  background-color: blue;
+  border-radius: 3em;
+}
