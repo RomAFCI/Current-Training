@@ -2,23 +2,27 @@
   display: flex;
   background-color: rgb(36, 111, 129);
   height: 15vh;
-  width: 100%;
+  width: 100vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
-  padding: 1em;
   align-items: center;
   gap: 1em;
+  justify-content: space-between;
 }
 
 .backhead {
   font-weight: bold;
-  order: 0;
   gap: 2em;
   padding: 1em;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
+
+h1 {
+  width: 30%;
+}
+
 img {
-  width: 3em;
-  height: 3em;
+  align-self: flex-start;
+  width: 2em;
 }
