@@ -1,0 +1,35 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.backhead {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10vh;
+  min-height: 4em;
+  background-color: rgb(51, 51, 99);
+  align-items: center;
+  color: azure;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+img {
+  object-position: center;
+  height: 100%;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1em;
+}
+
+.container-logo .img-logo {
+  align-self: flex-start;
+  height: 100%;
+}
