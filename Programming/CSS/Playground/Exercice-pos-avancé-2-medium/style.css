@@ -99,7 +99,8 @@ body {
   border: #39d39b;
   background-color: #39d39b;
   color: azure;
-  padding: 0 0.5em;
+  padding: 0.5em;
+  margin: 0.5em 0;
 }
 
 .styl2:hover {
