@@ -94,21 +94,24 @@ body {
 }
 
 .styl2 {
-  color: rgb(0, 0, 0);
-  text-align: left;
-  border: solid 1em #ffffff;
-  border-radius: 1em;
-  list-style: none;
+  text-align: center;
+  border-radius: 0.5em;
+  border: #39d39b;
+  background-color: #39d39b;
+  color: azure;
+  padding: 0 0.5em;
 }
 
 .styl2:hover {
-  border-radius: 1em;
-  border: solid 1em #39d39b;
+  border-radius: 0.5em;
+
   color: azure;
-  background-color: #39d39b;
+  background-color: #32916e;
 }
 
-button {
+.button1 {
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar {
