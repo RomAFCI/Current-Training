@@ -5,10 +5,12 @@ header {
   right: 0;
 }
 
-.backhead {
+.background {
+  padding: 1em;
   display: flex;
   flex-wrap: wrap;
-  height: 10vh;
+  height: 15vh;
+  gap: 1em;
   min-height: 4em;
   background-color: rgb(51, 51, 99);
   align-items: center;
@@ -17,19 +19,14 @@ header {
     "Lucida Sans", Arial, sans-serif;
 }
 
-img {
-  object-position: center;
-  height: 100%;
-}
-
-.container-logo {
+.logo {
   display: flex;
   align-items: center;
   height: 100%;
   gap: 1em;
 }
 
-.container-logo .img-logo {
+.img {
   align-self: flex-start;
   height: 100%;
 }

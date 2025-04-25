@@ -34,7 +34,7 @@ header {
   gap: 1em;
 }
 
-.container-logo .img-logo {
+.img-logo {
   align-self: flex-start;
   height: 100%;
 }
