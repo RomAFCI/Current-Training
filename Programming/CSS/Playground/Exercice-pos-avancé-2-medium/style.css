@@ -267,38 +267,50 @@ h4 {
     grid-template-rows: 0.25fr 0.25fr 3fr 0.75fr;
     grid-template-columns: 5fr 1fr;
   }
+
+  .navi1 {
+    grid-area: nav;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #c2dceb;
+    color: rgb(0, 0, 0);
+    line-height: 1em;
+    padding: 0.5em 1em;
+  }
+
+  .main {
+    grid-area: main;
+    margin: 0 0.5em;
+    padding-top: 1em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+  .tablegrid {
+    display: grid;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "boxfoot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .navfoot {
+    list-style: none;
+    padding: 0;
+  }
+
+  .place8 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
 }
-
-.navi1 {
-  grid-area: nav;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #c2dceb;
-  color: rgb(0, 0, 0);
-  line-height: 1em;
-  padding: 0.5em 1em;
-}
-
-/* .main {
-  grid-area: main;
-  margin: 0 0.5em;
-  padding-top: 1em;
-  line-height: 1.5em;
-  text-align: left;
-} */
-
-/* .tablegrid {
-  display: grid;
-  grid-template-areas:
-    "box1"
-    "box2"
-    "boxfoot";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-} */
-
 @media screen and (max-width: 580px) {
   .grid {
     display: grid;
@@ -309,25 +321,52 @@ h4 {
       "main"
       "sidebar"
       "foot";
-    grid-template-rows: 0.25fr 0.25fr 2fr 1fr 2fr;
+    grid-template-rows: 0.25fr 0.25fr 2fr 1fr 1.5fr;
     grid-template-columns: 1fr;
   }
-}
 
-.navi1 {
-  grid-area: nav;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #c2dceb;
-  color: rgb(0, 0, 0);
-  line-height: 1em;
-}
+  .navi1 {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    background-color: #c2dceb;
+    color: rgb(0, 0, 0);
+    line-height: 1em;
+    padding: 0;
+  }
 
-/* .main {
-  grid-area: main;
-  margin: 0 0.5em;
-  padding-top: 1em;
-  line-height: 1.5em;
-  text-align: left;
-} */
+  .main {
+    grid-area: main;
+    margin: 0 0.5em;
+    padding-top: 1em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+  .tablegrid {
+    display: grid;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "boxfoot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .gridfooter {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2.5px 0px 0px #b6b7b82a;
+    gap: 0.5em;
+    padding: 0.5em 0.5em;
+    line-height: 2em;
+  }
+
+  .navfoot {
+    padding: 0;
+  }
+
+  .place8 {
+    padding-bottom: 1em;
+  }
+}
