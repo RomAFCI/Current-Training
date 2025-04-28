@@ -9,27 +9,27 @@ body {
     "head head head"
     "nav main sidebar"
     "foot foot foot";
-  grid-template-rows: 100px 1fr 150px;
-  grid-template-columns: 1.2fr 6fr 1.8fr;
+  grid-template-rows: 0.5fr 5fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 
 .blocklogo {
   display: flex;
   align-items: center;
-  height: 100%;
+
   gap: 1em;
 }
 
 .logo {
+  width: 4em;
+  height: 4em;
   align-self: flex-start;
-  height: 100%;
 }
 
 .head {
   grid-area: head;
   padding: 1em 1em;
   background-color: #2c3d50;
-
   color: azure;
 }
 
@@ -43,8 +43,9 @@ body {
   padding: 0.5em 1em;
 }
 
-.navi ul {
+ul {
   padding: 0;
+  list-style: none;
 }
 
 .styl {
@@ -82,7 +83,7 @@ body {
 
 h2,
 h3 {
-  padding: 0.5em 0;
+  padding-bottom: 0.5em;
 }
 
 .box1 {
@@ -168,8 +169,78 @@ h3 {
 .foot {
   grid-area: foot;
   background-color: #2c3d50;
+  color: rgb(145, 140, 140);
 }
 
-.flexfoot {
+h4 {
+  color: azure;
+}
+
+.imgfoot {
+  width: 2em;
+  height: 2em;
+}
+
+.gridfooter {
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(2 1fr);
+  box-shadow: 0px 2.5px 0px 0px #b6b7b82a;
+  gap: 0.5em;
+  padding: 0.5em 0.5em;
+}
+
+.place1 {
+  align-items: center;
   display: flex;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.place2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.place3 {
+  display: flex;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.place4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.place5 {
+  display: flex;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.place6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.place7 {
+  display: flex;
+  align-items: center;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.place8 {
+  display: flex;
+  gap: 1em;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.footend {
+  text-align: center;
+  padding: 1em;
 }
