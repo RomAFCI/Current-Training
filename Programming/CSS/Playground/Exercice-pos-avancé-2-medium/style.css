@@ -9,7 +9,7 @@ body {
     "head head head"
     "nav main sidebar"
     "foot foot foot";
-  grid-template-rows: 0.5fr 5fr 1fr;
+  grid-template-rows: 0.5fr 4fr 1fr;
   grid-template-columns: 1fr 6fr 1fr;
 }
 
@@ -45,7 +45,6 @@ body {
 
 ul {
   padding: 0;
-  list-style: none;
 }
 
 .styl {
