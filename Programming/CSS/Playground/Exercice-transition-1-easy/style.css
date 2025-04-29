@@ -35,8 +35,10 @@ p {
 
 .btnone:hover {
   background-color: blueviolet;
-  transform: scale(1.2);
+  transform: translateY(-1em);
+  transition: 0.7s;
   color: pink;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btntwo {
@@ -52,4 +54,24 @@ p {
 .btntwo:hover {
   background-color: coral;
   color: lime;
+  transform: scale(1.2);
+  transition-duration: 0.7s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 12px 24px;
+  background-color: aqua;
+  color: blue;
+  border-radius: 5px;
+}
+
+.btn3:hover {
+  transform: rotate(5deg);
+  background-color: blue;
+  color: aqua;
+  transition-duration: 0.7s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 }
