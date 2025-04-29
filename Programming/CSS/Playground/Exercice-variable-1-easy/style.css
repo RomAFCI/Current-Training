@@ -1,6 +1,6 @@
 :root {
-  --couleur-primaire: #000000;
-  --couleur-secondaire: #ffffff;
+  --color-black: #000000;
+  --color-white: #ffffff;
   --duree-transition: 0.3s;
   --effet-transition: ease-in-out;
   --echelle-hover: 1.05;
@@ -8,6 +8,8 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 header {
@@ -20,14 +22,14 @@ header {
   padding: 1em;
 }
 
-ul {
+.containul {
   padding: 0;
   gap: 1em;
   display: flex;
   list-style: none;
 }
 
-a {
+.containhead {
   text-decoration: inherit;
   color: #3c97da;
 }
