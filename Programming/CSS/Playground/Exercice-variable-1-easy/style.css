@@ -1,3 +1,11 @@
+:root {
+  --couleur-primaire: #000000;
+  --couleur-secondaire: #ffffff;
+  --duree-transition: 0.3s;
+  --effet-transition: ease-in-out;
+  --echelle-hover: 1.05;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -24,7 +32,7 @@ a {
   color: #3c97da;
 }
 
-h2 {
+.title-principal {
   font-weight: bold;
   color: #3c97da;
 }
@@ -55,4 +63,18 @@ main {
   width: 20vw;
   height: 20vh;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.116);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --couleur-texte: #fff;
+    --couleur-fond: #222;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --couleur-fond: #ffffff;
+    background-color: var(--couleur-fond);
+    transition: background-color 0.3s;
+  }
 }

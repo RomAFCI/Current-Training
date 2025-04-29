@@ -2,9 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 480px) and (max-width: 920px) {
-}
-
 .grid {
   display: grid;
   min-height: 100vh;
@@ -333,6 +330,8 @@ h4 {
   .navi1 {
     grid-area: nav;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
     background-color: #c2dceb;
     color: rgb(0, 0, 0);
