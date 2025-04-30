@@ -1,9 +1,54 @@
-.img {
+:root {
+  --color-text: rgb(0, 0, 0);
+  --color-fond: rgb(226, 161, 172);
+  --color-shadow: rgb(218, 154, 165);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fond);
+  color: var(--color-text);
+}
+
+.resetli {
+  list-style: none;
+}
+
+.resetul {
+  padding: 0;
+}
+
+.reseta {
+  text-decoration: none;
+}
+
+.resetselect {
+  border: none;
+}
+
+.imghead {
   width: 100px;
   height: 100px;
 }
 
-img {
+.imgnav {
   width: 40px;
   height: 40px;
+}
+
+.flexhead {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.backgroundhead {
+  color: var(--color-fond);
+  box-shadow: 0 5px 3px 0 var(--color-shadow);
+}
+
+.backslct {
+  background-color: var(--color-fond);
 }
