@@ -22,10 +22,6 @@ body {
   text-decoration: none;
 }
 
-.resetselect {
-  border: none;
-}
-
 .imghead {
   width: 100px;
   height: 100px;
@@ -44,11 +40,16 @@ body {
   padding: 1em;
 }
 
+.colo-nav {
+  color: var(--color-text);
+}
+
 .backgroundhead {
   color: var(--color-fond);
   box-shadow: 0 5px 3px 0 var(--color-shadow);
 }
 
-.backslct {
-  background-color: var(--color-fond);
+.deroule {
+  display: block;
+  justify-content: column;
 }
