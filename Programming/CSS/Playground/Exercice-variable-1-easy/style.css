@@ -1,15 +1,16 @@
 :root {
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --duree-transition: 0.3s;
-  --effet-transition: ease-in-out;
-  --echelle-hover: 1.05;
+  --color-texte: #161616;
+  --color-fond: #ffffff;
+  --color-box: rgb(255, 255, 255);
+  --color-nav: #3c97da;
+  --color-p: rgb(109, 107, 107);
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-fond);
+  color: var(--color-texte);
+  transition: ease 1.5s;
 }
 
 header {
@@ -22,6 +23,11 @@ header {
   padding: 1em;
 }
 
+.containhead {
+  text-decoration: inherit;
+  color: #3c97da;
+}
+
 .containul {
   padding: 0;
   gap: 1em;
@@ -29,14 +35,9 @@ header {
   list-style: none;
 }
 
-.containhead {
-  text-decoration: inherit;
-  color: #3c97da;
-}
-
-.title-principal {
-  font-weight: bold;
-  color: #3c97da;
+.containa {
+  text-decoration: none;
+  color: var(--color-nav);
 }
 
 .contain {
@@ -46,7 +47,7 @@ header {
 }
 
 .contain p {
-  color: rgb(109, 107, 107);
+  color: var(--color-p);
 }
 
 main {
@@ -61,22 +62,24 @@ main {
   padding: 6em 0;
 }
 
-.box {
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.116);
+.flexbox h2 {
+  color: var(--color-nav);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --couleur-texte: #fff;
-    --couleur-fond: #222;
-  }
+.box {
+  border-radius: 1em;
+  padding: 1em;
+  width: 25vw;
+  height: 25vh;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.116);
+  background-color: var(--color-box);
+  color: var(--color-texte);
+}
 
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    --couleur-fond: #ffffff;
-    background-color: var(--couleur-fond);
-    transition: background-color 0.3s;
-  }
+.darkmode {
+  --color-texte: #ffffff;
+  --color-fond: rgb(48, 48, 48);
+  --color-box: rgb(66, 66, 66);
+  --color-nav: #3c97da;
+  --color-p: rgb(109, 107, 107);
 }
