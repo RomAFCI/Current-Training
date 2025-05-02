@@ -83,3 +83,26 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
     grid-area: sec-hura;
 }
 
+.img1-area {
+    grid-area: img1;
+}
+
+.img2-area {
+    grid-area: img2;
+}
+
+.img3-area {
+    grid-area: img3;
+}
+
+.img4-area {
+    grid-area: img4;
+}
+
+.img5-area {
+    grid-area: img5;
+}
+
+.img6-area {
+    grid-area: img6;
+}
