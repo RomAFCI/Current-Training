@@ -97,4 +97,27 @@ object-position: center;
 .grid-footer {
 
 }
-@media screen and (min-width: 580px) and (max-width: 920px)
+
+
+@media screen and (max-width: 1280px) {
+    .grid {
+    gap: 0.5em;
+    display: grid;
+    padding-bottom: 0.5em;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+}
+
+
+
+@media screen and (max-width: 992px){.grid {
+    gap: 0.5em;
+    display: grid;
+    padding-bottom: 0.5em;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+
+}
