@@ -1,12 +1,14 @@
 :root {
-    --color-header: black;
-    --color-header2:#2e2814;
+    --color-header-pri: black;
+    --color-header-sec:#525125;
     --color-textheader: white;
+    --color-text-primary:white;
+    --color-text-secondary:black;
+    
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .flexhead {
@@ -19,6 +21,7 @@ body {
 
 .flexul{
     display: flex;
+    flex-wrap: wrap;
    gap: 2em;
 }
 
@@ -35,22 +38,48 @@ body {
 }
 
 .bghead {
-background: linear-gradient(to right, black, #312b16);
-/* background:linear-gradient(rgba(var(--color-header),0)0%, rgba(var(--color-header),1)100%); */
+background: linear-gradient(to right,var(--color-header-pri),var(--color-header-sec));
 }
 
 .gridmain {
     display: grid;
     grid-template-areas:
-    "section-hura section-hura section-hura"
-    "section-urus section-urus section-urus"
+    "sec-hura sec-hura sec-hura"
+    "sec-urus sec-urus sec-urus"
     "img1 img2 img3"
     "img4 img5 img6";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
 
 }
 
-.section-hura {
-    grid-area: section-hura;
+.container-pos{
+    position: relative;
 }
+
+.card {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.textcard {
+    color: var(--color-text-primary);
+ }
+ 
+ .textcard-sec {
+     color: var(--color-text-secondary);
+ }
+
+.urus-area {
+    grid-area: sec-urus;
+} 
+
+.hura-area {
+    grid-area: sec-hura;
+}
+
