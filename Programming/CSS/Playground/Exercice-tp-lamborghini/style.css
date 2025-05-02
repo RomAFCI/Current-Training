@@ -4,11 +4,13 @@
     --color-textheader: white;
     --color-text-primary:white;
     --color-text-secondary:black;
+    --color-background:white;
     
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--color-background);
 }
 
 .flexhead {
@@ -41,23 +43,13 @@ body {
 background: linear-gradient(to right,var(--color-header-pri),var(--color-header-sec));
 }
 
-/* .gridmain {
-    display: grid;
-    grid-template-areas:
-    "sec-hura sec-hura sec-hura"
-    "sec-urus sec-urus sec-urus"
-    "img1 img2 img3"
-    "img4 img5 img6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 60vh 60vh;
-    gap: 0.5em;
 
-} */
-
-.grid2 {
+.grid {
     gap: 0.5em;
     display: grid;
+    padding-bottom: 0.5em;
     grid-template-columns: repeat(3,1fr);
+    
 }
 
 .container-pos{
@@ -81,16 +73,9 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
      color: var(--color-text-secondary);
  }
 
- .hura-area {
-    /* grid-area: sec-hura; */
-    margin-bottom: 0.5em;
-}
-
-.urus-area {
-    /* grid-area: sec-urus; */
+ .margin-background {
     margin-bottom: 0.5em;
 } 
-
 
 .img-hh {
   max-width: auto;
@@ -99,26 +84,17 @@ object-fit: cover;
 object-position: center;
 } 
 
-/* .img1-area {
-    grid-area:img1;
+.filter {
+    filter: opacity(60%);
 }
 
-.img2-area {
-    grid-area: img2;
+.bg-footer {
+    background-color: var(--color-header-pri);
+    padding: 3em;
+   
 }
 
-.img3-area {
-    grid-area: img3;
-}
+.grid-footer {
 
-.img4-area {
-    grid-area: img4;
 }
-
-.img5-area {
-    grid-area: img5;
-}
-
-.img6-area {
-    grid-area: img6;
-} */
+@media screen and (min-width: 580px) and (max-width: 920px)
