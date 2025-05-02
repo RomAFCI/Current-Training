@@ -41,7 +41,7 @@ body {
 background: linear-gradient(to right,var(--color-header-pri),var(--color-header-sec));
 }
 
-.gridmain {
+/* .gridmain {
     display: grid;
     grid-template-areas:
     "sec-hura sec-hura sec-hura"
@@ -52,6 +52,12 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
     grid-template-rows: 1fr 1fr 60vh 60vh;
     gap: 0.5em;
 
+} */
+
+.grid2 {
+    gap: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .container-pos{
@@ -76,11 +82,13 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
  }
 
  .hura-area {
-    grid-area: sec-hura;
+    /* grid-area: sec-hura; */
+    margin-bottom: 0.5em;
 }
 
 .urus-area {
-    grid-area: sec-urus;
+    /* grid-area: sec-urus; */
+    margin-bottom: 0.5em;
 } 
 
 
@@ -91,7 +99,7 @@ object-fit: cover;
 object-position: center;
 } 
 
-.img1-area {
+/* .img1-area {
     grid-area:img1;
 }
 
@@ -113,4 +121,4 @@ object-position: center;
 
 .img6-area {
     grid-area: img6;
-}
+} */
