@@ -49,7 +49,7 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
     "img1 img2 img3"
     "img4 img5 img6";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 60vh 60vh;
     gap: 0.5em;
 
 }
@@ -75,16 +75,24 @@ background: linear-gradient(to right,var(--color-header-pri),var(--color-header-
      color: var(--color-text-secondary);
  }
 
+ .hura-area {
+    grid-area: sec-hura;
+}
+
 .urus-area {
     grid-area: sec-urus;
 } 
 
-.hura-area {
-    grid-area: sec-hura;
-}
+
+.img-hh {
+  max-width: auto;
+  height: 100%;
+object-fit: cover;
+object-position: center;
+} 
 
 .img1-area {
-    grid-area: img1;
+    grid-area:img1;
 }
 
 .img2-area {
