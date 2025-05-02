@@ -1,123 +1,115 @@
 :root {
-    --color-header-pri: black;
-    --color-header-sec:#525125;
-    --color-textheader: white;
-    --color-text-primary:white;
-    --color-text-secondary:black;
-    --color-background:white;
-    
+  --color-header-pri: black;
+  --color-header-sec: #525125;
+  --color-textheader: white;
+  --color-text-primary: white;
+  --color-text-secondary: black;
+  --color-background: white;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:var(--color-background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-background);
 }
 
 .flexhead {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    gap: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
 }
 
-.flexul{
-    display: flex;
-    flex-wrap: wrap;
-   gap: 2em;
+.flexul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
 .resetul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .textul {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: var(--color-textheader);
-
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-textheader);
 }
 
 .bghead {
-background: linear-gradient(to right,var(--color-header-pri),var(--color-header-sec));
+  background: linear-gradient(
+    to right,
+    var(--color-header-pri),
+    var(--color-header-sec)
+  );
 }
-
 
 .grid {
-    gap: 0.5em;
-    display: grid;
-    padding-bottom: 0.5em;
-    grid-template-columns: repeat(3,1fr);
-    
+  gap: 0.5em;
+  display: grid;
+  padding-bottom: 0.5em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.container-pos{
-    position: relative;
+.container-pos {
+  position: relative;
 }
 
 .card {
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .textcard {
-    color: var(--color-text-primary);
- }
- 
- .textcard-sec {
-     color: var(--color-text-secondary);
- }
+  color: var(--color-text-primary);
+}
 
- .margin-background {
-    margin-bottom: 0.5em;
-} 
+.textcard-sec {
+  color: var(--color-text-secondary);
+}
+
+.margin-background {
+  margin-bottom: 0.5em;
+}
 
 .img-hh {
   max-width: auto;
   height: 100%;
-object-fit: cover;
-object-position: center;
-} 
+  object-fit: cover;
+  object-position: center;
+}
 
 .filter {
-    filter: opacity(60%);
+  filter: opacity(60%);
 }
 
 .bg-footer {
-    background-color: var(--color-header-pri);
-    padding: 3em;
-   
+  background-color: var(--color-header-pri);
+  padding: 3em;
 }
 
 .grid-footer {
-
 }
-
 
 @media screen and (max-width: 1280px) {
-    .grid {
+  .grid {
     gap: 0.5em;
     display: grid;
     padding-bottom: 0.5em;
-    grid-template-columns: repeat(2,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-}
-
-
-
-@media screen and (max-width: 992px){.grid {
+@media screen and (max-width: 992px) {
+  .grid {
     gap: 0.5em;
     display: grid;
     padding-bottom: 0.5em;
-    grid-template-columns: repeat(1,1fr);
-    
-}
-
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
