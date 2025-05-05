@@ -49,6 +49,15 @@ body {
   box-shadow: 0 5px 3px 0 var(--color-shadow);
 }
 
-/* .deroule {
+.sous {
+  display: none;
+  position: absolute;
+}
+.sous li {
+  display: inline-block;
+}
+
+li:hover .sous {
   display: block;
-} */
+  justify-content: column;
+}
