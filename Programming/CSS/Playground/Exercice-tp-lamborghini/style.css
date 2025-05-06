@@ -93,11 +93,25 @@ body {
   padding: 3em;
 }
 
+.borderfooter {
+  padding: 1em;
+  border-top: rgb(255, 255, 255) solid 0.125em;
+}
+
 @media screen and (max-width: 1280px) {
   .grid {
     gap: 0.5em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flexhead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
   }
 }
 
@@ -106,5 +120,14 @@ body {
     gap: 0.5em;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .flexhead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
   }
 }
