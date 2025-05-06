@@ -12,7 +12,7 @@ body {
 
 .logo-croc:hover {
   transform: rotate(360deg);
-  transition-duration: 3s;
+  transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
 
