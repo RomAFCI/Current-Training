@@ -131,3 +131,10 @@ body {
     gap: 1em;
   }
 }
+
+/*commande pratique en grid (media querries grid)*/
+
+/* .grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr))
+} */
