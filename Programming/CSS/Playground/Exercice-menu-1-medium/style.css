@@ -55,6 +55,19 @@ body {
   box-shadow: 0 5px 3px 0 var(--color-shadow);
 }
 
+/* .container-pos {
+  position: relative;
+} */
+
 .hide-menu {
   display: none;
+  position: absolute;
+}
+
+.drop-down-menu {
+  display: block;
+}
+
+.drop-down-menu:hover {
+  display: block;
 }
