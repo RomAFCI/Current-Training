@@ -64,10 +64,11 @@ body {
   position: absolute;
 }
 
-/* .drop-down-menu {
-  display: block;
-} */
-
 .drop-down-menu:hover .hide-menu {
   display: block;
+}
+
+.drop-down-menu .link-header::after {
+  content: ">";
+  color: black;
 }
