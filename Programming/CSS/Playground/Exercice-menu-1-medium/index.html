@@ -11,7 +11,22 @@
 
   <body>
     <header class="flexhead backgroundhead">
-      <img class="imghead" src="./images/crocodile.png" alt="logo-croco" />
+      <img
+        class="imghead logo-croc"
+        src="./images/crocodile.png"
+        alt="logo-croco"
+      />
+
+      <!-- menu-burger à revoir
+
+      <input id="menu-mobile" type="checkbox" />
+      <label for="menu-mobile" class="menu-burger">
+        <span class="trait"></span>
+        <span class="trait"></span>
+        <span class="trait"></span>
+      </label>
+      <nav class="nav-menu"> -->
+
       <nav>
         <ul class="resetul flexnav">
           <li class="resetli">
@@ -41,17 +56,19 @@
                 alt="box"
               />Produits</a
             >
-            <ul class="resetul flexnav hide-menu">
-              <li class="resetli">
-                <a class="reseta colo-nav" href="">Produit 1</a>
-              </li>
-              <li class="resetli">
-                <a class="reseta colo-nav" href="">Produit 2</a>
-              </li>
-              <li class="resetli">
-                <a class="reseta colo-nav" href="">Produit 3</a>
-              </li>
-            </ul>
+            <div class="hide-menu">
+              <ul class="resetul menu-deroulant">
+                <li class="resetli">
+                  <a class="reseta colo-nav" href="">Produit 1</a>
+                </li>
+                <li class="resetli">
+                  <a class="reseta colo-nav" href="">Produit 2</a>
+                </li>
+                <li class="resetli">
+                  <a class="reseta colo-nav deco-menu" href="">Produit 3</a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <li class="resetli">
@@ -73,9 +90,6 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>about</h1>
-      <p>lien</p>
-    </main>
+    <main></main>
   </body>
 </html>
