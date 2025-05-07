@@ -73,7 +73,7 @@ body {
   right: 0;
 }
 .menu-deroulant {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--color-shadow);
   border-radius: 1em;
@@ -103,17 +103,40 @@ body {
   transition-delay: 0.1s;
 }
 
+/*SLIDE POUR MENU DEROULANT*/
+
+.slide {
+  text-align: left;
+  position: relative;
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 80%;
+  height: 2px;
+  bottom: -3px;
+  background-color: #eb0fa2;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.slide:hover::after {
+  transform: scaleX(1);
+}
+
+/*BACKGROUND CARD ETC*/
+/* background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545); */
+/*filter: blur(1.5em);
+opacity: 0.5;*/
+
 /* .deco-menu {
   border-bottom: 2px solid blue;
 } */
-
-.deco-menu:hover {
-  border-bottom: 2px solid blue;
-  transform: translateX(2px);
-  transition-duration: 1.5s;
-  transition-timing-function: ease;
-  transition-delay: 0.21;
-}
 
 /* MENU HAMBURGER */
 /* 
