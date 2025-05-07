@@ -138,6 +138,8 @@ body {
   bottom: 0;
 }
 
+/*ANIMATION CARD*/
+
 .card-main {
   color: white;
   margin: 0 auto;
@@ -173,9 +175,9 @@ body {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 160px;
+  padding: 155px;
   border-radius: 10px;
-  animation: 3s spin linear infinite;
+  animation: 3.5s spin linear infinite;
 }
 
 .card-main::before {
@@ -192,24 +194,6 @@ body {
     --angle: 360deg;
   }
 }
-
-/* from var(--angle),
-transparent,
-#ff4545,
-#00ff99,
-#006aff,
-#ff0095,
-#ff4545
-); */
-
-/*BACKGROUND CARD ETC*/
-/* background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545); */
-/*filter: blur(1.5em);
-opacity: 0.5;*/
-
-/* .deco-menu {
-  border-bottom: 2px solid blue;
-} */
 
 /* MENU HAMBURGER */
 /* 
