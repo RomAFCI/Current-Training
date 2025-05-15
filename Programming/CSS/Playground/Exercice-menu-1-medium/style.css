@@ -94,13 +94,15 @@ body {
 .drop-down-menu .link-header::after {
   content: "🡶";
   color: black;
+  transition-timing-function: ease;
+  transition-duration: 2s;
+  transition-delay: 0.1s;
 }
 
 .drop-down-menu:hover .link-header::after {
-  transition-timing-function: ease;
-  transition-duration: 2s;
+  /* transition-timing-function: ease;
+  transition-duration: 2s; */
   transform: rotate(90deg);
-  transition-delay: 0.1s;
 }
 
 /*SLIDE POUR MENU DEROULANT*/
