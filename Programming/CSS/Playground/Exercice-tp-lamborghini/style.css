@@ -1,6 +1,6 @@
 :root {
-  --color-back-pri: black;
-  --color-back-sec: #525125;
+  --color-header-pri: black;
+  --color-header-sec: #525125;
   --color-textheader: white;
   --color-text-primary: white;
   --color-text-secondary: black;
@@ -8,8 +8,8 @@
 }
 
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-background);
-  font-family: Roboto;
 }
 
 .flexhead {
@@ -40,14 +40,15 @@ body {
 .bghead {
   background: linear-gradient(
     to right,
-    var(--color-back-pri),
-    var(--color-back-sec)
+    var(--color-header-pri),
+    var(--color-header-sec)
   );
 }
 
 .grid {
   gap: 0.5em;
   display: grid;
+  padding-bottom: 0.5em;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -76,12 +77,11 @@ body {
   margin-bottom: 0.5em;
 }
 
-.img-covering {
+.img-hh {
   max-width: auto;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  padding: 0 0.5em;
 }
 
 .filter {
@@ -89,29 +89,18 @@ body {
 }
 
 .bg-footer {
-  background-color: var(--color-back-pri);
+  background-color: var(--color-header-pri);
   padding: 3em;
 }
 
-.borderfooter {
-  padding: 1em;
-  border-top: rgb(255, 255, 255) solid 0.125em;
-}
+
 
 @media screen and (max-width: 1280px) {
   .grid {
     gap: 0.5em;
     display: grid;
+    padding-bottom: 0.5em;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .flexhead {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    gap: 1em;
   }
 }
 
@@ -119,22 +108,7 @@ body {
   .grid {
     gap: 0.5em;
     display: grid;
+    padding-bottom: 0.5em;
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .flexhead {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    gap: 1em;
-  }
 }
-
-/*commande pratique en grid (media querries grid)*/
-
-/* .grid { 
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px,1fr))
-} */
