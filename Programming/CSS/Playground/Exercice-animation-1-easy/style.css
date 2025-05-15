@@ -1,0 +1,63 @@
+:root {
+  --couleur-primaire: #12c3e2;
+  --couleur-secondaire: #e67ba8;
+  --couleur-background: #0e0e0e;
+  --couleur-texte: #ebe7e4;
+}
+
+.background {
+  background-color: var(--couleur-background);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.typo-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: var(--couleur-texte);
+  padding-bottom: 2em;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--couleur-primaire);
+  border-top: 5px solid var(--couleur-background);
+  border-radius: 100%;
+}
+
+.loader {
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
