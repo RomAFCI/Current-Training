@@ -31,6 +31,7 @@
   border: 5px solid var(--couleur-primaire);
   border-top: 5px solid var(--couleur-background);
   border-radius: 100%;
+  filter: blur(1.5px);
 }
 
 .loader {
