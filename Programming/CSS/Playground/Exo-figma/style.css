@@ -1,0 +1,78 @@
+:root {
+  --color-bg: #606060;
+  --color-prim: #cca57c;
+  --color-seco: #272727;
+  --color-tert: white;
+  --color-alte: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-head {
+  background-image: url(./image/bg_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reset-li {
+  list-style: none;
+}
+
+.reset-ul {
+  padding: 0;
+}
+.flex-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.contain-head {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 4em 0;
+  align-items: end;
+}
+
+.pad-text {
+  padding-top: 2em;
+}
+
+.marg-text {
+  margin-top: 2em;
+}
+
+.FS-nav {
+  font-size: 24px;
+}
+.FS-titre {
+  font-size: 58px;
+}
+.FS-text {
+  font-size: 20px;
+}
+.btn-head {
+  display: inline-block;
+  max-width: 10em;
+  color: var(--color-tert);
+  background-color: var(--color-prim);
+  padding: 0.25em 1em;
+  border-radius: 3em;
+  border: none;
+  font-size: 18px;
+}
+
+.btn-head::after {
+  content: "→";
+}
+
+.color-text {
+  color: var(--color-tert);
+}
