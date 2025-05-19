@@ -187,6 +187,25 @@
   background-color: var(--color-greyblack);
 }
 
+.b-more {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0.25em 3em;
+}
+
+.more-grey {
+  border-left: var(--color-taupe) 3px solid;
+  color: var(--color-taupe);
+  background-color: var(--color-grey);
+  text-align: end;
+}
+
+.more-taupe {
+  color: var(--color-black);
+  background-color: var(--color-taupe);
+  text-align: right;
+}
+
 /* PICTURES */
 
 .pictures {
