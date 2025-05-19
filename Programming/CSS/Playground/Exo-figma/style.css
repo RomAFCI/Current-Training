@@ -19,6 +19,20 @@
   background-position: center;
 }
 
+.bg-logo {
+  background-image: url(./image/logo_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 70px;
+  transition: ease 0.3s;
+}
+
+.bg-logo:hover {
+  background-image: url(./image/logo_hover.png);
+}
+
 .bg-greyblack {
   background-color: var(--color-greyblack);
 }
@@ -234,6 +248,7 @@
   color: var(--color-taupe);
   background-color: var(--color-grey);
   text-align: end;
+  transition: ease 0.3s;
 }
 
 .more-grey:hover {
@@ -330,6 +345,17 @@
 }
 
 /*HOVER*/
+
+.tab {
+  transition: ease 0.3s;
+}
+.tab:hover {
+  bottom: 2px;
+  text-decoration: underline var(--color-taupe);
+  text-underline-position: under;
+  color: var(--color-taupe);
+  opacity: 0.9;
+}
 
 /*INPUT*/
 
