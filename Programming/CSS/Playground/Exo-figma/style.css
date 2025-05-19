@@ -1,11 +1,15 @@
+/*RACINE*/
+
 :root {
-  --color-bg: #606060;
-  --color-prim: #cca57c;
-  --color-seco: #272727;
-  --color-tert: white;
-  --color-alte: black;
+  --color-grey: #606060;
+  --color-taupe: #cca57c;
+  --color-greyblack: #272727;
+  --color-white: white;
+  --color-black: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* BACKGROUND*/
 
 .bg-head {
   background-image: url(./image/bg_header.jpg);
@@ -14,6 +18,12 @@
   background-position: center;
 }
 
+.bg-main {
+  background-color: var(--color-greyblack);
+}
+
+/*RESET*/
+
 .reset-li {
   list-style: none;
 }
@@ -21,6 +31,9 @@
 .reset-ul {
   padding: 0;
 }
+
+/*FLEX*/
+
 .flex-head {
   display: flex;
   flex-direction: column;
@@ -33,7 +46,13 @@
   gap: 2em;
 }
 
-.contain-head {
+.flex-main {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.flex-head {
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -41,12 +60,20 @@
   align-items: end;
 }
 
+/* PADDING */
+
 .pad-text {
   padding-top: 2em;
 }
 
 .marg-text {
   margin-top: 2em;
+}
+
+/* TYPOGRAPHIE */
+
+.typo {
+  font-family: "roboto";
 }
 
 .FS-nav {
@@ -58,11 +85,21 @@
 .FS-text {
   font-size: 20px;
 }
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-grey 
+
+
+/*BUTTON*/
+
 .btn-head {
   display: inline-block;
   max-width: 10em;
-  color: var(--color-tert);
-  background-color: var(--color-prim);
+  color: var(--color-white);
+  background-color: var(--color-taupe);
   padding: 0.25em 1em;
   border-radius: 3em;
   border: none;
@@ -73,6 +110,9 @@
   content: "→";
 }
 
-.color-text {
-  color: var(--color-tert);
+/* PICTURES */
+
+.pictures {
+  width: 220px;
+  height: 295px;
 }
