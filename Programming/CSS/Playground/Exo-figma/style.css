@@ -69,6 +69,13 @@
   align-items: center;
 }
 
+.flex-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
 /* PADDING */
 
 .pad-top {
@@ -134,6 +141,9 @@
   color: var(--color-greywhite);
 }
 
+.text-right {
+  text-align: right;
+}
 /*BUTTON*/
 
 .btn-head {
@@ -194,6 +204,16 @@
   min-height: 145px;
 }
 
+.logo-s {
+  min-width: 100px;
+  min-height: 102px;
+}
+
+.pict-l {
+  min-width: 387px;
+  min-height: 260px;
+}
+
 /* BORDER*/
 
 .border-text {
@@ -201,6 +221,7 @@
 }
 
 .border-pictures {
+  padding: 1em 0;
   border-top: var(--color-taupe) solid 3px;
   border-bottom: var(--color-taupe) solid 3px;
 }
