@@ -19,10 +19,17 @@
   background-position: center;
 }
 
-.bg-main {
+.bg-greyblack {
   background-color: var(--color-greyblack);
 }
 
+.bg-main {
+  background-color: var(--color-grey);
+}
+
+.bg-taupe {
+  background-color: var(--color-taupe);
+}
 /*RESET*/
 
 .reset-li {
@@ -83,6 +90,10 @@
 .pad-bottom {
   padding-bottom: 2em;
 }
+
+.pad-main {
+  padding: 0 15%;
+}
 /* TYPOGRAPHIE */
 
 .typo {
@@ -136,6 +147,32 @@
   content: "→";
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.25 1em;
+  font-size: 18px;
+}
+
+.btn::after {
+  content: "→";
+}
+
+.date {
+  display: inline-block;
+  padding: 0.25em 1em;
+  font-size: 18px;
+}
+
+.btn-taupe {
+  color: var(--color-white);
+  background-color: var(--color-taupe);
+}
+
+.btn-greyblack {
+  color: var(--color-white);
+  background-color: var(--color-greyblack);
+}
+
 /* PICTURES */
 
 .pictures {
@@ -168,5 +205,15 @@
 
 .position {
   bottom: 0px;
+  left: 15px;
+}
+
+.pos-btn {
+  bottom: 15px;
+  left: 15px;
+}
+
+.pos-h {
+  top: 15px;
   left: 15px;
 }
