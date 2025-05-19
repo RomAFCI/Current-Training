@@ -19,7 +19,9 @@
           <ul class="flex reset-ul reset-li">
             <li>HOME</li>
             <li>ABOUT</li>
-            <div><img src="./image/logo_header.png" alt="logo-head" /></div>
+            <div class="hover-logo">
+              <img src="./image/logo_header.png" alt="logo-head" />
+            </div>
             <li>PROJECTS</li>
             <li>CONTACTS</li>
           </ul>
@@ -37,7 +39,7 @@
       </section>
     </header>
     <main class="pad-main bg-main">
-      <section class="bg-greyblack">
+      <section class="bg-greyblack pad-section">
         <div class="flex">
           <h2 class="text-white pad-top">
             ABOUT <span class="text-taupe">GO.HALL</span>
@@ -121,13 +123,13 @@
           </div>
         </div>
       </section>
-      <section class="bg-greyblack pad">
-        <div class="flex pad-bottom">
+      <section class="bg-greyblack pad-section">
+        <div class="flex pad-bottom pad-top">
           <h2 class="text-white">
             ABOUT <span class="text-taupe">SERVICES</span>
           </h2>
         </div>
-        <div class="flex">
+        <div class="flex pad-bottom">
           <div>
             <img
               class="logo-s pad-bottom"
@@ -188,11 +190,31 @@
         </div>
         <form class="bg-form flex-form pad">
           <label for="prenom"></label>
-          <input class="" type="text" id="prenom" name="prenom" required />
+          <input
+            class="text-white bg-input input border-form"
+            type="text"
+            id="prenom"
+            name="prenom"
+            placeholder="Name *"
+            required
+          />
           <label for="email"></label>
-          <input class="" type="email" id="email" name="email" required />
+          <input
+            class="text-white bg-input input border-form"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail *"
+            required
+          />
           <label for="message"></label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <textarea
+            class="text-white bg-input input border-form"
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Message *"
+          ></textarea>
           <button class="btn-foot btn-taupe">LOOK MORE</button>
         </form>
       </div>

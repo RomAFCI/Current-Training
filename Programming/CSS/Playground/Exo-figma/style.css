@@ -44,6 +44,10 @@
   min-width: 375px;
   min-height: 313px;
 }
+
+.bg-input {
+  background-color: var(--color-black);
+}
 /*RESET*/
 
 .reset-li {
@@ -125,6 +129,10 @@
 
 .pad-main {
   padding: 0 15%;
+}
+
+.pad-section {
+  padding: 0 250px;
 }
 
 .pad {
@@ -289,6 +297,13 @@
   border-bottom: var(--color-taupe) solid 3px;
 }
 
+.border-form {
+  border-bottom: var(--color-white) 3px solid;
+  border-left: var(--color-black) 3px solid;
+  border-top: var(--color-black) 3px solid;
+  border-right: var(--color-black) 3px solid;
+}
+
 /* POSITION */
 
 .blockr {
@@ -302,7 +317,7 @@
 }
 
 .position {
-  bottom: 0px;
+  bottom: -15px;
   left: 15px;
 }
 
@@ -314,4 +329,17 @@
 .pos-h {
   top: 15px;
   left: 15px;
+}
+
+/*HOVER*/
+
+/*INPUT*/
+
+.input::placeholder {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+input {
+  list-style: none;
 }
