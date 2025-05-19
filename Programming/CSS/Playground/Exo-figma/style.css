@@ -2,6 +2,7 @@
 
 :root {
   --color-grey: #606060;
+  --color-greywhite: #bebebe;
   --color-taupe: #cca57c;
   --color-greyblack: #272727;
   --color-white: white;
@@ -34,22 +35,11 @@
 
 /*FLEX*/
 
-.flex-head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
-}
-
-.flex-main {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
 }
 
 .flex-head {
@@ -58,6 +48,18 @@
   text-align: right;
   padding: 4em 0;
   align-items: end;
+}
+
+.flex-main {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.flex-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* PADDING */
@@ -70,10 +72,25 @@
   margin-top: 2em;
 }
 
+.pad-left {
+  padding-left: 2em;
+}
+
+.marg {
+  margin: 2em;
+}
+
+.pad-bottom {
+  padding-bottom: 2em;
+}
 /* TYPOGRAPHIE */
 
 .typo {
   font-family: "roboto";
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .FS-nav {
@@ -90,8 +107,17 @@
   color: var(--color-white);
 }
 
-.text-grey 
+.text-grey {
+  color: var(--color-grey);
+}
 
+.text-taupe {
+  color: var(--color-taupe);
+}
+
+.text-greywhite {
+  color: var(--color-greywhite);
+}
 
 /*BUTTON*/
 
@@ -113,6 +139,34 @@
 /* PICTURES */
 
 .pictures {
-  width: 220px;
-  height: 295px;
+  min-width: 220px;
+  min-height: 295px;
+}
+
+/* BORDER*/
+
+.border-text {
+  border-left: var(--color-taupe) solid 3px;
+}
+
+.border-pictures {
+  border-top: var(--color-taupe) solid 3px;
+  border-bottom: var(--color-taupe) solid 3px;
+}
+
+/* POSITION */
+
+.blockr {
+  display: block;
+  position: relative;
+}
+
+.blocka {
+  display: block;
+  position: absolute;
+}
+
+.position {
+  bottom: 0px;
+  left: 15px;
 }
