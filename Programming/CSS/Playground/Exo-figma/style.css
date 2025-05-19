@@ -71,7 +71,7 @@
 
 /* PADDING */
 
-.pad-text {
+.pad-top {
   padding-top: 2em;
 }
 
@@ -93,6 +93,10 @@
 
 .pad-main {
   padding: 0 15%;
+}
+
+.pad {
+  padding: 2em;
 }
 /* TYPOGRAPHIE */
 
@@ -178,6 +182,16 @@
 .pictures {
   min-width: 220px;
   min-height: 295px;
+}
+
+.pict-m {
+  min-width: 290px;
+  min-height: 434px;
+}
+
+.logo-m {
+  min-width: 160px;
+  min-height: 145px;
 }
 
 /* BORDER*/
