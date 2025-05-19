@@ -231,16 +231,14 @@
 }
 
 .more-grey {
-  border-left: var(--color-taupe) 3px solid;
   color: var(--color-taupe);
   background-color: var(--color-grey);
   text-align: end;
 }
 
-.more-taupe {
+.more-grey:hover {
   color: var(--color-black);
   background-color: var(--color-taupe);
-  text-align: right;
 }
 
 .btn-foot {
@@ -298,7 +296,7 @@
 }
 
 .border-form {
-  border-bottom: var(--color-white) 3px solid;
+  border-bottom: var(--color-white) 1px solid;
   border-left: var(--color-black) 3px solid;
   border-top: var(--color-black) 3px solid;
   border-right: var(--color-black) 3px solid;
