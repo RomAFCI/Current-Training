@@ -39,10 +39,10 @@
 }
 
 .bg-form {
-  background-image: url(./image/visuelgauche.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  min-width: 375px;
+  min-height: 313px;
 }
 /*RESET*/
 
@@ -90,6 +90,17 @@
   align-items: end;
 }
 
+.flex-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
 /* PADDING */
 
 .pad-top {
@@ -118,6 +129,10 @@
 
 .pad {
   padding: 2em;
+}
+
+.pad-side {
+  padding: 0 2em;
 }
 /* TYPOGRAPHIE */
 
@@ -220,6 +235,17 @@
   text-align: right;
 }
 
+.btn-foot {
+  display: inline-block;
+  max-width: 10em;
+  border-radius: 5px;
+  padding: 0.25 1em;
+  font-size: 18px;
+}
+
+.btn-foot::after {
+  content: "→";
+}
 /* PICTURES */
 
 .pictures {

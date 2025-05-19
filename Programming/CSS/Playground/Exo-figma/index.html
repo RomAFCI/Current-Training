@@ -19,7 +19,7 @@
           <ul class="flex reset-ul reset-li">
             <li>HOME</li>
             <li>ABOUT</li>
-            <div><img src="./image/logo_header.png" /></div>
+            <div><img src="./image/logo_header.png" alt="logo-head" /></div>
             <li>PROJECTS</li>
             <li>CONTACTS</li>
           </ul>
@@ -69,7 +69,11 @@
             </p>
           </div>
           <div class="marg blockr pad-top">
-            <img class="pictures" src="./image/london_hall.jpg" />
+            <img
+              class="pictures"
+              src="./image/london_hall.jpg"
+              alt="london-hall"
+            />
             <div class="blocka position">
               <button class="btn btn-taupe">LOOK MORE</button>
             </div>
@@ -82,7 +86,7 @@
         </div>
         <div class="flex">
           <div class="blockr">
-            <img class="pict-m" src="./image/paris.jpg" />
+            <img class="pict-m" src="./image/paris.jpg" alt="paris" />
             <div class="blocka pos-h">
               <h3 class="text-white">CONCERT HALL</h3>
               <h3 class="text-white">
@@ -94,7 +98,7 @@
             </div>
           </div>
           <div class="blockr">
-            <img class="pict-m" src="./image/london.jpg" />
+            <img class="pict-m" src="./image/london.jpg" alt="london" />
             <div class="blocka pos-h">
               <h3 class="text-white">CONCERT HALL</h3>
               <h3 class="text-white">
@@ -106,7 +110,7 @@
             </div>
           </div>
           <div>
-            <img class="logo-m" src="./image/logo12.png" />
+            <img class="logo-m" src="./image/logo12.png" alt="logo12" />
             <h3 class="pad-top">YEARS OF SUCCESSFUL WORK</h3>
             <h3 class="text-white">IN THE MARKET</h3>
             <p class="pad-top">
@@ -125,7 +129,11 @@
         </div>
         <div class="flex">
           <div>
-            <img class="logo-s pad-bottom" src="./image/poly-logo.png" />
+            <img
+              class="logo-s pad-bottom"
+              src="./image/poly-logo.png"
+              alt="logo1"
+            />
             <h4 class="pad-bottom text-white">DEVELOPMENT</h4>
             <p class="pad-bottom text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sit
@@ -136,7 +144,11 @@
             <button class="b-more more-grey">MORE</button>
           </div>
           <div>
-            <img class="logo-s pad-bottom" src="./image/3d-logo.png" />
+            <img
+              class="logo-s pad-bottom"
+              src="./image/3d-logo.png"
+              alt="logo2"
+            />
             <h4 class="pad-bottom text-white">PLAN WORKS</h4>
             <p class="pad-bottom text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sit
@@ -147,7 +159,11 @@
           </div>
           <div class="flex-pics">
             <div>
-              <img class="pict-l border-pictures" src="./image/map.png" />
+              <img
+                class="pict-l border-pictures"
+                src="./image/map.png"
+                alt="map"
+              />
             </div>
             <div>
               <p class="text-right pad-top bold text-greywhite">
@@ -162,15 +178,23 @@
       </section>
     </main>
     <footer class="bg-foot pad">
-      <div class="flex">
+      <div class="flex-foot">
         <div class="blockr">
-          <img src="./image/visuelgauche.jpg" />
+          <img src="./image/visuelgauche.jpg" alt="imgfoot" />
           <div class="blocka pos-h">
             <h3 class="text-white">REQUEST</h3>
             <h3 class="text-white">A CALL BACK</h3>
           </div>
         </div>
-        <div><form></form></div>
+        <form class="bg-form flex-form pad">
+          <label for="prenom"></label>
+          <input class="" type="text" id="prenom" name="prenom" required />
+          <label for="email"></label>
+          <input class="" type="email" id="email" name="email" required />
+          <label for="message"></label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <button class="btn-foot btn-taupe">LOOK MORE</button>
+        </form>
       </div>
     </footer>
   </body>
