@@ -30,6 +30,20 @@
 .bg-taupe {
   background-color: var(--color-taupe);
 }
+
+.bg-foot {
+  background-image: url(./image/bg_footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-form {
+  background-image: url(./image/visuelgauche.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /*RESET*/
 
 .reset-li {
@@ -233,6 +247,10 @@
   min-height: 260px;
 }
 
+.pict-foot {
+  min-width: 375px;
+  min-height: 313px;
+}
 /* BORDER*/
 
 .border-text {
