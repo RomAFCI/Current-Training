@@ -1,0 +1,36 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-darkblue: #121f23;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-white);
+}
+
+.bg-head {
+  background-color: var(--color-black);
+}
+
+.bg-main {
+  background-color: var(--color-darkblue);
+  height: 100vw;
+}
+
+.logo-head {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 2em;
+}
+
+.pad {
+  padding: 2em;
+}
