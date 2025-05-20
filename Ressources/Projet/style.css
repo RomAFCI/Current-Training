@@ -6,6 +6,7 @@
   --color-darkblue: #121f23;
   --color-lightblue: #5294a8;
   --color-darkblack: #0e0e0e;
+  --color-blue: #0f3d57;
 }
 
 body {
@@ -16,7 +17,13 @@ body {
 /*BACKGROUND*/
 
 .bg-head {
-  background-color: var(--color-darkblack);
+  background: linear-gradient(
+    to bottom,
+    var(--color-darkblack),
+    var(--color-darkblue)
+  );
+  /* background-image: url(./images/Galaxy.jpg);
+  background-position: bottom; */
 }
 
 .bg-main {
@@ -27,6 +34,7 @@ body {
 .logo-head {
   max-width: 100px;
   max-height: 100px;
+  filter: blur(1);
 }
 
 /*DISPLAY*/
@@ -85,6 +93,7 @@ body {
 
 li {
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 li:hover {
@@ -97,4 +106,17 @@ li:hover {
 
 .logo:hover {
   transform: scale(1.2);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  max-height: 100vh;
+  grid-template-areas:
+    "profil profil competence diplome"
+    "profil profil competence experience"
+    "contact creation loisir";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
