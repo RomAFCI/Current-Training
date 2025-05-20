@@ -347,14 +347,28 @@
 /*HOVER*/
 
 .tab {
+  position: relative;
   transition: ease 0.3s;
 }
-.tab:hover {
-  bottom: 2px;
-  text-decoration: underline var(--color-taupe);
-  text-underline-position: under;
+.tab::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-taupe);
+  bottom: -5px;
+  left: 0;
   color: var(--color-taupe);
-  opacity: 0.9;
+  transform: scale(0);
+}
+
+.tab:hover {
+  color: var(--color-taupe);
+  opacity: 0.85;
+}
+
+.tab:hover::after {
+  transform: scale(1);
 }
 
 /*INPUT*/
