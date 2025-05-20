@@ -1,16 +1,22 @@
+/*STRUCTURES*/
+
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-darkblue: #121f23;
+  --color-lightblue: #5294a8;
+  --color-darkblack: #0e0e0e;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Outfit";
   color: var(--color-white);
 }
 
+/*BACKGROUND*/
+
 .bg-head {
-  background-color: var(--color-black);
+  background-color: var(--color-darkblack);
 }
 
 .bg-main {
@@ -19,18 +25,76 @@ body {
 }
 
 .logo-head {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/*DISPLAY*/
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+/*PADDING ... */
+
+.marg {
+  margin: 1.5em;
 }
 
 .gap {
-  gap: 2em;
+  gap: 1.5em;
 }
 
 .pad {
-  padding: 2em;
+  padding: 1.5em;
+}
+
+.flex-beetwen {
+  justify-content: space-between;
+}
+
+/*RESET*/
+
+.reset-li {
+  list-style: none;
+}
+
+.reset-ul {
+  padding: 0;
+}
+
+/*TYPOGRAPHIE*/
+
+.fs-m {
+  font-size: 18px;
+}
+
+/*HOVER*/
+
+li {
+  transition: 0.3s ease;
+}
+
+li:hover {
+  color: var(--color-lightblue);
+}
+
+.logo {
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
