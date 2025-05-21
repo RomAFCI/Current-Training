@@ -1,0 +1,48 @@
+:root {
+  --color-taupe: #fdc98a;
+  --color-grey: #606060;
+  --color-green: #c2c57e;
+  --padding-xs: 0.5em;
+  --padding-s: 1em;
+  --padding-l: 2em;
+  --padding-xl: 4em;
+}
+
+/*RESET*/
+
+.reset-ul {
+  padding: 0;
+}
+
+.reset-li {
+  list-style: none;
+}
+
+/* FLEX */
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* BACKGROUND */
+
+.bg-head {
+  background-image: url(./images/background_head.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 287px;
+}
+
+.bg-nav {
+  background-color: var(--color-taupe);
+}
+
+/* INPUT */
+
+input {
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-taupe);
+}
