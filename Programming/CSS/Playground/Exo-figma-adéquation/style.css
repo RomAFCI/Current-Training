@@ -18,12 +18,26 @@
   list-style: none;
 }
 
+/* BODY */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* FLEX */
 
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 2em;
+}
+
+.flex-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* BACKGROUND */
@@ -31,9 +45,9 @@
 .bg-head {
   background-image: url(./images/background_head.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
-  height: 287px;
+  height: 365px;
 }
 
 .bg-nav {
@@ -42,7 +56,43 @@
 
 /* INPUT */
 
-input {
+.search {
   border: 1px solid var(--color-grey);
   background-color: var(--color-taupe);
+}
+
+/* PICTURES */
+
+.glass {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-grey);
+}
+
+/* CONTAIN */
+
+.contain-xl {
+  padding: var(--padding-xl);
+}
+
+.contain-l {
+  padding: var(--padding-l);
+}
+
+/* RELATIVE ABSOLUTE */
+
+.blockr {
+  position: relative;
+}
+
+.blocka {
+  position: absolute;
+  margin: 0 auto;
+  width: auto;
+}
+
+/* TYPOGRAPHIE */
+
+.typo-grey {
+  color: var(--color-grey);
 }
