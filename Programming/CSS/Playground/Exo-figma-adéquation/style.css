@@ -1,6 +1,6 @@
 :root {
   --color-taupe: #fdc98a;
-  --color-taupe-transparent: rgba(253, 201, 138, 0.85);
+  --color-taupe-transparent: rgba(253, 201, 138, 0.9);
   --color-grey: #606060;
   --color-green: #c2c57e;
   --color-white: #ffffff;
@@ -28,12 +28,20 @@ body {
 
 /* FLEX */
 
-.flex {
+.flex-head {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .flex-center {
@@ -161,6 +169,11 @@ body {
   height: 44px;
 }
 
+.pics-xs {
+  width: 20px;
+  height: 20px;
+}
+
 .pics-s {
   min-width: 300px;
   min-height: 180px;
@@ -171,21 +184,32 @@ body {
   min-height: 250px;
 }
 
+.pics-profil {
+  min-width: 180px;
+  max-height: 180px;
+}
+
 .pics-bg-transp {
   min-width: 300px;
   min-height: 477px;
-  filter: blur(4px);
-  overflow: hidden;
+  border: var(--color-taupe) solid 1px;
 }
 
 .pics-bg-transp::after {
   content: "";
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color-taupe-transparent);
+  filter: blur(4px);
+}
+
+.pics-bg-transp > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* CONTAIN */
@@ -232,6 +256,14 @@ body {
 
 .typo-taupe {
   color: var(--color-taupe);
+}
+
+.typo-white {
+  color: var(--color-white);
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
 }
 
 /* BORDER */
