@@ -2,10 +2,10 @@
   --color-taupe: #fdc98a;
   --color-grey: #606060;
   --color-green: #c2c57e;
-  --padding-xs: 0.5em;
-  --padding-s: 1em;
-  --padding-l: 2em;
-  --padding-xl: 4em;
+  --padding-xs: 0.25em;
+  --padding-s: 0.5em;
+  --padding-l: 1em;
+  --padding-xl: 2em;
 }
 
 /*RESET*/
@@ -21,7 +21,7 @@
 /* BODY */
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "roboto";
 }
 
 /* FLEX */
@@ -34,9 +34,14 @@ body {
   gap: 2em;
 }
 
-.flex-search {
+.flex-center {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.stretch {
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -54,29 +59,46 @@ body {
   background-color: var(--color-taupe);
 }
 
+.bg-glass {
+  background-color: var(--color-grey);
+}
+
+.bg-soup {
+  background-image: url(./images/soupe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* INPUT */
 
 .search {
   border: 1px solid var(--color-grey);
   background-color: var(--color-taupe);
+  max-width: 250px;
+  min-width: 250px;
 }
 
 /* PICTURES */
 
 .glass {
-  width: 20px;
-  height: 20px;
-  background-color: var(--color-grey);
+  width: 44px;
+  height: 44px;
+}
+
+.pics-m {
+  width: 300px;
+  height: 250px;
 }
 
 /* CONTAIN */
 
-.contain-xl {
-  padding: var(--padding-xl);
-}
-
 .contain-l {
   padding: var(--padding-l);
+}
+
+.contain-xl {
+  padding: var(--padding-xl);
 }
 
 /* RELATIVE ABSOLUTE */
@@ -87,12 +109,21 @@ body {
 
 .blocka {
   position: absolute;
-  margin: 0 auto;
-  width: auto;
 }
 
 /* TYPOGRAPHIE */
 
 .typo-grey {
   color: var(--color-grey);
+}
+
+.typo-taupe {
+  color: var(--color-taupe);
+}
+
+/* BORDER */
+
+.border {
+  border-top: var(--color-taupe) 1px solid;
+  border-bottom: var(--color-taupe) 1px solid;
 }
