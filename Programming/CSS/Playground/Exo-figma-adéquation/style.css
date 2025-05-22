@@ -226,11 +226,23 @@ body {
   max-width: 300px;
 }
 
+.titre {
+  text-align: center;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.titre-img {
+  text-align: center;
+  min-width: 236px;
+  max-width: 236px;
+}
+
 /* PADDING */
 
-.pad {
+/* .pad {
   padding: 0 30%;
-}
+} */
 
 /* RELATIVE ABSOLUTE */
 
@@ -264,6 +276,9 @@ body {
 
 .ellipsis {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
 }
 
 /* BORDER */
