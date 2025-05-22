@@ -40,6 +40,14 @@ body {
   justify-content: center;
 }
 
+.flex-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
 .stretch {
   align-items: stretch;
   justify-content: center;
@@ -59,12 +67,30 @@ body {
   background-color: var(--color-taupe);
 }
 
+.bg-main {
+  background-color: var(--color-grey);
+}
+
 .bg-glass {
   background-color: var(--color-grey);
 }
 
 .bg-soup {
   background-image: url(./images/soupe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-salad {
+  background-image: url(./images/légumes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-dessert {
+  background-image: url(./images/dessert.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -87,8 +113,8 @@ body {
 }
 
 .pics-m {
-  width: 300px;
-  height: 250px;
+  min-width: 300px;
+  min-height: 250px;
 }
 
 /* CONTAIN */
@@ -99,6 +125,12 @@ body {
 
 .contain-xl {
   padding: var(--padding-xl);
+}
+
+/* PADDING */
+
+.pad {
+  padding: 0 30%;
 }
 
 /* RELATIVE ABSOLUTE */
