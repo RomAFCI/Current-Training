@@ -1,7 +1,9 @@
 :root {
   --color-taupe: #fdc98a;
+  --color-taupe-transparent: rgba(253, 201, 138, 0.85);
   --color-grey: #606060;
   --color-green: #c2c57e;
+  --color-white: #ffffff;
   --padding-xs: 0.25em;
   --padding-s: 0.5em;
   --padding-l: 1em;
@@ -48,6 +50,15 @@ body {
   flex-wrap: wrap;
 }
 
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5em;
+}
+
 .stretch {
   align-items: stretch;
   justify-content: center;
@@ -58,7 +69,7 @@ body {
 .bg-head {
   background-image: url(./images/background_head.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   height: 365px;
 }
@@ -73,6 +84,10 @@ body {
 
 .bg-glass {
   background-color: var(--color-grey);
+}
+
+.bg-card {
+  background-color: var(--color-green);
 }
 
 .bg-soup {
@@ -96,6 +111,40 @@ body {
   background-position: center;
 }
 
+.bg-tacos {
+  background-image: url(./images/tacos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-boeuf {
+  background-image: url(./images/boeuf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-muffin {
+  background-image: url(./images/muffin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-cookie {
+  background-image: url(./images/cookies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-lilas {
+  background-image: url(./images/lilas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* INPUT */
 
 .search {
@@ -112,9 +161,31 @@ body {
   height: 44px;
 }
 
+.pics-s {
+  min-width: 300px;
+  min-height: 180px;
+}
+
 .pics-m {
   min-width: 300px;
   min-height: 250px;
+}
+
+.pics-bg-transp {
+  min-width: 300px;
+  min-height: 477px;
+  filter: blur(4px);
+  overflow: hidden;
+}
+
+.pics-bg-transp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-taupe-transparent);
 }
 
 /* CONTAIN */
@@ -125,6 +196,10 @@ body {
 
 .contain-xl {
   padding: var(--padding-xl);
+}
+
+.card {
+  max-width: 300px;
 }
 
 /* PADDING */
@@ -143,6 +218,12 @@ body {
   position: absolute;
 }
 
+.block-logo {
+  position: absolute;
+  left: 112.5px;
+  bottom: -40px;
+}
+
 /* TYPOGRAPHIE */
 
 .typo-grey {
@@ -158,4 +239,11 @@ body {
 .border {
   border-top: var(--color-taupe) 1px solid;
   border-bottom: var(--color-taupe) 1px solid;
+}
+
+.btn {
+  padding: 0.25em 0.75em;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  border: none;
 }
