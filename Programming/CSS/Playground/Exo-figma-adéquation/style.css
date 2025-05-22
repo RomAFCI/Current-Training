@@ -72,9 +72,22 @@ body {
   gap: 1.5em;
 }
 
+.flex-ctg {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: end;
+  align-items: center;
+}
+
 .stretch {
   align-items: stretch;
   justify-content: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* BACKGROUND */
@@ -158,6 +171,63 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.bg-biere {
+  background-image: url(./images/bière.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-cafe {
+  background-image: url(./images/café.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-burger {
+  background-image: url(./images/burger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-wrap {
+  background-image: url(./images/wrap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-choco {
+  background-image: url(./images/chocolat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-pancake {
+  background-image: url(./images/pancakes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-oeuf {
+  background-image: url(./images/oeuf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-fish {
+  background-image: url(./images/saumon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* INPUT */
 
 .search {
@@ -187,6 +257,16 @@ body {
 .pics-m {
   min-width: 300px;
   min-height: 250px;
+}
+
+.pics-l {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.pics-xl {
+  min-width: 300px;
+  min-height: 350px;
 }
 
 .pics-profil {
@@ -243,12 +323,6 @@ body {
   max-width: 236px;
 }
 
-/* PADDING */
-
-/* .pad {
-  padding: 0 30%;
-} */
-
 /* RELATIVE ABSOLUTE */
 
 .blockr {
@@ -292,6 +366,12 @@ body {
   border-top: var(--color-taupe) 1px solid;
   border-bottom: var(--color-taupe) 1px solid;
 }
+
+.allborder {
+  border: var(--color-taupe) solid 1px;
+}
+
+/* BUTTON */
 
 .btn {
   padding: 0.25em 0.75em;
