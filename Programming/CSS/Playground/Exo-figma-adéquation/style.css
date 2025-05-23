@@ -394,6 +394,7 @@ body {
 
 .allborder {
   border: var(--color-taupe) solid 1px;
+  height: 334px;
 }
 
 /* BUTTON */
