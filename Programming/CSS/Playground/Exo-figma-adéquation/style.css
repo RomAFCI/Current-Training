@@ -446,16 +446,15 @@ body {
 
   .flex-left {
     display: flex;
-
     justify-content: start;
-    align-items: center;
+    align-items: start;
   }
 
   .flex-right {
     display: flex;
     text-align: right;
     justify-content: end;
-    align-items: center;
+    align-items: end;
   }
 
   .grid-article {
