@@ -412,6 +412,8 @@ body {
   border: none;
 }
 
+/* MEDIA TABLET */
+
 @media screen and (min-width: 1045px) and (max-width: 1728px) {
   .bg-head {
     background-image: url(./images/background_head.jpg);
@@ -427,6 +429,13 @@ body {
     justify-content: space-between;
   }
 
+  .flex-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+  }
+
   .grid-article {
     display: grid;
     min-width: 616px;
@@ -434,7 +443,6 @@ body {
     min-height: 1922px;
     grid-template-rows: 50px, repeat(6, 1fr);
     grid-template-columns: 1fr 1fr;
-    border: solid black 2px;
   }
 
   .titre-art {
@@ -442,9 +450,14 @@ body {
     grid-row: 1/2;
   }
 
-  .titre {
+  .titre-media {
     text-align: center;
     min-width: 616px;
+  }
+
+  .titre-galerie {
+    text-align: center;
+    min-width: 932px;
   }
 
   .tacos-art {
@@ -452,10 +465,20 @@ body {
     grid-row: 2/4;
   }
 
-  .cookies-art {
-    grid-column: 1/3;
+  .boeuf-art {
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 
+  .muffin-art {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .cookies-art {
+    grid-column: 1/3;
+    grid-row: 5/7;
+  }
   .pics-xxl {
     width: 616px;
     height: 250px;
@@ -478,6 +501,8 @@ body {
   }
 }
 
+/* MEDIA DESKTOP */
+
 @media screen and (min-width: 1728px) {
   .bg-head {
     background-image: url(./images/background_head.jpg);
@@ -491,5 +516,70 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .grid-article {
+    display: grid;
+    min-width: 616px;
+    max-width: 616px;
+    min-height: 1922px;
+    grid-template-rows: 50px, repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titre-art {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .titre-media {
+    text-align: center;
+    min-width: 616px;
+  }
+
+  .titre-galerie {
+    text-align: center;
+    min-width: 932px;
+  }
+
+  .tacos-art {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+
+  .boeuf-art {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .muffin-art {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .cookies-art {
+    grid-column: 1/3;
+    grid-row: 5/7;
+  }
+
+  .pics-xxl {
+    width: 616px;
+    height: 250px;
+  }
+
+  .card-media {
+    max-width: 616px;
+  }
+
+  .logo-media {
+    position: absolute;
+    left: 272px;
+    bottom: -40px;
+  }
+
+  .ellipsis {
+    text-overflow: initial;
+    white-space: initial;
+    overflow: initial;
   }
 }
