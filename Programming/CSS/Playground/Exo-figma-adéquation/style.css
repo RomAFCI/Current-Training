@@ -5,10 +5,12 @@
   --color-grey-transparent: rgb(57, 57, 57, 0.85);
   --color-green: #c2c57e;
   --color-white: #ffffff;
+  --color-black: #000000;
   --padding-xs: 0.25em;
   --padding-s: 0.5em;
   --padding-l: 1em;
   --padding-xl: 2em;
+  --transition: ease 0.3s;
 }
 
 /*RESET*/
@@ -21,9 +23,27 @@
   list-style: none;
 }
 
+/* DIVERS */
+
 h1,
 h2 {
   font-weight: normal;
+}
+
+li {
+  transition: var(--transition);
+}
+
+li:hover {
+  color: var(--color-black);
+}
+
+.réseau {
+  transition: var(--transition);
+}
+
+.réseau:hover {
+  opacity: 0.5;
 }
 
 /* BODY */
@@ -418,6 +438,11 @@ body {
   background-color: var(--color-grey);
   color: var(--color-white);
   border: none;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* MEDIA TABLET */
