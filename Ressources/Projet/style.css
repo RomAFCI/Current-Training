@@ -100,13 +100,13 @@ li:hover {
   color: var(--color-lightblue);
 }
 
-.logo {
+/* .logo {
   transition: 0.3s ease-in-out;
 }
 
 .logo:hover {
   transform: scale(1.2);
-}
+} */
 
 /* GRID */
 
@@ -119,4 +119,23 @@ li:hover {
     "contact creation loisir";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* ANIMATION */
+
+.pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

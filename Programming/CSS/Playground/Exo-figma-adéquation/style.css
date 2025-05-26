@@ -388,6 +388,11 @@ body {
   min-width: 236px;
   max-width: 236px;
 }
+/* 
+.contain-test {
+  width: 100%;
+  margin: 0 auto;
+} */
 
 /* RELATIVE ABSOLUTE */
 
@@ -468,17 +473,6 @@ text-align: center;
 
 .pad-top {
   padding-top: 1em;
-}
-
-.body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.main {
-  max-width: 1200px;
-  width: 100%;
 }
   
 
