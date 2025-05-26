@@ -469,6 +469,17 @@ text-align: center;
 .pad-top {
   padding-top: 1em;
 }
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  max-width: 1200px;
+  width: 100%;
+}
   
 
 
