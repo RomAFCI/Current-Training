@@ -100,12 +100,26 @@ console.log ("Résultats de l'addition :", resultat);
 
 // TABLEAU
 
-let tableau = [1, 2, 3, 4, 5];
+let tableau = [1,2,3,4,5]
 
 console.log(tableau);
+console.table(tableau);
 
-let tab = [
-    push(10)
-]
+console.log (tableau[0]);
+console.log (tableau[1]);
+console.log (tableau[2]);
+console.log (tableau[3]);
+console.log (tableau[4]);
+
+
+
+
+let tab = [];
+tab.push(10,20,30);
+tab.shift();
+
+
+
+
 
 console.log(tab);
