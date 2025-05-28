@@ -156,9 +156,9 @@ compte.solde = compte.solde + 500;
 //  CONDITION & BOUCLES 
 
 
-let years = 20;
+let years = 19;
 
-function agerequired() {
+function agerequired(years){
 
 if (years >= 18){
   console.log("Majeur");
@@ -169,4 +169,10 @@ else {
 }
 }
 
-console.log(agerequired());
+agerequired(years);
+
+
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
