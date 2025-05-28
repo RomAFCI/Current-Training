@@ -132,6 +132,9 @@ solde: 1000,
 titulaire: `John Doe`,
 }
 
-// solde.push(500);
+// let ajout = 500;
 
-console.log(compte);
+compte.solde = compte.solde + 500;
+
+
+ console.log(compte);
