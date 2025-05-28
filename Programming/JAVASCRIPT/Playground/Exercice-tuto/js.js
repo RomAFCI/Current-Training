@@ -18,6 +18,10 @@ console.log(age >= ageminimum);
 // let diviser = "/";
 
 
+
+// VARIABLES ET OPERATIONS  
+
+
 let cinq =5;
 let trois =3;
 
@@ -52,6 +56,10 @@ résultat = sept ** deux;
 
 console.log(résultat);
 
+
+// CONCATÉNAGE
+
+
 let text = "Bonjour";
 
 text = text + " je m'apelle Romain";
@@ -76,7 +84,9 @@ texte = sujet + verbe + objet;
 
 console.log(texte);
 
+
 // FONCTION
+
 
 let bjr = `Bonjour, `
 
@@ -96,9 +106,12 @@ function multiplier (a, b){
 }
 
 let resultat = multiplier(7,8);
+
 console.log ("Résultats de l'addition :", resultat);
 
+
 // TABLEAU
+
 
 let tableau = [1,2,3,4,5]
 
@@ -138,3 +151,22 @@ compte.solde = compte.solde + 500;
 
 
  console.log(compte);
+
+
+//  CONDITION & BOUCLES 
+
+
+let years = 20;
+
+function agerequired() {
+
+if (years >= 18){
+  console.log("Majeur");
+  } 
+  
+else {
+    console.log("Mineur");
+}
+}
+
+console.log(agerequired());
