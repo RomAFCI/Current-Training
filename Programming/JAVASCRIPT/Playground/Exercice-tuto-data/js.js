@@ -26,3 +26,31 @@ let data = {
 }
 
 console.log(data);
+
+console.log(data.name);
+console.log(data.ppu);
+console.log(data.topping);
+console.log(data.batters.batter[3].type);
+console.log(data.topping[6].type);
+console.log(data.topping[0].id);
+
+
+console.log(data.batters.batter[0].id);
+console.log(data.batters.batter[0].type);
+
+let one = data.batters.batter[0].id;
+let two = data.batters.batter[0].type;
+let three = ` est l'id `
+
+total = two + three + one;
+
+console.log(total);
+
+console.log(two + ` est l'id ` + one );
+
+console.log(data.topping[6].id);
+
+let a = data.name;
+let b = data.topping[6].id;
+
+console.log(a + ` est l'id ` + b );
