@@ -112,14 +112,26 @@ console.log (tableau[3]);
 console.log (tableau[4]);
 
 
-
-
 let tab = [];
 tab.push(10,20,30);
 tab.shift();
 
-
-
-
-
 console.log(tab);
+
+
+let personne = {
+    nom: `Alice`,
+    age: 25,
+    ville: `Paris`,
+}
+
+console.log(personne);
+
+let compte = {
+solde: 1000,
+titulaire: `John Doe`,
+}
+
+// solde.push(500);
+
+console.log(compte);
