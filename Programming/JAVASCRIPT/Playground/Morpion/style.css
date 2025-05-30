@@ -1,0 +1,34 @@
+body {
+    background-color: #0f3d57;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: #0f3d57;
+}
+
+.case {
+    background-color: #5294a8;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#5294a8 ;
+}
