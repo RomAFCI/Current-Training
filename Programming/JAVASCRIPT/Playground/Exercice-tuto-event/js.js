@@ -28,4 +28,10 @@
 // )
 
 
-addEventListener("click", () => {})
+const rond = document.querySelector(".rond");
+console.log(rond);
+rond.addEventListener(
+    "click",
+     () => {
+    rond.style.backgroundColor = "black";
+     })

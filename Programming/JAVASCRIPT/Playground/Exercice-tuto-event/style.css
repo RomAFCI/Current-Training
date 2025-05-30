@@ -1,6 +1,6 @@
 .rond {
-    width: 100 px;
-    height: 100 px;
-    border-radius: 2em;
+    width: 300px;
+    height: 300px;
+    border-radius: 999em;
     background-color: rgb(17, 125, 187);
 }
