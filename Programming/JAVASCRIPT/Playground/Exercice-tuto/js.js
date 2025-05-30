@@ -158,7 +158,7 @@ compte.solde = compte.solde + 500;
 
 let years = 19;
 
-function agerequired(years){
+function ageRequired(years){
 
 if (years >= 18){
   console.log("Majeur");
@@ -169,8 +169,39 @@ else {
 }
 }
 
-agerequired(years);
+ageRequired(years);
 
+// OPTIMISER RETURN POUR LES FONCTIONS 
+
+// function verifAge(age){
+//     if (age >= 18){
+//         return "majeur";       
+//     }
+//     else {
+//         return "mineur";
+//     }
+// }
+
+
+// let verif = verifAge(18);
+// console.log(verif);
+
+// EXEMPLE BOUCLES
+
+// let tab = ["Bordeaux", "Montpellier", "Toulouse", "Dunkerque"]
+// console.log(tab.length);
+
+// let mot = ""
+// console.log(tab[0].length);
+
+
+// for (let i = 0; i < tab[0].length; i = i + 1) {
+//     mot += tab[0][i]
+//     console.log(mot);  
+// }
+
+for (let i = 0; i <= 20; i += 2)
+    console.log (i);
 
 for (let i = 1; i <= 20; i++) {
 
@@ -178,3 +209,21 @@ if (i % 2 == 0){
     console.log(i);
 }
 }
+
+
+
+
+
+let n = 1;
+
+
+while (n != 7) {
+    if (n != 7){
+      console.log("Essaye encore!")
+      n = 7
+    }
+    
+    else {
+         console.log("Bravo !")
+}}
+
