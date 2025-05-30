@@ -1,6 +1,9 @@
 body {
     background-color: #0f3d57;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#5294a8 ;
 }
+
 
 .grid {
     display: grid;
@@ -28,7 +31,33 @@ body {
     gap: 1em;
 }
 
+.flex-button {
+    display: flex;
+    gap: 3em;
+    
+}
+
+button {
+    margin: 1em;
+    padding: 0.5em 2em;
+    border: #0f3d57 solid 1px;
+    border-radius: 1em;
+    color: #0f3d57;
+    background-color: #5294a8;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    color: #5294a8;
+    background-color: #0f3d57;
+    border: #5294a8 solid 1px;
+    
+}
+
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#5294a8 ;
+    transition: 0.3s ease-in;
+}
+
+h1:hover {
+    transform: scale(1.2);
 }
