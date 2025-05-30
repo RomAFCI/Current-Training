@@ -205,25 +205,33 @@ for (let i = 0; i <= 20; i += 2)
 
 for (let i = 1; i <= 20; i++) {
 
-if (i % 2 == 0){
+if (i % 2 === 0){
     console.log(i);
 }
 }
 
 
-
-
-
 let n = 1;
+
+
+// prompt <= 100;
 
 
 while (n != 7) {
     if (n != 7){
       console.log("Essaye encore!")
-      n = 7
+      n = prompt("salut !")
     }
     
     else {
+      
          console.log("Bravo !")
 }}
 
+
+
+// let j = 1;
+// while (j <= 100) {
+//     console.log(j);
+//     j++;
+// }
