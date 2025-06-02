@@ -15,6 +15,8 @@ h1 {
   color: var(--color-white);
 }
 
+/* GRID FLEX*/
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,17 +24,6 @@ h1 {
   width: 500px;
   height: 500px;
   grid-gap: 1rem;
-}
-
-.case {
-  background-color: var(--color-black);
-  border-radius: 0.5rem;
-  font-size: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0.5px 1px 0 var(--color-grey),
-    0 0.75px 2.5px 0 var(--color-white);
 }
 
 .flex {
@@ -43,8 +34,24 @@ h1 {
   gap: 3em;
 }
 
-.flex-center {
+/* BACKGROUND */
+
+.case {
+  background-color: var(--color-black);
+  border-radius: 0.5rem;
+  font-size: 4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5px 1px 0 var(--color-grey),
+    0 0.75px 2.5px 0 var(--color-white);
+  cursor: pointer;
+}
+
+/* DIVERS */
+
+.win {
+  color: var(--color-white);
+  font-size: 5rem;
+  text-align: center;
 }
