@@ -1,0 +1,50 @@
+:root {
+  --color-grey: #11171c;
+  --color-black: #030303;
+  --color-white: #dfe5e5;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  font-weight: 600;
+}
+
+h1 {
+  color: var(--color-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  grid-gap: 1rem;
+}
+
+.case {
+  background-color: var(--color-black);
+  border-radius: 0.5rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5px 1px 0 var(--color-grey),
+    0 0.75px 2.5px 0 var(--color-white);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
