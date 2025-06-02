@@ -16,6 +16,10 @@
 // Choix des noms,
 // Pizza à la place des ronds
 
+
+const grid = document.querySelector(".grid");
+console.log(grid);
+
 let cross = document.querySelector(".cross");
 
 console.log(cross);
@@ -23,5 +27,5 @@ console.log(cross);
 cross.addEventListener(
     "click",
      () => {
-    cross.style.backgroundImage = "";
+    cross.style.opacity = "1";
      })
