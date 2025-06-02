@@ -20,12 +20,33 @@
 const grid = document.querySelector(".grid");
 console.log(grid);
 
-let cross = document.querySelector(".cross");
 
-console.log(cross);
 
-cross.addEventListener(
-    "click",
-     () => {
-    cross.style.opacity = "1";
-     })
+let playerOne = '0';
+
+
+function clickable(event){
+    const cell = event.target;
+
+    if(cell.classList.contains('case1'))
+        console.log('1');
+     if(cell.classList.contains('case2'))
+        console.log('2');
+    if(cell.classList.contains('case3'))
+        console.log('3');
+    if(cell.classList.contains('case4'))
+        console.log('4');
+    if(cell.classList.contains('case5'))
+        console.log('5');
+    if(cell.classList.contains('case6'))
+        console.log('6');
+    if(cell.classList.contains('case7'))
+        console.log('7');
+    if(cell.classList.contains('case8'))
+        console.log('8');
+    if(cell.classList.contains('case9'))
+        console.log('9');
+
+}
+
+grid.addEventListener("click", clickable)
