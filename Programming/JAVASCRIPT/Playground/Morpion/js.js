@@ -15,3 +15,13 @@
 // Optionnel :
 // Choix des noms,
 // Pizza à la place des ronds
+
+let cross = document.querySelector(".cross");
+
+console.log(cross);
+
+cross.addEventListener(
+    "click",
+     () => {
+    cross.style.backgroundImage = "";
+     })
