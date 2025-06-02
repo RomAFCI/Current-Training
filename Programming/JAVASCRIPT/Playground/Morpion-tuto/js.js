@@ -23,6 +23,10 @@ function check() {
     })
 }
 
+function checkNul(){
+    return [...cells].every((cell) => cell.textContent !== "");
+}
+
 function switchPlayer(){
     if (player === 'x') {
         player = 'o';
@@ -41,7 +45,14 @@ function clickable(event) {
 
    if(check()){
     win.textContent = player + " gagne !";
+    grid.removeEventListener("click", clickable);
    }
+
+   else if (checkNul()) {
+    win.textContent ="Match Nul !";
+    grid.removeEventListener("click", clickable);
+   }
+
    else {
       switchPlayer();
     }
