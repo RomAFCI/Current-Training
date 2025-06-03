@@ -33,7 +33,7 @@ case1.addEventListener("click", () => {
     case1.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case2.addEventListener("click", () => {
@@ -48,7 +48,7 @@ case2.addEventListener("click", () => {
     case2.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case3.addEventListener("click", () => {
@@ -63,7 +63,7 @@ case3.addEventListener("click", () => {
     case3.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case4.addEventListener("click", () => {
@@ -77,7 +77,7 @@ case4.addEventListener("click", () => {
     case4.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case5.addEventListener("click", () => {
@@ -91,7 +91,7 @@ case5.addEventListener("click", () => {
     case5.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case6.addEventListener("click", () => {
@@ -105,7 +105,7 @@ case6.addEventListener("click", () => {
     case6.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case7.addEventListener("click", () => {
@@ -119,7 +119,7 @@ case7.addEventListener("click", () => {
     case7.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 case8.addEventListener("click", () => {
@@ -133,7 +133,7 @@ case8.addEventListener("click", () => {
     case8.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 case9.addEventListener("click", () => {
   if (case9.classList.contains("cross") || case9.classList.contains("round")) {
@@ -146,63 +146,141 @@ case9.addEventListener("click", () => {
     case9.classList.add("round");
     player = 0;
   }
-  victory()
+  victory();
 });
 
 // FUNCTION
 // Victoire X
 
 function victory() {
+  if (
+    case1.classList.contains("cross") &&
+    case2.classList.contains("cross") &&
+    case3.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case1.classList.contains("cross") && case2.classList.contains("cross") && case3.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case4.classList.contains("cross") &&
+    case5.classList.contains("cross") &&
+    case6.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case4.classList.contains("cross") && case5.classList.contains("cross") && case6.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case7.classList.contains("cross") &&
+    case8.classList.contains("cross") &&
+    case9.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case7.classList.contains("cross") && case8.classList.contains("cross") && case9.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case1.classList.contains("cross") &&
+    case4.classList.contains("cross") &&
+    case7.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case1.classList.contains("cross") && case4.classList.contains("cross") && case7.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case2.classList.contains("cross") &&
+    case5.classList.contains("cross") &&
+    case8.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case2.classList.contains("cross") && case5.classList.contains("cross") && case8.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case3.classList.contains("cross") &&
+    case6.classList.contains("cross") &&
+    case9.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case3.classList.contains("cross") && case6.classList.contains("cross") && case9.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case1.classList.contains("cross") &&
+    case5.classList.contains("cross") &&
+    case9.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case1.classList.contains("cross") && case5.classList.contains("cross") && case9.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  if (
+    case3.classList.contains("cross") &&
+    case5.classList.contains("cross") &&
+    case7.classList.contains("cross")
+  ) {
+    console.log("C'est gagné pour les X!");
+  }
 
-    if (case3.classList.contains("cross") && case5.classList.contains("cross") && case7.classList.contains("cross"))
-    {console.log("C'est gagné pour les X!")}
+  // Victoire O
 
-    // Victoire O
-       
-    if (case1.classList.contains("round") && case2.classList.contains("round") && case3.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case1.classList.contains("round") &&
+    case2.classList.contains("round") &&
+    case3.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case4.classList.contains("round") && case5.classList.contains("round") && case6.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case4.classList.contains("round") &&
+    case5.classList.contains("round") &&
+    case6.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case7.classList.contains("round") && case8.classList.contains("round") && case9.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case7.classList.contains("round") &&
+    case8.classList.contains("round") &&
+    case9.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case1.classList.contains("round") && case4.classList.contains("round") && case7.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case1.classList.contains("round") &&
+    case4.classList.contains("round") &&
+    case7.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case2.classList.contains("round") && case5.classList.contains("round") && case8.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case2.classList.contains("round") &&
+    case5.classList.contains("round") &&
+    case8.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case3.classList.contains("round") && case6.classList.contains("round") && case9.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case3.classList.contains("round") &&
+    case6.classList.contains("round") &&
+    case9.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case1.classList.contains("round") && case5.classList.contains("round") && case9.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case1.classList.contains("round") &&
+    case5.classList.contains("round") &&
+    case9.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    if (case3.classList.contains("round") && case5.classList.contains("round") && case7.classList.contains("round"))
-    {console.log("C'est gagné pour les O!")}
+  if (
+    case3.classList.contains("round") &&
+    case5.classList.contains("round") &&
+    case7.classList.contains("round")
+  ) {
+    console.log("C'est gagné pour les O!");
+  }
 
-    }
-
+}
