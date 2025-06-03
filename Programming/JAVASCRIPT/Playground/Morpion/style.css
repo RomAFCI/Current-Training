@@ -60,6 +60,7 @@ button:hover {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: var(--color-lightblue);
+  
   border-radius: 1em;
   cursor: pointer;
 }

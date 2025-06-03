@@ -1,0 +1,11 @@
+.cellule{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+.global{
+    display: flex;
+}
