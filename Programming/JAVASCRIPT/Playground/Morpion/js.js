@@ -1,21 +1,5 @@
-// 1er projet : Faire un jeu de morpion
 
-// première étape : le brainstorming
-
-// Résultat : 
-// Croix,(img ou background)
-// Rond,(img ou background)
-// Grille, (grid)
-// Système de tour par tour croix = 0(joueur1), rond= 1(joueur2) (selon le départ change les background image à changer)
-// Gérer la condition de victoire et de match nul (compteur 9 tour ou comparaison entre les cases),
-// Compteur de points (text box),
-// Animation en cas de victoire (Ligne par exemple pour valider la victoire visuellement),
-// Bouton "Démarrer la partie"(reset joueur, initialiser la partie, reset point cases img),
-
-// Optionnel :
-// Choix des noms,
-// Pizza à la place des ronds
-
+// DÉCLARATION
 
 const grid = document.querySelector(".grid");
 console.log(grid);
@@ -30,35 +14,63 @@ const case7 = document.querySelector(".case7");
 const case8 = document.querySelector(".case8");
 const case9 = document.querySelector(".case9");
 
-const cross = document
+const cross = document.querySelector(".cross");
+const round = document.querySelector(".round");
 
-
-
-let playerOne = '0';
-
+// FUNCTION
 
 function clickable(event){
-    const cell = event.target;
-
-    if(cell.classList.contains('case1'))
-        console.log('1');
-     if(cell.classList.contains('case2'))
-        console.log('2');
-    if(cell.classList.contains('case3'))
-        console.log('3');
-    if(cell.classList.contains('case4'))
-        console.log('4');
-    if(cell.classList.contains('case5'))
-        console.log('5');
-    if(cell.classList.contains('case6'))
-        console.log('6');
-    if(cell.classList.contains('case7'))
-        console.log('7');
-    if(cell.classList.contains('case8'))
-        console.log('8');
-    if(cell.classList.contains('case9'))
-        console.log('9');
 
 }
 
-grid.addEventListener("click", clickable)
+// EVENT
+
+case1.addEventListener("click",
+     () => { 
+        case1.classList.add("cross");
+     })
+
+case2.addEventListener("click",
+     () => { 
+        case2.classList.add("cross");
+     })
+     
+case3.addEventListener("click",
+     () => { 
+        case3.classList.add("cross");
+     })
+
+case4.addEventListener("click",
+     () => { 
+        case4.classList.add("cross");
+     })
+
+case5.addEventListener("click",
+     () => { 
+        case5.classList.add("cross");
+     })
+
+case6.addEventListener("click",
+     () => { 
+        case6.classList.add("cross");
+     })
+
+case7.addEventListener("click",
+     () => { 
+        case7.classList.add("cross");
+     })
+
+case8.addEventListener("click",
+     () => { 
+        case8.classList.add("cross");
+     })
+case9.addEventListener("click",
+     () => { 
+        case9.classList.add("cross");
+     })                                        
+
+
+// case1.addEventListener("click",
+//      () => { 
+//         case1.classList.add("round");
+//      })
