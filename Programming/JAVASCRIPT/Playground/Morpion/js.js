@@ -19,7 +19,6 @@ const round = document.querySelector(".round");
 let player = 0;
 
 // EVENT
-// Croix
 
 case1.addEventListener("click", () => {
   if (case1.classList.contains("cross") || case1.classList.contains("round")) {
@@ -158,7 +157,8 @@ function victory() {
     case2.classList.contains("cross") &&
     case3.classList.contains("cross")
   ) {
-    console.log("C'est gagné pour les X!");
+    console.log("C'est gagné pour les X!")
+    return true;
   }
 
   if (
@@ -167,6 +167,7 @@ function victory() {
     case6.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -175,6 +176,7 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -183,6 +185,7 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -191,6 +194,7 @@ function victory() {
     case8.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -199,6 +203,7 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -207,6 +212,7 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   if (
@@ -215,6 +221,7 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    return true;
   }
 
   // Victoire O
@@ -225,6 +232,7 @@ function victory() {
     case3.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -233,6 +241,7 @@ function victory() {
     case6.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -241,6 +250,7 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -249,6 +259,7 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -257,6 +268,7 @@ function victory() {
     case8.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -265,6 +277,7 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -273,6 +286,7 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
   if (
@@ -281,6 +295,19 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    return true;
   }
 
+}
+
+
+function egality (tour) {
+if (victory != true && tour == 9) {return true} ;
+
+else (return )
+}
+
+
+for (let tour = 1; tour <= 9; i++) {
+    console.log(tour);
 }
