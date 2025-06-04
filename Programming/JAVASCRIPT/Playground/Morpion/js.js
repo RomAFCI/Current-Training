@@ -18,7 +18,9 @@ const round = document.querySelector(".round");
 
 let player = 0;
 let turn = 0;
-let gameInProgress = 0;
+
+let gameInProgress = false;
+
 let scoreX = 0;
 let scoreO = 0;
 
