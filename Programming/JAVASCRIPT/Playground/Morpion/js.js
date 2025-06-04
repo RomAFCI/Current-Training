@@ -17,10 +17,16 @@ const cross = document.querySelector(".cross");
 const round = document.querySelector(".round");
 
 let player = 0;
+let turn = 0;
+let gameInProgress = 0;
+let scoreX = 0;
+let scoreO = 0;
 
 // EVENT
 
 case1.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case1.classList.contains("cross") || case1.classList.contains("round")) {
     return;
   }
@@ -32,10 +38,20 @@ case1.addEventListener("click", () => {
     case1.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case2.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case2.classList.contains("cross") || case2.classList.contains("round")) {
     return;
   }
@@ -47,10 +63,19 @@ case2.addEventListener("click", () => {
     case2.classList.add("round");
     player = 0;
   }
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case3.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case3.classList.contains("cross") || case3.classList.contains("round")) {
     return;
   }
@@ -62,10 +87,20 @@ case3.addEventListener("click", () => {
     case3.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case4.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case4.classList.contains("cross") || case4.classList.contains("round")) {
     return;
   }
@@ -76,10 +111,20 @@ case4.addEventListener("click", () => {
     case4.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case5.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case5.classList.contains("cross") || case5.classList.contains("round")) {
     return;
   }
@@ -90,10 +135,20 @@ case5.addEventListener("click", () => {
     case5.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case6.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case6.classList.contains("cross") || case6.classList.contains("round")) {
     return;
   }
@@ -104,10 +159,20 @@ case6.addEventListener("click", () => {
     case6.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case7.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case7.classList.contains("cross") || case7.classList.contains("round")) {
     return;
   }
@@ -118,10 +183,20 @@ case7.addEventListener("click", () => {
     case7.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 case8.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case8.classList.contains("cross") || case8.classList.contains("round")) {
     return;
   }
@@ -132,9 +207,19 @@ case8.addEventListener("click", () => {
     case8.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 case9.addEventListener("click", () => {
+  if(gameInProgress) return;
+
   if (case9.classList.contains("cross") || case9.classList.contains("round")) {
     return;
   }
@@ -145,7 +230,15 @@ case9.addEventListener("click", () => {
     case9.classList.add("round");
     player = 0;
   }
+
+  turn++;
+
   victory();
+
+  if (turn >= 9) {
+    gameInProgress = true;
+    console.log("Match nul");
+  }
 });
 
 // FUNCTION
@@ -158,7 +251,8 @@ function victory() {
     case3.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!")
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -167,7 +261,8 @@ function victory() {
     case6.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -176,7 +271,8 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -185,7 +281,8 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -194,7 +291,8 @@ function victory() {
     case8.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -203,7 +301,8 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -212,7 +311,8 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -221,7 +321,8 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   // Victoire O
@@ -232,7 +333,8 @@ function victory() {
     case3.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -241,7 +343,8 @@ function victory() {
     case6.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -250,7 +353,8 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -259,7 +363,8 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -268,7 +373,8 @@ function victory() {
     case8.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -277,7 +383,8 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -286,7 +393,8 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
   if (
@@ -295,19 +403,17 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
-    return true;
+    gameInProgress = true;
+    return;
   }
 
 }
 
 
-function egality (tour) {
-if (victory != true && tour == 9) {return true} ;
+// function egality (tour) {
+// if (victory != true && tour == 9) {return true} ;
 
-else (return )
-}
+// else (return )
+// }
 
 
-for (let tour = 1; tour <= 9; i++) {
-    console.log(tour);
-}
