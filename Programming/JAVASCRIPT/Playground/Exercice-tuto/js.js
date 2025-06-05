@@ -8,7 +8,6 @@ console.log(age >= ageminimum);
 
 // document.querySelector("p").style.backgroundColor = "red";
 
-
 // let plus = "+";
 
 // let moins = "-";
@@ -17,13 +16,10 @@ console.log(age >= ageminimum);
 
 // let diviser = "/";
 
+// VARIABLES ET OPERATIONS
 
-
-// VARIABLES ET OPERATIONS  
-
-
-let cinq =5;
-let trois =3;
+let cinq = 5;
+let trois = 3;
 
 let résultat;
 
@@ -31,16 +27,15 @@ résultat = cinq + trois;
 
 console.log(résultat);
 
-
-let dix =10;
-let sept =7;
+let dix = 10;
+let sept = 7;
 
 résultat = dix - sept;
 
 console.log(résultat);
 
-let quatre =4;
-let six =6;
+let quatre = 4;
+let six = 6;
 
 résultat = quatre * six;
 
@@ -56,9 +51,7 @@ résultat = sept ** deux;
 
 console.log(résultat);
 
-
 // CONCATÉNAGE
-
 
 let text = "Bonjour";
 
@@ -70,7 +63,7 @@ let prenom = "John";
 
 let nom = " Doe";
 
-texte = prenom + nom; 
+texte = prenom + nom;
 
 console.log(texte);
 
@@ -84,104 +77,89 @@ texte = sujet + verbe + objet;
 
 console.log(texte);
 
-
 // FONCTION
 
+let bjr = `Bonjour, `;
 
-let bjr = `Bonjour, `
-
-function saluer (a){
-
- return (bjr + a)
-
+function saluer(a) {
+  return bjr + a;
 }
 
-console.log(saluer("Alice !"))
+console.log(saluer("Alice !"));
 
 let nombre7 = 7;
 let nombre8 = 8;
 
-function multiplier (a, b){
-    return a * b
+function multiplier(a, b) {
+  return a * b;
 }
 
-let resultat = multiplier(7,8);
+let resultat = multiplier(7, 8);
 
-console.log ("Résultats de l'addition :", resultat);
-
+console.log("Résultats de l'addition :", resultat);
 
 // TABLEAU
 
-
-let tableau = [1,2,3,4,5]
+let tableau = [1, 2, 3, 4, 5];
 
 console.log(tableau);
 console.table(tableau);
 
-console.log (tableau[0]);
-console.log (tableau[1]);
-console.log (tableau[2]);
-console.log (tableau[3]);
-console.log (tableau[4]);
-
+console.log(tableau[0]);
+console.log(tableau[1]);
+console.log(tableau[2]);
+console.log(tableau[3]);
+console.log(tableau[4]);
 
 let tab = [];
-tab.push(10,20,30);
+tab.push(10, 20, 30);
 tab.shift();
 
 console.log(tab);
 
-
 let personne = {
-    nom: `Alice`,
-    age: 25,
-    ville: `Paris`,
-}
+  nom: `Alice`,
+  age: 25,
+  ville: `Paris`,
+};
 
 console.log(personne);
 
 let compte = {
-solde: 1000,
-titulaire: `John Doe`,
-}
+  solde: 1000,
+  titulaire: `John Doe`,
+};
 
 // let ajout = 500;
 
 compte.solde = compte.solde + 500;
 
+console.log(compte);
 
- console.log(compte);
-
-
-//  CONDITION & BOUCLES 
-
+//  CONDITION & BOUCLES
 
 let years = 19;
 
-function ageRequired(years){
-
-if (years >= 18){
-  console.log("Majeur");
-  } 
-  
-else {
+function ageRequired(years) {
+  if (years >= 18) {
+    console.log("Majeur");
+  } else {
     console.log("Mineur");
-}
+  }
 }
 
 ageRequired(years);
 
-// OPTIMISER RETURN POUR LES FONCTIONS 
+// OPTIMISER RETURN POUR LES FONCTIONS
 
 // function verifAge(age){
 //     if (age >= 18){
-//         return "majeur";       
+//         return "majeur";
 //     }
 //     else {
 //         return "mineur";
 //     }
 // }
-
 
 // let verif = verifAge(18);
 // console.log(verif);
@@ -194,44 +172,42 @@ ageRequired(years);
 // let mot = ""
 // console.log(tab[0].length);
 
-
 // for (let i = 0; i < tab[0].length; i = i + 1) {
 //     mot += tab[0][i]
-//     console.log(mot);  
+//     console.log(mot);
 // }
 
-for (let i = 0; i <= 20; i += 2)
-    console.log (i);
+
+// BOUCLES :
+
+for (let i = 0; i <= 20; i += 2) console.log(i);
 
 for (let i = 1; i <= 20; i++) {
-
-if (i % 2 === 0){
+  if (i % 2 === 0) {
     console.log(i);
+  }
 }
+
+// BOUCLES WHILE :
+
+let secretNumber = 0;
+
+while (secretNumber != 7) {
+  secretNumber = prompt("Devine entre 1 et 100");
+
+  if (secretNumber < 7) {
+    alert("C'est plus !");
+  } else if (secretNumber > 7) {
+    alert("C'est moins !");
+  }
+
+  if (secretNumber == 7) {
+    alert("Bravo ! Vous avez deviné le bon nombre !");
+  }
 }
 
-
-let n = 1;
-
-
-// prompt <= 100;
+// EXO FUNCTION MOIS / ANNÉE :
 
 
-while (n != 7) {
-    if (n != 7){
-      console.log("Essaye encore!")
-      n = prompt("salut !")
-    }
-    
-    else {
-      
-         console.log("Bravo !")
-}}
-
-
-
-// let j = 1;
-// while (j <= 100) {
-//     console.log(j);
-//     j++;
-// }
+let janvier = 1 ;
+let 1 = 31 ;
