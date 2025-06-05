@@ -16,6 +16,12 @@ const case9 = document.querySelector(".case9");
 const cross = document.querySelector(".cross");
 const round = document.querySelector(".round");
 
+const buttonDepart = document.querySelector(".buttonDepart")
+document.querySelector(".buttonDepart").addEventListener("click", launchGame);
+
+
+let pointsX =0;
+let pointsO =0;
 document.querySelector(".scoreX").textContent = pointsX;
 document.querySelector(".scoreO").textContent = pointsO;
 
@@ -24,8 +30,7 @@ let turn = 0;
 
 let gameInProgress = false;
 
-let pointsX =0;
-let pointsO =0;
+
 
 // EVENT
 
@@ -477,6 +482,29 @@ function victory() {
   }
 
 }
+
+
+launchGame.addEventListener("click", function() {
+  // Réinitialise les cases
+  case1.classList.remove("cross", "round");
+  case2.classList.remove("cross", "round");
+  case3.classList.remove("cross", "round");
+  case4.classList.remove("cross", "round");
+  case5.classList.remove("cross", "round");
+  case6.classList.remove("cross", "round");
+  case7.classList.remove("cross", "round");
+  case8.classList.remove("cross", "round");
+  case9.classList.remove("cross", "round");
+
+  // Réinitialise les variables
+  player = 0;
+  turn = 0;
+  gameInProgress = false;
+
+  console.log("Nouvelle partie !");
+});
+
+
 
 
 // function egality (tour) {
