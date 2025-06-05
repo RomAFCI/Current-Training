@@ -570,6 +570,9 @@ buttonDepart.addEventListener("click", function() {
   case8.style.backgroundColor = "#5294a8";
   case9.style.backgroundColor = "#5294a8";
 
+  // 🔄 Réinitialiser le message
+  document.querySelector(".message").textContent = "";
+
   // Réinitialise les variables
   player = 0;
   turn = 0;
