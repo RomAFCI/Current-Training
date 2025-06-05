@@ -16,13 +16,16 @@ const case9 = document.querySelector(".case9");
 const cross = document.querySelector(".cross");
 const round = document.querySelector(".round");
 
+document.querySelector(".scoreX").textContent = pointsX;
+document.querySelector(".scoreO").textContent = pointsO;
+
 let player = 0;
 let turn = 0;
 
 let gameInProgress = false;
 
-let scoreX = 0;
-let scoreO = 0;
+let pointsX =0;
+let pointsO =0;
 
 // EVENT
 
@@ -253,6 +256,10 @@ function victory() {
     case3.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!")
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+    
     gameInProgress = true;
     return;
   }
@@ -263,6 +270,10 @@ function victory() {
     case6.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -273,6 +284,10 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -283,6 +298,10 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -293,6 +312,10 @@ function victory() {
     case8.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -303,6 +326,10 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -313,6 +340,10 @@ function victory() {
     case9.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -323,6 +354,10 @@ function victory() {
     case7.classList.contains("cross")
   ) {
     console.log("C'est gagné pour les X!");
+    pointsX++; // ✖️ ajoute 1 point à X
+    document.querySelector(".scoreX").textContent = pointsX;
+    console.log("Points X :", pointsX);
+
     gameInProgress = true;
     return;
   }
@@ -335,6 +370,10 @@ function victory() {
     case3.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -345,6 +384,10 @@ function victory() {
     case6.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -355,6 +398,10 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -365,6 +412,10 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -375,6 +426,10 @@ function victory() {
     case8.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -385,6 +440,10 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -395,6 +454,10 @@ function victory() {
     case9.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }
@@ -405,6 +468,10 @@ function victory() {
     case7.classList.contains("round")
   ) {
     console.log("C'est gagné pour les O!");
+    pointsO++; // ⭕ ajoute 1 point à O
+    document.querySelector(".scoreO").textContent = pointsO;
+    console.log("Points O :", pointsO);
+
     gameInProgress = true;
     return;
   }

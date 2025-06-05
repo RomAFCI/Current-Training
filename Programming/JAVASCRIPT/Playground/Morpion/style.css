@@ -183,3 +183,11 @@ h1 {
 h1:hover {
   transform: scale(1.2);
 }
+
+.scoreX {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scoreO {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
