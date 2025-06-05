@@ -17,7 +17,7 @@ const cross = document.querySelector(".cross");
 const round = document.querySelector(".round");
 
 const buttonDepart = document.querySelector(".buttonDepart")
-document.querySelector(".buttonDepart").addEventListener("click", launchGame);
+
 
 
 let pointsX =0;
@@ -35,7 +35,7 @@ let gameInProgress = false;
 // EVENT
 
 case1.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case1.classList.contains("cross") || case1.classList.contains("round")) {
     return;
@@ -54,13 +54,13 @@ case1.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case2.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case2.classList.contains("cross") || case2.classList.contains("round")) {
     return;
@@ -78,13 +78,13 @@ case2.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case3.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case3.classList.contains("cross") || case3.classList.contains("round")) {
     return;
@@ -103,13 +103,13 @@ case3.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case4.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case4.classList.contains("cross") || case4.classList.contains("round")) {
     return;
@@ -127,13 +127,13 @@ case4.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case5.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case5.classList.contains("cross") || case5.classList.contains("round")) {
     return;
@@ -151,13 +151,13 @@ case5.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case6.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case6.classList.contains("cross") || case6.classList.contains("round")) {
     return;
@@ -175,13 +175,13 @@ case6.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case7.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case7.classList.contains("cross") || case7.classList.contains("round")) {
     return;
@@ -199,13 +199,13 @@ case7.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 
 case8.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case8.classList.contains("cross") || case8.classList.contains("round")) {
     return;
@@ -223,12 +223,12 @@ case8.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
 case9.addEventListener("click", () => {
-  if(gameInProgress) return;
+  if(!gameInProgress) return;
 
   if (case9.classList.contains("cross") || case9.classList.contains("round")) {
     return;
@@ -246,7 +246,7 @@ case9.addEventListener("click", () => {
   victory();
 
   if (turn >= 9) {
-    gameInProgress = true;
+    gameInProgress = false;
     console.log("Match nul");
   }
 });
@@ -265,7 +265,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
     
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -279,7 +279,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -293,7 +293,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -307,7 +307,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -321,7 +321,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -335,7 +335,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -349,7 +349,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -363,7 +363,7 @@ function victory() {
     document.querySelector(".scoreX").textContent = pointsX;
     console.log("Points X :", pointsX);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -379,7 +379,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -393,7 +393,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -407,7 +407,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -421,7 +421,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -435,7 +435,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -449,7 +449,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -463,7 +463,7 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
@@ -477,14 +477,13 @@ function victory() {
     document.querySelector(".scoreO").textContent = pointsO;
     console.log("Points O :", pointsO);
 
-    gameInProgress = true;
+    gameInProgress = false;
     return;
   }
 
 }
 
-
-launchGame.addEventListener("click", function() {
+buttonDepart.addEventListener("click", function() {
   // Réinitialise les cases
   case1.classList.remove("cross", "round");
   case2.classList.remove("cross", "round");
@@ -499,7 +498,10 @@ launchGame.addEventListener("click", function() {
   // Réinitialise les variables
   player = 0;
   turn = 0;
-  gameInProgress = false;
+  gameInProgress = true;
+
+  // Change le texte du bouton
+  buttonDepart.textContent = "Relancer";
 
   console.log("Nouvelle partie !");
 });
