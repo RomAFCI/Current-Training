@@ -55,7 +55,8 @@ case1.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    
+
   }
 });
 
@@ -79,7 +80,8 @@ case2.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -104,7 +106,8 @@ case3.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -128,7 +131,8 @@ case4.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -152,7 +156,8 @@ case5.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -176,7 +181,8 @@ case6.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -200,7 +206,8 @@ case7.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -221,10 +228,12 @@ case8.addEventListener("click", () => {
   turn++;
 
   victory();
+  
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 case9.addEventListener("click", () => {
@@ -247,7 +256,8 @@ case9.addEventListener("click", () => {
 
   if (turn >= 9) {
     gameInProgress = false;
-    console.log("Match nul");
+    afficherMessage("Match nul !");
+
   }
 });
 
@@ -263,6 +273,9 @@ function victory() {
     console.log("C'est gagné pour les X!")
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case1.style.backgroundColor = "#ff8f2d"
+    case2.style.backgroundColor = "#ff8f2d"
+    case3.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
     
     gameInProgress = false;
@@ -277,6 +290,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case4.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case6.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -291,6 +307,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case7.style.backgroundColor = "#ff8f2d"
+    case8.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -305,6 +324,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case1.style.backgroundColor = "#ff8f2d"
+    case4.style.backgroundColor = "#ff8f2d"
+    case7.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -319,6 +341,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case2.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case8.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -333,6 +358,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case3.style.backgroundColor = "#ff8f2d"
+    case6.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -347,6 +375,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case1.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -361,6 +392,9 @@ function victory() {
     console.log("C'est gagné pour les X!");
     pointsX++; // ✖️ ajoute 1 point à X
     document.querySelector(".scoreX").textContent = pointsX;
+    case3.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case7.style.backgroundColor = "#ff8f2d"
     console.log("Points X :", pointsX);
 
     gameInProgress = false;
@@ -377,6 +411,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case1.style.backgroundColor = "#ff8f2d"
+    case2.style.backgroundColor = "#ff8f2d"
+    case3.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -391,6 +428,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case4.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case6.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -405,6 +445,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case7.style.backgroundColor = "#ff8f2d"
+    case8.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -419,6 +462,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case1.style.backgroundColor = "#ff8f2d"
+    case4.style.backgroundColor = "#ff8f2d"
+    case7.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -433,6 +479,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case2.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case8.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -447,6 +496,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case3.style.backgroundColor = "#ff8f2d"
+    case6.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -461,6 +513,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case1.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case9.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -475,6 +530,9 @@ function victory() {
     console.log("C'est gagné pour les O!");
     pointsO++; // ⭕ ajoute 1 point à O
     document.querySelector(".scoreO").textContent = pointsO;
+    case3.style.backgroundColor = "#ff8f2d"
+    case5.style.backgroundColor = "#ff8f2d"
+    case7.style.backgroundColor = "#ff8f2d"
     console.log("Points O :", pointsO);
 
     gameInProgress = false;
@@ -482,6 +540,13 @@ function victory() {
   }
 
 }
+
+function afficherMessage(msg) {
+  document.querySelector(".message").textContent = msg;
+}
+
+
+// BOUTON DEMARRAGE RESET :
 
 buttonDepart.addEventListener("click", function() {
   // Réinitialise les cases
@@ -495,6 +560,16 @@ buttonDepart.addEventListener("click", function() {
   case8.classList.remove("cross", "round");
   case9.classList.remove("cross", "round");
 
+  case1.style.backgroundColor = "#5294a8";
+  case2.style.backgroundColor = "#5294a8";
+  case3.style.backgroundColor = "#5294a8";
+  case4.style.backgroundColor = "#5294a8";
+  case5.style.backgroundColor = "#5294a8";
+  case6.style.backgroundColor = "#5294a8";
+  case7.style.backgroundColor = "#5294a8";
+  case8.style.backgroundColor = "#5294a8";
+  case9.style.backgroundColor = "#5294a8";
+
   // Réinitialise les variables
   player = 0;
   turn = 0;
@@ -505,14 +580,5 @@ buttonDepart.addEventListener("click", function() {
 
   console.log("Nouvelle partie !");
 });
-
-
-
-
-// function egality (tour) {
-// if (victory != true && tour == 9) {return true} ;
-
-// else (return )
-// }
 
 

@@ -195,3 +195,27 @@ h1:hover {
 .scoreO {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
+
+/* animation GPT */
+.message {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: #555;
+}
+
+.message.show {
+  opacity: 1;
+  animation: blink 1s ease-in-out 2;
+}
+
+@keyframes blink {
+  0%, 100% { color: #555; }
+  50% { color: red; }
+}

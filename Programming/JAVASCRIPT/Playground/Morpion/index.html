@@ -23,14 +23,22 @@
       <div>
         <button class="buttonDepart">Lancer la partie</button>
       </div>
-      <div>
-        <button>Joueur 1</button>
-        <button>Joueur 2</button>
+      <div class="playerSelect">
+        <label>
+          Pseudo Joueur X :
+          <input type="text" id="pseudoX" placeholder="Joueur X" />
+        </label>
+
+        <label>
+          Pseudo Joueur O :
+          <input type="text" id="pseudoO" placeholder="Joueur O" />
+        </label>
       </div>
-      <div>
+      <div class="flex-button">
         <p>Score X : <span class="scoreX">0</span></p>
         <p>Score O : <span class="scoreO">0</span></p>
       </div>
+      <div class="message"></div>
     </section>
     <script src="js.js"></script>
   </body>
