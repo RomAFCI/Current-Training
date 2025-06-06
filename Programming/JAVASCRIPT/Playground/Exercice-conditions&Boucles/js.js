@@ -76,13 +76,9 @@ let nombreDeJour;
 
 const bouton = document.querySelector("button");
 
-
-bouton.addEventListener("click",
-  () => {
-    calendar();
-  })
-
-
+bouton.addEventListener("click", () => {
+  calendar();
+});
 
 function calendar() {
   mois = parseInt(prompt("choisis un mois pour connaître le nombre de jour"));
@@ -99,7 +95,14 @@ function calendar() {
       break;
 
     case 2:
-      nombreDeJour = "28 ou 29 selon l'année";
+      let year = parseInt(
+        prompt("choisis l'année car le chiffre peux changer")
+      );
+      if (year % 4 === 0) {
+        nombreDeJour = 29;
+      } else {
+        nombreDeJour = 28;
+      }
       break;
 
     case 4:
@@ -116,9 +119,7 @@ function calendar() {
   alert(nombreDeJour);
 }
 
-
-
-
+function year() {}
 
 // essai
 // function calendar () {
