@@ -48,8 +48,8 @@ for (let i = 1; i <= 20; i++) {
 //   if (secretNumber < 77) {
 //     alert("C'est plus !");
 //   }
- 
-//   else if (secretNumber > 77) {
+
+//   if (secretNumber > 77) {
 //     alert("C'est moins !");
 //   }
 
