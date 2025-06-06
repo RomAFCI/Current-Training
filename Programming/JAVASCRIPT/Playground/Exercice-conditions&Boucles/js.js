@@ -77,5 +77,7 @@ let decembre = 12 ;
 
 
 function calendar () {
-  
+  while (j <= 31){
+    j++
+  }
 }
