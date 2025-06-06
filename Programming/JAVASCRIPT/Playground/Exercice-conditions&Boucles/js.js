@@ -47,7 +47,9 @@ for (let i = 1; i <= 20; i++) {
 
 //   if (secretNumber < 77) {
 //     alert("C'est plus !");
-//   } else if (secretNumber > 77) {
+//   }
+ 
+//   else if (secretNumber > 77) {
 //     alert("C'est moins !");
 //   }
 
@@ -55,6 +57,9 @@ for (let i = 1; i <= 20; i++) {
 //     alert("Bravo ! Vous avez deviné le bon nombre !");
 //   }
 // }
+
+
+
 
 // EXO FUNCTION MOIS / ANNÉE :
 
@@ -119,7 +124,6 @@ function calendar() {
   alert(nombreDeJour);
 }
 
-function year() {}
 
 // essai
 // function calendar () {
