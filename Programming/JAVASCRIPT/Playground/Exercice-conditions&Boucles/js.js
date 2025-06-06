@@ -44,16 +44,16 @@ for (let i = 1; i <= 20; i++) {
 
 let secretNumber = 0;
 
-while (secretNumber != 7) {
+while (secretNumber != 77) {
   secretNumber = prompt("Devine entre 1 et 100");
 
-  if (secretNumber < 7) {
+  if (secretNumber < 77) {
     alert("C'est plus !");
-  } else if (secretNumber > 7) {
+  } else if (secretNumber > 77) {
     alert("C'est moins !");
   }
 
-  if (secretNumber == 7) {
+  if (secretNumber == 77) {
     alert("Bravo ! Vous avez deviné le bon nombre !");
   }
 }
