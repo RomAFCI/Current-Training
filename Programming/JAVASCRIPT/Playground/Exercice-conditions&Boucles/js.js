@@ -123,3 +123,24 @@ function calendar() {
 
   alert(nombreDeJour);
 }
+
+
+// correction switch
+
+function nombreJours (month){
+
+  
+  switch (month){
+    case 1:
+      console.log("31 jours")
+      return 31;
+    
+      case 2:
+      console.log("31 jours")
+      return 28;
+    }
+  }
+
+  let jour = nombreDeJour(1);
+  console.log(jour);
+    
