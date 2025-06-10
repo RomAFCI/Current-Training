@@ -58,9 +58,6 @@ for (let i = 1; i <= 20; i++) {
 //   }
 // }
 
-
-
-
 // EXO FUNCTION MOIS / ANNÉE :
 
 // let janvier = 1;
@@ -103,7 +100,7 @@ function calendar() {
       let year = parseInt(
         prompt("choisis l'année car le chiffre peux changer")
       );
-      if (year % 4 === 0 && year % 100!=0) {
+      if (year % 4 === 0 && year % 100 != 0) {
         nombreDeJour = 29;
       } else {
         nombreDeJour = 28;
@@ -124,23 +121,73 @@ function calendar() {
   alert(nombreDeJour);
 }
 
-
 // correction switch
 
-function nombreJours (month){
+// function combienDeJourDansLeMois(a) {
 
-  
-  switch (month){
-    case 1:
-      console.log("31 jours")
-      return 31;
-    
-      case 2:
-      console.log("31 jours")
-      return 28;
-    }
-  }
+//     switch (a) {
+//         case 1:
+//             console.log("Le mois de janvier comporte 31 jours");
+//             return 31;
 
-  let jour = nombreDeJour(1);
-  console.log(jour);
-    
+//         case 2:
+//             let year = new Date();
+//             console.log("Le mois de février comporte 28 ou 29 jours");
+
+//             if ((year.getFullYear % 4 === 0 && year.getFullYear % 100 > 0) || (year.getFullYear % 400 === 0)) {
+//                 console.log("on est sur une année bissextile");
+//                 return 29;
+//             }
+//             else {
+//                 console.log("ce n'est pas une année bissextile");
+//                 return 28;
+//             }
+
+//         case 3:
+//             console.log("Le mois de mars comporte 31 jours");
+//             return 31;
+
+//         case 4:
+//             console.log("Le mois de avril comporte 30 jours");
+//             return 30;
+
+//         case 5:
+//             console.log("Le mois de mai comporte 31 jours");
+//             return 31;
+
+//         case 6:
+//             console.log("Le mois de juin comporte 30 jours");
+//             return 30;
+
+//         case 7:
+//             console.log("Le mois de juillet comporte 31 jours");
+//             return 31;
+
+//         case 8:
+//             console.log("Le mois de août comporte 31 jours");
+//             return 31;
+
+//         case 9:
+//             console.log("Le mois de septembre comporte 30 jours");
+//             return 30;
+
+//         case 10:
+//             console.log("Le mois de octobre comporte 31 jours");
+//             return 31;
+
+//         case 11:
+//             console.log("Le mois de novembre comporte 30 jours");
+//             return 30;
+
+//         case 12:
+//             console.log("Le mois de décembre comporte 31 jours");
+//             return 31;
+
+//         default:
+//             console.log("Le mois sélectionner n'est pas disponible, veuillez entrer un nombre entre 1 et 12");
+//             break;
+//     }
+// }
+
+// let nombreDeJour = combienDeJourDansLeMois(2);
+// console.log(nombreDeJour);

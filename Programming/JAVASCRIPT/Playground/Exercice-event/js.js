@@ -10,7 +10,7 @@
 //     carre.style.backgroundColor = "yellow";
 //     carre.style.width = w + "px";
 //     carre.style.height = h + "px";
-    
+
 // })
 // }
 
@@ -18,7 +18,7 @@
 // changeSize("demo2", 600, 10)
 
 // carre.addEventListener(
-//     "click", 
+//     "click",
 //     () => {
 //     carre.style.backgroundColor = "yellow";
 //     carre.style.width = w + "px";
@@ -27,11 +27,25 @@
 
 // )
 
+// ⚠️MIS EN COMMENTAIRE POUR EVITER CONFLIT⚠️
 
 const rond = document.querySelector(".rond");
-console.log(rond);
-rond.addEventListener(
-    "click",
-     () => {
-    rond.style.backgroundColor = "black";
-     })
+
+// console.log(rond);
+// rond.addEventListener(
+//     "click",
+//      () => {
+//     rond.style.backgroundColor = "black";
+//      })
+
+
+
+document.addEventListener("mousemove", (event) => {
+  
+  const x = event.clientX;
+  const y = event.clientY;
+
+  rond.style.left = x + "px"
+  rond.style.top = y + "px"
+
+});
