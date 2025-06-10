@@ -123,17 +123,3 @@ function calendar() {
 
   alert(nombreDeJour);
 }
-
-
-// essai
-// function calendar () {
-
-//   }
-
-//   while (j <= 31){
-
-// j = prompt("choisis un mois pour connaître le nombre de jour");
-
-// if (mois =)
-
-//   }

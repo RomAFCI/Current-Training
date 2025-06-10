@@ -42,3 +42,12 @@ while (secretNumber != 7) {
     alert("Bravo ! Vous avez deviné le bon nombre !");
   }
 }
+
+//   🔁 Entrée valide Objectif : 
+//   Demander à l'utilisateur d'entrer "oui" ou "non",
+//   jusqu'à ce qu'il donne une réponse valide. 
+
+let oui = "oui";
+let non = "non";
+
+// while () {}
