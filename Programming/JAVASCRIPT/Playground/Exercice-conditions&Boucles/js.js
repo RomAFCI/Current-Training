@@ -103,7 +103,7 @@ function calendar() {
       let year = parseInt(
         prompt("choisis l'année car le chiffre peux changer")
       );
-      if (year % 4 === 0) {
+      if (year % 4 === 0 && year % 100!=0) {
         nombreDeJour = 29;
       } else {
         nombreDeJour = 28;

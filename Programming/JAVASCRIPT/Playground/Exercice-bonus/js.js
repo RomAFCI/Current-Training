@@ -48,21 +48,26 @@ console.log(sommeTotal);
 //   Demander à l'utilisateur d'entrer "oui" ou "non",
 //   jusqu'à ce qu'il donne une réponse valide.
 
+// ⚠️ MIS EN COMMENTAIRE POUR EVITER CONFLIT ⚠️
+// let réponse;
+// let oui = "oui";
+// let non = "non";
 
-let réponse;
-let oui = "oui";
-let non = "non";
+// while (réponse !== oui && réponse !== non) {
+//   réponse = prompt("oui ou non ?");
 
-while (réponse !== oui && réponse !== non) {
-  réponse = prompt("oui ou non ?");
+//   if (réponse !== oui && réponse !== non) {
+//     alert("répond par oui ou non");
+//   }
 
-  if (réponse !== oui && réponse !== non) {
-    alert("répond par oui ou non");
-  }
-
-}
+// }
 
 //   🔁 Afficher les nombres pairs jusqu’à un nombre donné Objectif :
 //   Demander un nombre à l'utilisateur et afficher tous
 //   les nombres pairs jusqu'à ce nombre. -->
 
+let 
+
+while (condition) {
+  
+}
