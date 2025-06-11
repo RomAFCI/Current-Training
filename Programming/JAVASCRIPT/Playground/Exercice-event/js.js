@@ -39,7 +39,6 @@ const rond = document.querySelector(".rond");
 //      })
 
 
-
 document.addEventListener("mousemove", (event) => {
   
   const x = event.clientX;

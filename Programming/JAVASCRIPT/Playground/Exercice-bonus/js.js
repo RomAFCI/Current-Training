@@ -66,8 +66,13 @@ console.log(sommeTotal);
 //   Demander un nombre à l'utilisateur et afficher tous
 //   les nombres pairs jusqu'à ce nombre. -->
 
-let 
+let numéro = parseInt(prompt("Entrez un numéro pair :"));
 
-while (condition) {
-  
+let compteur = 0;
+
+while (compteur <= numéro) {
+  if (compteur % 2 === 0) {
+    console.log(compteur);
+  }
+  compteur++;
 }
