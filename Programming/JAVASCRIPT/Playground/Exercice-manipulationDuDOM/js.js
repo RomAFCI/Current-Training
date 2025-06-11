@@ -31,20 +31,38 @@ bouton4.addEventListener("click", () => {
   // Autre utilisation pour éviter conflit et pouvoir tout supprimer un par un.
 });
 
-let bouton5 = document.querySelector("#button5");
-let bouton6 = document.querySelector("#button6");
-let bouton7 = document.querySelector("#button7");
+// 1er Test 🔧 :
 
-function gestionEvent(event) {
-    console.log(`L'Id est : ` + event.target.id);
+let button5 = document.querySelector("#button5");
+let button6 = document.querySelector("#button6");
+let button7 = document.querySelector("#button7");
+
+function gestionEvent() {
+  button5.addEventListener("click", (event) => {
+    console.log("Bouton cliqué : " + event.target.id);
+  });
+
+  button6.addEventListener("click", (event) => {
+    console.log("Bouton cliqué : " + event.target.id);
+  });
+
+  button7.addEventListener("click", (event) => {
+    console.log("Bouton cliqué : " + event.target.id);
+  });
 }
 
-// bouton5.addEventListener("click", () => {});
-// bouton6.addEventListener("click", () => {});
-// bouton7.addEventListener("click", () => {});
+gestionEvent();
 
 // Correction ⬇️
 
-bouton5.addEventListener("click", gestionEvent);
-bouton6.addEventListener("click", gestionEvent);
-bouton7.addEventListener("click", gestionEvent);
+// let bouton5 = document.querySelector("#button5");
+// let bouton6 = document.querySelector("#button6");
+// let bouton7 = document.querySelector("#button7");
+
+// function gestionEvent(event) {
+//   console.log(`L'Id est : ` + event.target.id);
+// }
+
+// bouton5.addEventListener("click", gestionEvent);
+// bouton6.addEventListener("click", gestionEvent);
+// bouton7.addEventListener("click", gestionEvent);
