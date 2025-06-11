@@ -40,7 +40,9 @@ const rond = document.querySelector(".rond");
 
 
 document.addEventListener("mousemove", (event) => {
-  
+ 
+  // console.log(event.clientX, event.clientY);
+
   const x = event.clientX;
   const y = event.clientY;
 
