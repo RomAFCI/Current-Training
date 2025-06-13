@@ -1,88 +1,176 @@
 :root {
-    --color-skin:#A98678;
-     --color-wood: #6B411C;
+  --color-skin: #a98678;
+  --color-wood: #6b411c;
+  --color-taupe: #fdc98a;
   --color-white: #ffffff;
   --color-black: #000000;
 }
 
 
-.div1 {
-background-color: var(--color-wood);
-    width: 100px;
-    height: 29px;
-    border-radius: 12px;
+
+/* FLEX MISE EN PAGE */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
-.div2 {
-    background-color: var(--color-wood);
-    width: 457px;
-    height: 29px;
-    border-radius: 12px;
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-white);
+
 }
 
-.div3 {
-        background-color: var(--color-wood);
-    width: 315px;
-    height: 29px;
-    border-radius: 12px;
-}
-.div4 {
-background-color: var(--color-wood);
-    width: 97px;
-    height: 18px;
-    border-radius: 12px;
+/* BACKGROUND */
+
+.background {
+    background-image: url(./image/squid\ game.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.div5 {
-    background-color: var(--color-wood);
-    width: 97px;
-    height: 29px;
-    border-radius: 12px;
+.backgroundPendu {
+    background-color: var(--color-black);
+}
+/* VISUEL PENDU */
+
+.grid-pendu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 500px;
+  height: 500px;
+  border-radius: 2em;
 }
 
-.div6 {
-        background-color: var(--color-skin);
-    width: 86px;
-    height: 86px;
-    border-radius: 100%;
-}
-.div7 {
-background-color: var(--color-skin);
-    width: 226px;
-    height: 29px;
-    border-radius: 12px;
+.pendu {
+  position: relative;
+  width: 440px;
+  height: 480px;
 }
 
-.div8 {
-    background-color: var(--color-skin);
-    width: 135px;
-    height: 29px;
-    border-radius: 12px;
+.divBase {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  background-color: var(--color-wood);
+  width: 100px;
+  height: 29px;
+  border-radius: 12px;
 }
 
-.div9 {
-        background-color: var(--color-skin);
-    width: 135px;
-    height: 29px;
-    border-radius: 12px;
-}
-.div10 {
-background-color: var(--color-skin);
-    width: 97px;
-    height: 29px;
-    border-radius: 12px;
+.divPoteau {
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+  background-color: var(--color-wood);
+  width: 29px;
+  height: 457px;
+  border-radius: 12px;
 }
 
-.div11 {
-    background-color: var(--color-skin);
-    width: 97px;
-    height: 29px;
-    border-radius: 12px;
+.divPoutre {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  background-color: var(--color-wood);
+  width: 315px;
+  height: 29px;
+  border-radius: 12px;
+}
+.divSquare {
+  position: absolute;
+  left: 35px;
+  top: 65px;
+  background-color: var(--color-wood);
+  width: 97px;
+  height: 18px;
+  border-radius: 12px;
+  transform: rotate(-45deg);
 }
 
-.div12 {
-        background-color: var(--color-wood);
-    width: ;
-    height: ;
-    border-radius: ;
-} 
+.divCorde {
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  background-color: var(--color-taupe);
+  width: 29px;
+  height: 97px;
+  border-radius: 12px;
+}
+
+.divTete {
+  position: absolute;
+  top: 65px;
+  right: 62.5px;
+  background-color: var(--color-skin);
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+}
+.divCorps {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  background-color: var(--color-skin);
+  width: 29px;
+  height: 226px;
+  border-radius: 12px;
+}
+
+.divJambeGauche {
+  position: absolute;
+  top: 270px;
+  right: 130px;
+  background-color: var(--color-skin);
+  width: 29px;
+  height: 135px;
+  border-radius: 12px;
+  transform: rotate(45deg);
+}
+
+.divJambeDroite {
+  position: absolute;
+  top: 270px;
+  right: 50px;
+  background-color: var(--color-skin);
+  width: 29px;
+  height: 135px;
+  border-radius: 12px;
+  transform: rotate(-45deg);
+}
+.divBrasGauche {
+  right: 120px;
+  top: 170px;
+  position: absolute;
+  background-color: var(--color-skin);
+  width: 29px;
+  height: 97px;
+  border-radius: 12px;
+  transform: rotate(45deg);
+}
+
+.divBrasDroit {
+  top: 170px;
+  right: 60px;
+  position: absolute;
+  background-color: var(--color-skin);
+  width: 29px;
+  height: 97px;
+  border-radius: 12px;
+  transform: rotate(-45deg);
+}
+
+.divVisage {
+  top: 85px;
+  right: 75px;
+  position: absolute;
+  background-image: url(./image/death\ face.png);
+  width: 58px;
+  height: 36px;
+}
