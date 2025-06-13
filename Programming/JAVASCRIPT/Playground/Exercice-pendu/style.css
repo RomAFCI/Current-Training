@@ -1,5 +1,88 @@
-
-div1 {
-background-color: black;
-    clip-path: inset(44% 0 45% 0);
+:root {
+    --color-skin:#A98678;
+     --color-wood: #6B411C;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
+
+
+.div1 {
+background-color: var(--color-wood);
+    width: 100px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div2 {
+    background-color: var(--color-wood);
+    width: 457px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div3 {
+        background-color: var(--color-wood);
+    width: 315px;
+    height: 29px;
+    border-radius: 12px;
+}
+.div4 {
+background-color: var(--color-wood);
+    width: 97px;
+    height: 18px;
+    border-radius: 12px;
+}
+
+.div5 {
+    background-color: var(--color-wood);
+    width: 97px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div6 {
+        background-color: var(--color-skin);
+    width: 86px;
+    height: 86px;
+    border-radius: 100%;
+}
+.div7 {
+background-color: var(--color-skin);
+    width: 226px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div8 {
+    background-color: var(--color-skin);
+    width: 135px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div9 {
+        background-color: var(--color-skin);
+    width: 135px;
+    height: 29px;
+    border-radius: 12px;
+}
+.div10 {
+background-color: var(--color-skin);
+    width: 97px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div11 {
+    background-color: var(--color-skin);
+    width: 97px;
+    height: 29px;
+    border-radius: 12px;
+}
+
+.div12 {
+        background-color: var(--color-wood);
+    width: ;
+    height: ;
+    border-radius: ;
+} 
