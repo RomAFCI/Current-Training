@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" />
-    <link href="reset.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet" />
   </head>
-  <body class="flex background">
-    <h1>Je connais ce jeu...</h1>
-    <div class="grid-pendu backgroundPendu">
-      <div class="pendu">
-        <div class="divBase"></div>
-        <div class="divPoteau"></div>
-        <div class="divPoutre"></div>
-        <div class="divSquare"></div>
-        <div class="divCorde"></div>
-        <div class="divTete"></div>
-        <div class="divCorps"></div>
-        <div class="divJambeGauche"></div>
-        <div class="divJambeDroite"></div>
-        <div class="divBrasGauche"></div>
-        <div class="divBrasDroit"></div>
-        <div class="divVisage"></div>
+  <body class="background">
+    <section class="flexColumn">
+      <h1>Je connais ce jeu...</h1>
+      <div class="grid-pendu backgroundPendu">
+        <div class="pendu">
+          <div class="divBase"></div>
+          <div class="divPoteau"></div>
+          <div class="divPoutre"></div>
+          <div class="divSquare"></div>
+          <div class="divCorde"></div>
+          <div class="divTete"></div>
+          <div class="divCorps"></div>
+          <div class="divJambeGauche"></div>
+          <div class="divJambeDroite"></div>
+          <div class="divBrasGauche"></div>
+          <div class="divBrasDroit"></div>
+          <div class="divVisage"></div>
+        </div>
       </div>
-    </div>
-    <form class="flex backgroundForm">
+    </section>
+    <section class="flex">
+      <form class="flexColumn backgroundForm">
         <label>Écrit une lettre à la fois</label>
-        <input class="inputStyle" type="text" placeholder="Essaye donc ...">
-        <input class="btnStyle" type="submit">
-    </form>
-    </form>
+        <input class="inputStyle" type="text" placeholder="Essaye donc ..." />
+        <input class="btnStyle" type="submit" />
+      </form>
+      <p class="backgroundResultat">RESULTAT</p>
+    </section>
     <script src="js.js"></script>
   </body>
 </html>

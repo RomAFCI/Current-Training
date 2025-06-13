@@ -17,18 +17,27 @@ body {
 
 /* FLEX MISE EN PAGE */
 
-.flex {
+.flexColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
+}
+
+.flex {
+    margin-top: 2em;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 h1 {
   background: linear-gradient(225deg,var(--color-lightpink), var(--color-pink),var(--color-dark), var(--color-black));
   padding: 1em;
   border-radius: 1em;
-  margin-top: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   border: var(--color-darkwhite) 2px solid;
 }
 
@@ -58,7 +67,24 @@ h1 {
   border: var(--color-darkwhite) 2px solid;
   padding: 1em;
   border-radius: 1em;
+  width: 230px;
+  height: 160px;
 }
+
+.backgroundResultat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(225deg,var(--color-lightpink), var(--color-pink),var(--color-dark), var(--color-black));
+  border: var(--color-darkwhite) 2px solid;
+  padding: 1em;
+  border-radius: 1em;
+  width: 230px;
+  height: 160px;
+  
+  
+}
+
 /* STYLE FORM */
 .inputStyle {
     border: var(--color-white) solid 1px;
