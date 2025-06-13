@@ -3,40 +3,85 @@
   --color-wood: #6b411c;
   --color-taupe: #fdc98a;
   --color-white: #ffffff;
-  --color-black: #000000;
+  --color-black: #12101d;
+  --color-pink: #782e53;
+  --color-dark: #1a1d2c;
+  --color-lightpink: #e57fb5;
+  --color-darkwhite:#9CA3A8;
 }
 
-
+body {
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-white);
+}
 
 /* FLEX MISE EN PAGE */
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 
-
-
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-white);
-
+  background: linear-gradient(225deg,var(--color-lightpink), var(--color-pink),var(--color-dark), var(--color-black));
+  padding: 1em;
+  border-radius: 1em;
+  margin-top: 1em;
+  border: var(--color-darkwhite) 2px solid;
 }
 
 /* BACKGROUND */
+/* 45deg : en diagonale haut-droite.
+135deg : en diagonale bas-droite.
+225deg : en diagonale bas-gauche.
+315deg : en diagonale haut-gauche. */
+/* (pour l'angle du background linear gradient) */
 
 .background {
-    background-image: url(./image/squid\ game.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./image/squid\ game.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .backgroundPendu {
-    background-color: var(--color-black);
+  background: linear-gradient(225deg,var(--color-lightpink), var(--color-pink),var(--color-dark), var(--color-black));
+  border: var(--color-darkwhite) 2px solid;
 }
+
+.backgroundForm {
+  background: linear-gradient(225deg,var(--color-lightpink), var(--color-pink),var(--color-dark), var(--color-black));
+  border: var(--color-darkwhite) 2px solid;
+  padding: 1em;
+  border-radius: 1em;
+}
+/* STYLE FORM */
+.inputStyle {
+    border: var(--color-white) solid 1px;
+    border-radius: 0.5em;
+    list-style: none ;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.25em;
+}
+
+.btnStyle {
+    padding: 0.125em 0.75em;
+    border-radius: 0.5em;
+    border: var(--color-white) 1px solid;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transition: 0.3s ease;
+}
+
+.btnStyle:hover {
+    background-color: var(--color-pink);
+}
+
 /* VISUEL PENDU */
 
 .grid-pendu {
@@ -55,39 +100,43 @@ h1 {
 }
 
 .divBase {
+  display: none;
   position: absolute;
   bottom: 0px;
   left: 5px;
-  background-color: var(--color-wood);
+  background-color: var(--color-darkwhite);
   width: 100px;
   height: 29px;
   border-radius: 12px;
 }
 
 .divPoteau {
+  display: none;
   position: absolute;
   left: 35px;
   bottom: 0px;
-  background-color: var(--color-wood);
+  background-color: var(--color-darkwhite);
   width: 29px;
   height: 457px;
   border-radius: 12px;
 }
 
 .divPoutre {
+  display: none;
   position: absolute;
   top: 20px;
   left: 35px;
-  background-color: var(--color-wood);
+  background-color: var(--color-darkwhite);
   width: 315px;
   height: 29px;
   border-radius: 12px;
 }
 .divSquare {
+  display: none;
   position: absolute;
   left: 35px;
   top: 65px;
-  background-color: var(--color-wood);
+  background-color: var(--color-darkwhite);
   width: 97px;
   height: 18px;
   border-radius: 12px;
@@ -95,39 +144,43 @@ h1 {
 }
 
 .divCorde {
+  display: none;
   position: absolute;
   top: 20px;
   right: 90px;
-  background-color: var(--color-taupe);
+  background-color: var(--color-white);
   width: 29px;
   height: 97px;
   border-radius: 12px;
 }
 
 .divTete {
+  display: none;
   position: absolute;
   top: 65px;
   right: 62.5px;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 86px;
   height: 86px;
   border-radius: 100%;
 }
 .divCorps {
+  display: none;
   position: absolute;
   top: 80px;
   right: 90px;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 29px;
   height: 226px;
   border-radius: 12px;
 }
 
 .divJambeGauche {
+  display: none;
   position: absolute;
   top: 270px;
   right: 130px;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 29px;
   height: 135px;
   border-radius: 12px;
@@ -135,20 +188,22 @@ h1 {
 }
 
 .divJambeDroite {
+  display: none;
   position: absolute;
   top: 270px;
   right: 50px;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 29px;
   height: 135px;
   border-radius: 12px;
   transform: rotate(-45deg);
 }
 .divBrasGauche {
+  display: none;
   right: 120px;
   top: 170px;
   position: absolute;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 29px;
   height: 97px;
   border-radius: 12px;
@@ -156,10 +211,11 @@ h1 {
 }
 
 .divBrasDroit {
+  display: none;
   top: 170px;
   right: 60px;
   position: absolute;
-  background-color: var(--color-skin);
+  background-color: var(--color-lightpink);
   width: 29px;
   height: 97px;
   border-radius: 12px;
@@ -167,6 +223,7 @@ h1 {
 }
 
 .divVisage {
+  display: none;
   top: 85px;
   right: 75px;
   position: absolute;
