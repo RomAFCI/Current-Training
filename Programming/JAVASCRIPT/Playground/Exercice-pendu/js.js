@@ -18,12 +18,43 @@ let motSecret = document.querySelector(".motSecret");
 
 let answer = "trucmuche";
 let goodLetters = [];
+let erreurs = 0;
 
 // Verifier la longueur du mot en tableau peu importe sa taille avec lenght
 // console.log(answer[2]);
 // console.log(answer.length);
 
-// NOTES:
+// test
+// Fonction pour afficher le mot
+
+// function affichageMot () {
+//     let affichage =""
+// }
+
+// A revoir ⚠️
+// Fonction pour afficher le mot avec les lettres trouvées
+// function afficherMotCache() {
+//   let affichage = "";
+
+//   for (let lettre of answer) {
+//     if (lettresTrouvees.includes(lettre)) {
+//       affichage += lettre + " ";
+//     } else {
+//       affichage += "_ ";
+//     }
+//   }
+
+//   motSecret.textContent = affichage.trim();
+// }
+
+// Affichage initial du mot
+// afficherMotCache();
+
+
+
+
+
+// 📓 NOTES:
 // preventDefault();  empêche le rechargement de la page
 // match(/^[a-zA-Z]$/) - Vérifie si c’est une lettre (a-z)
 
@@ -39,12 +70,18 @@ envoi.addEventListener("click", (event) => {
   }
   if (answer.includes(texte)) {
     motSecret.textContent = goodLetters;
-
-    if (!goodLetters.includes(texte)) {
-      goodLetters.push(texte);
+ } else {
+    if (erreurs < divBase.length) {
+      parties[erreurs].style.display = "block";
+      erreurs++;
+      motSecret.textContent = `Faux ! (${erreurs}/${divBase.length})`;
     }
-    console.log(goodLetters);
-  } else {
-    motSecret.textContent = `Essaye encore`;
+
+    if (erreurs === divBase.length) {
+      motSecret.textContent = "Perdu ! Le mot était : " + mot;
+      saisie.disabled = true;
+      envoi.disabled = true;
+    }
   }
 });
+
