@@ -14,6 +14,7 @@
 
 let answer = "trucmuche";
 let goodLetters = [];
+
 let error = 0;
 
 // DECLARATION DU PENDU EN TABLEAU
@@ -37,7 +38,6 @@ let saisie = document.querySelector(".inputStyle");
 let envoi = document.querySelector(".btnStyle");
 let motSecret = document.querySelector(".motSecret");
 let info = document.querySelector(".info");
-let fautes = document.querySelector(".fautes");
 
 // Fonction pour afficher le mot
 // A revoir ⚠️
@@ -80,7 +80,7 @@ envoi.addEventListener("click", (event) => {
     if (!goodLetters.includes(texte)) {
       goodLetters.push(texte);
     }
-    
+
     afficherMot();
 
     // Condition de victoire
@@ -96,7 +96,6 @@ envoi.addEventListener("click", (event) => {
       divPendu[error].style.display = "block";
       error++;
       info.textContent = `Essaye encore`;
-     
     }
 
     // Si toutes les parties sont affichées : perdu
