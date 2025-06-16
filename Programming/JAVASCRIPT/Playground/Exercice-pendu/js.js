@@ -1,62 +1,67 @@
-let divBase = document.querySelector(".divBase");
-let divPoteau = document.querySelector(".divPoteau");
-let divPoutre = document.querySelector(".divPoutre");
-let divSquare = document.querySelector(".divSquare");
-let divCorde = document.querySelector(".divCorde");
-let divTete = document.querySelector(".divTete");
-let divCorps = document.querySelector(".divCorps");
-let divJambeGauche = document.querySelector(".divJambeGauche");
-let divJambeDroite = document.querySelector(".divJambeDroite");
-let divBrasGauche = document.querySelector(".divBrasGauche");
-let divBrasDroit = document.querySelector(".divBrasDroit");
-let divVisage = document.querySelector(".divVisage");
-
-let saisie = document.querySelector(".inputStyle");
-let envoi = document.querySelector(".btnStyle");
-
-let motSecret = document.querySelector(".motSecret");
+// DECLARATION DU PENDU
+// let divBase = document.querySelector(".divBase");
+// let divPoteau = document.querySelector(".divPoteau");
+// let divPoutre = document.querySelector(".divPoutre");
+// let divSquare = document.querySelector(".divSquare");
+// let divCorde = document.querySelector(".divCorde");
+// let divTete = document.querySelector(".divTete");
+// let divCorps = document.querySelector(".divCorps");
+// let divJambeGauche = document.querySelector(".divJambeGauche");
+// let divJambeDroite = document.querySelector(".divJambeDroite");
+// let divBrasGauche = document.querySelector(".divBrasGauche");
+// let divBrasDroit = document.querySelector(".divBrasDroit");
+// let divVisage = document.querySelector(".divVisage");
 
 let answer = "trucmuche";
 let goodLetters = [];
-let erreurs = 0;
+let error = 0;
 
-// Verifier la longueur du mot en tableau peu importe sa taille avec lenght
-// console.log(answer[2]);
-// console.log(answer.length);
+// DECLARATION DU PENDU EN TABLEAU
 
-// test
+let divPendu = [
+  document.querySelector(".divBase"),
+  document.querySelector(".divPoteau"),
+  document.querySelector(".divPoutre"),
+  document.querySelector(".divSquare"),
+  document.querySelector(".divCorde"),
+  document.querySelector(".divTete"),
+  document.querySelector(".divCorps"),
+  document.querySelector(".divBrasGauche"),
+  document.querySelector(".divBrasDroit"),
+  document.querySelector(".divJambeGauche"),
+  document.querySelector(".divJambeDroite"),
+  document.querySelector(".divVisage"),
+];
+
+let saisie = document.querySelector(".inputStyle");
+let envoi = document.querySelector(".btnStyle");
+let motSecret = document.querySelector(".motSecret");
+let info = document.querySelector(".info");
+
 // Fonction pour afficher le mot
-
-// function affichageMot () {
-//     let affichage =""
-// }
-
 // A revoir ⚠️
-// Fonction pour afficher le mot avec les lettres trouvées
-// function afficherMotCache() {
-//   let affichage = "";
+function afficherMot() {
+  let affichage = "";
 
-//   for (let lettre of answer) {
-//     if (lettresTrouvees.includes(lettre)) {
-//       affichage += lettre + " ";
-//     } else {
-//       affichage += "_ ";
-//     }
-//   }
+  // On parcourt chaque lettre du mot secret
+  for (let i = 0; i < answer.length; i++) {
+    let lettre = answer[i];
 
-//   motSecret.textContent = affichage.trim();
-// }
+    // Si la lettre est devinée, on l'affiche
+    if (goodLetters.includes(lettre)) {
+      affichage += lettre + " ";
+    } else {
+      // Sinon, on affiche un underscore (_)
+      affichage += "_ ";
+    }
+  }
 
-// Affichage initial du mot
-// afficherMotCache();
+  // On affiche le résultat dans le HTML
+  motSecret.textContent = affichage;
+}
 
-
-
-
-
-// 📓 NOTES:
-// preventDefault();  empêche le rechargement de la page
-// match(/^[a-zA-Z]$/) - Vérifie si c’est une lettre (a-z)
+// EVENT
+// evenment pour les bonnes et mauvaises reponses du pendu
 
 envoi.addEventListener("click", (event) => {
   event.preventDefault();
@@ -65,7 +70,7 @@ envoi.addEventListener("click", (event) => {
   saisie.value = "";
 
   if (!texte.match(/^[a-zA-Z]$/)) {
-    motSecret.textContent = "Entre une seule lettre entre a et z !";
+    info.textContent = "Entre une seule lettre entre a et z !";
     return;
   }
   if (answer.includes(texte)) {
@@ -74,11 +79,35 @@ envoi.addEventListener("click", (event) => {
     if (!goodLetters.includes(texte)) {
       goodLetters.push(texte);
     }
-    console.log(goodLetters);
+    afficherMot();
+
+    // Condition de victoire
+    if(!motSecret.textContent.includes("_")) {
+      info.textContent = "Félicitations !";
+      saisie.disabled = true;
+      envoi.disabled = true;
+    }
   } else {
-    motSecret.textContent = `Essaye encore`;
+    // A revoir ⚠️ 
+    // Affiche la prochaine image du pendu
+    if (error < divPendu.length) {
+      divPendu[error].style.display = "block";
+      error++;
+      info.textContent = `Essaye encore`;
+    }
+
+    // Si toutes les parties sont affichées : perdu
+    if (error === divPendu.length) {
+      info.textContent = "Perdu !";
+      saisie.disabled = true;
+      envoi.disabled = true;
+    }
   }
 });
 
-
-
+// 📓 NOTES:
+// preventDefault();  empêche le rechargement de la page
+// match(/^[a-zA-Z]$/) - Vérifie si c’est une lettre (a-z)
+// Verifier la longueur du mot en tableau peu importe sa taille avec lenght
+// console.log(answer[2]);
+// console.log(answer.length);

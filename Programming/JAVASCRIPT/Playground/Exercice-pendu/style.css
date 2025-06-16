@@ -15,6 +15,9 @@ body {
   color: var(--color-white);
 }
 
+.info {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* FLEX MISE EN PAGE */
 
 .flexColumn {
