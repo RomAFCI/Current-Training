@@ -257,3 +257,7 @@ h1 {
   width: 58px;
   height: 36px;
 }
+
+.display {
+  display: block;
+}
