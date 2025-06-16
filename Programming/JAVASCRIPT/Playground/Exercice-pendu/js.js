@@ -37,6 +37,7 @@ let saisie = document.querySelector(".inputStyle");
 let envoi = document.querySelector(".btnStyle");
 let motSecret = document.querySelector(".motSecret");
 let info = document.querySelector(".info");
+let fautes = document.querySelector(".fautes");
 
 // Fonction pour afficher le mot
 // A revoir ⚠️
@@ -79,21 +80,23 @@ envoi.addEventListener("click", (event) => {
     if (!goodLetters.includes(texte)) {
       goodLetters.push(texte);
     }
+    
     afficherMot();
 
     // Condition de victoire
-    if(!motSecret.textContent.includes("_")) {
+    if (!motSecret.textContent.includes("_")) {
       info.textContent = "Félicitations !";
       saisie.disabled = true;
       envoi.disabled = true;
     }
   } else {
-    // A revoir ⚠️ 
+    // A revoir ⚠️
     // Affiche la prochaine image du pendu
     if (error < divPendu.length) {
       divPendu[error].style.display = "block";
       error++;
       info.textContent = `Essaye encore`;
+     
     }
 
     // Si toutes les parties sont affichées : perdu
