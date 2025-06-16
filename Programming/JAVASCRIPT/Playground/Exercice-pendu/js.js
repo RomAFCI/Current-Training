@@ -12,8 +12,9 @@
 // let divBrasDroit = document.querySelector(".divBrasDroit");
 // let divVisage = document.querySelector(".divVisage");
 
-let answer = "trucmuche";
+let answer = "test";
 let goodLetters = [];
+let triedLetters = [];
 
 let error = 0;
 
@@ -38,6 +39,7 @@ let saisie = document.querySelector(".inputStyle");
 let envoi = document.querySelector(".btnStyle");
 let motSecret = document.querySelector(".motSecret");
 let info = document.querySelector(".info");
+let proposition = document.querySelector(".proposition");
 
 // Fonction pour afficher le mot
 // A revoir ⚠️
@@ -61,8 +63,12 @@ function afficherMot() {
   motSecret.textContent = affichage;
 }
 
+function afficherPropositions() {
+  proposition.textContent = "Lettres proposées : " + triedLetters.join(", ");
+}
+
 // EVENT
-// evenment pour les bonnes et mauvaises reponses du pendu
+// evenement pour les bonnes et mauvaises reponses du pendu
 
 envoi.addEventListener("click", (event) => {
   event.preventDefault();
@@ -74,6 +80,17 @@ envoi.addEventListener("click", (event) => {
     info.textContent = "Entre une seule lettre entre a et z !";
     return;
   }
+
+  // vérification pour empêcher les doublons
+  if (triedLetters.includes(texte)) {
+    info.textContent = "Tu as déjà essayé cette lettre !";
+    return;
+  }
+
+  // Lettre jamais tentée : on l’ajoute
+  triedLetters.push(texte);
+  afficherPropositions();
+
   if (answer.includes(texte)) {
     motSecret.textContent = goodLetters;
 
