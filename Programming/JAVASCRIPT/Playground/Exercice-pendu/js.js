@@ -70,18 +70,15 @@ envoi.addEventListener("click", (event) => {
   }
   if (answer.includes(texte)) {
     motSecret.textContent = goodLetters;
- } else {
-    if (erreurs < divBase.length) {
-      parties[erreurs].style.display = "block";
-      erreurs++;
-      motSecret.textContent = `Faux ! (${erreurs}/${divBase.length})`;
-    }
 
-    if (erreurs === divBase.length) {
-      motSecret.textContent = "Perdu ! Le mot était : " + mot;
-      saisie.disabled = true;
-      envoi.disabled = true;
+    if (!goodLetters.includes(texte)) {
+      goodLetters.push(texte);
     }
+    console.log(goodLetters);
+  } else {
+    motSecret.textContent = `Essaye encore`;
   }
 });
+
+
 
