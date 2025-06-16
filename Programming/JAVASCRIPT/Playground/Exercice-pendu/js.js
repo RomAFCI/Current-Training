@@ -62,7 +62,7 @@ function afficherMot() {
   // On affiche le résultat dans le HTML
   motSecret.textContent = affichage;
 }
-
+//  A revoir ⚠️
 function afficherPropositions() {
   proposition.textContent = "Lettres proposées : " + triedLetters.join(", ");
 }
@@ -80,13 +80,13 @@ envoi.addEventListener("click", (event) => {
     info.textContent = "Entre une seule lettre entre a et z !";
     return;
   }
-
+  //  A revoir ⚠️
   // vérification pour empêcher les doublons
   if (triedLetters.includes(texte)) {
     info.textContent = "Tu as déjà essayé cette lettre !";
     return;
   }
-
+  //  A revoir ⚠️
   // Lettre jamais tentée : on l’ajoute
   triedLetters.push(texte);
   afficherPropositions();
@@ -99,7 +99,7 @@ envoi.addEventListener("click", (event) => {
     }
 
     afficherMot();
-
+    //  A revoir ⚠️
     // Condition de victoire
     if (!motSecret.textContent.includes("_")) {
       info.textContent = "Félicitations !";
@@ -125,8 +125,15 @@ envoi.addEventListener("click", (event) => {
 });
 
 // 📓 NOTES:
+
+// .join(", ") La concaténation utilise la virgule ou une autre chaîne,
+//  fournie en argument, comme séparateur. - permet d'ajouter un espace et une virgule
+//  au propositions de lettre.
+
 // preventDefault();  empêche le rechargement de la page
+
 // match(/^[a-zA-Z]$/) - Vérifie si c’est une lettre (a-z)
+
 // Verifier la longueur du mot en tableau peu importe sa taille avec lenght
 // console.log(answer[2]);
 // console.log(answer.length);
