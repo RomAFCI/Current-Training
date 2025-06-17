@@ -57,6 +57,7 @@ let letter;
 let answer = document.querySelector(".answer");
 let input = document.querySelector(".input");
 let error = 0;
+let fault = document.querySelector(".fault");
 
 let wordsRandom = Math.floor(Math.random() * words.length);
 let wordsFound = words[wordsRandom];
@@ -85,6 +86,7 @@ function searchGoodLetters() {
   if (check == false) {
     announcement.textContent = "Essaye encore";
     error++;
+    fault.textContent = `Erreurs : ` + error;
   }
 
   if (tabWordsTransform.toString() == tabAnswer.toString()) {
