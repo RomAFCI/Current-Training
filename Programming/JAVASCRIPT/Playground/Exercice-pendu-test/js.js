@@ -76,6 +76,8 @@ input.addEventListener("keydown", () => {
 
 // FUNCTION 
 
+// 💡❔ Spread operator ❔💡
+
 function searchGoodLetters () {
 
 }
@@ -84,7 +86,7 @@ function searchGoodLetters () {
 
 
 words.forEach (function (words){
-  console.log(typeof words);
+  console.log(words);
   
 })
 
