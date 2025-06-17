@@ -62,7 +62,7 @@ function afficherMot() {
   // On affiche le résultat dans le HTML
   motSecret.textContent = affichage;
 }
-//  A revoir ⚠️
+
 function afficherPropositions() {
   proposition.textContent = "Lettres proposées : " + triedLetters.join(", ");
 }
@@ -130,6 +130,15 @@ envoi.addEventListener("click", (event) => {
 //  fournie en argument, comme séparateur. - permet d'ajouter un espace et une virgule
 //  au propositions de lettre.
 
+// La méthode includes() permet de déterminer si un tableau contient
+//  une valeur et renvoie true si c'est le cas, false sinon.
+// il permet de comparer le contenu ciblé.
+
+// 📌 Que fait preventDefault() ?
+// Elle empêche le comportement par défaut d’un événement.
+// 🔧 Exemple simple : formulaire
+// Par défaut, lorsqu’on soumet un formulaire avec un bouton <button type="submit">,
+//  la page se recharge (ce qui est souvent non souhaité en JavaScript moderne).
 // preventDefault();  empêche le rechargement de la page
 
 // match(/^[a-zA-Z]$/) - Vérifie si c’est une lettre (a-z)
