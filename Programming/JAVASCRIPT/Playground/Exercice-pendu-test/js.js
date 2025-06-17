@@ -1,4 +1,4 @@
-// DeCLARATION
+// DÉCLARATION
 
 let words = [
   "console",
@@ -51,25 +51,74 @@ let words = [
   "vie",
   "energie",
   "armure",
+  "agro",
+  "arena",
+  "balise",
+  "ban",
+  "build",
+  "camper",
+  "clan",
+  "combo",
+  "cooldown",
+  "coupcritique",
+  "crafting",
+  "dash",
+  "debuff",
+  "drop",
+  "emote",
+  "esport",
+  "farm",
+  "farming",
+  "grind",
+  "healer",
+  "hitbox",
+  "hud",
+  "inventory",
+  "jukes",
+  "karma",
+  "laning",
+  "launcher",
+  "macro",
+  "mana",
+  "matchmaking",
+  "metagame",
+  "mob",
+  "mount",
+  "nerf",
+  "patch",
+  "pet",
+  "ping",
+  "platformer",
+  "poison",
+  "powerup",
+  "pvp",
+  "questlog",
+  "ragequit",
+  "ranked",
+  "rotation",
+  "sandbox",
+  "skillshot",
+  "smurf",
+  "spawn",
+  "stealth",
+  "tank",
 ];
 
 let letter;
+let error = 0;
+let check = false;
+
 let answer = document.querySelector(".answer");
 let input = document.querySelector(".input");
-let error = 0;
 let fault = document.querySelector(".fault");
+let announcement = document.querySelector(".announcement");
 
 let wordsRandom = Math.floor(Math.random() * words.length);
 let wordsFound = words[wordsRandom];
 console.log(wordsFound);
-
 let tabWordsTransform = wordsFound.split("");
 console.log(tabWordsTransform);
-
-let tabAnswer = new Array(tabWordsTransform.length);
-let check = false;
-
-let announcement = document.querySelector(".announcement");
+let tabAnswer = new Array(tabWordsTransform.length).fill("_");
 
 // FUNCTION
 
@@ -86,7 +135,7 @@ function searchGoodLetters() {
   if (check == false) {
     announcement.textContent = "Essaye encore";
     error++;
-    fault.textContent = `Erreurs : ` + error;
+    fault.textContent = `Erreurs : ` + error + `/12`;
   }
 
   if (tabWordsTransform.toString() == tabAnswer.toString()) {
@@ -96,7 +145,7 @@ function searchGoodLetters() {
   }
 
   if (error >= 12) {
-     announcement.textContent = "Perdu";
+    announcement.textContent = "Perdu";
     input.disabled = true;
   }
 
@@ -111,7 +160,7 @@ input.addEventListener("keypress", (event) => {
 
   input.value = "";
 
-  //console.log(letter);
+  console.log(letter);
 
   if (!letter.match(/^[a-zA-Z]$/)) {
     announcement.textContent = "ecrit une lettre entre a et z";
@@ -122,18 +171,16 @@ input.addEventListener("keypress", (event) => {
   searchGoodLetters();
 });
 
-//   })
-
-// }
-
-// TABLEAU
-
-// words.forEach (function (words){
-//   console.log(words);
-
-// })
-
 // 📓 NOTES:
+
+// .fill
+// La méthode fill() remplit tous les éléments d'un tableau entre deux index avec
+// une valeur statique. La valeur de l'index de fin n'est pas incluse.
+// Cette méthode renvoie le tableau modifié.
+
+// .join(", ") La concaténation utilise la virgule ou une autre chaîne,
+//  fournie en argument, comme séparateur. - permet d'ajouter un espace et une virgule
+//  au propositions de lettre.
 
 // toString
 // La méthode toString() renvoie une chaîne de caractères représentant l'objet.

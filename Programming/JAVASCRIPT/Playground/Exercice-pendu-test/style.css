@@ -1,0 +1,72 @@
+:root {
+  --color-blue: #2bfdfe;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-darkBlue: #044170;
+  --color-lightBlue:#047DB4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.backgroundBody {
+  background-image: url(./images/hexablue.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.backgroundDiv {
+  background: linear-gradient(
+    225deg,
+    var(--color-blue),
+    var(--color-darkBlue),
+    var(--color-black)
+  );
+  border: var(--color-white) 2px solid;
+  padding: 1em;
+  border-radius: 1em;
+  width: 200px;
+  height: 150px;
+}
+
+h1 {
+     background: linear-gradient(
+    225deg,
+    var(--color-blue),
+    var(--color-darkBlue),
+    var(--color-black)
+  );
+  border: var(--color-white) 2px solid;
+  padding: 1em;
+  border-radius: 1em;
+  width: 300px;
+  height: 50px;
+}
+
+input {
+    border: var(--color-white) solid 1px;
+  border-radius: 0.5em;
+  list-style: none;
+  background-color: var(--color-darkBlue);
+  color: var(--color-white);
+  padding: 0.25em;
+  transition: 0.3s ease;
+}
+
+input:hover {
+  background-color: var(--color-lightBlue);
+}
