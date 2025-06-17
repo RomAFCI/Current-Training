@@ -1,6 +1,6 @@
-// DÉCLARATION
+// DeCLARATION
 
-const words = [
+let words = [
   "console",
   "pixel",
   "manette",
@@ -9,7 +9,7 @@ const words = [
   "joueur",
   "multijoueur",
   "solo",
-  "quêtes",
+  "quetes",
   "loot",
   "inventaire",
   "respawn",
@@ -28,57 +28,91 @@ const words = [
   "skin",
   "avatar",
   "ennemi",
-  "allié",
-  "équipe",
+  "allie",
+  "equipe",
   "serveur",
   "recompense",
   "glitch",
-  "succès",
-  "trophée",
-  "cinématique",
+  "succes",
+  "trophee",
+  "cinematique",
   "pause",
   "option",
   "attaque",
-  "défense",
-  "stratégie",
+  "defense",
+  "strategie",
   "simulation",
   "interface",
   "mode",
   "graphismes",
   "niveau",
   "bataille",
-  "compétence",
+  "competence",
   "vie",
   "energie",
   "armure",
 ];
 
 let letter;
+let answer = document.querySelector(".answer");
+let input = document.querySelector(".input");
+let error = 0;
 
-const wordsRandom = Math.floor(Math.random() * words.length);
-const wordsFound = words[wordsRandom];
+let wordsRandom = Math.floor(Math.random() * words.length);
+let wordsFound = words[wordsRandom];
 console.log(wordsFound);
 
-const tabWordsTransform = wordsFound.split("");
+let tabWordsTransform = wordsFound.split("");
 console.log(tabWordsTransform);
 
-const input = document.querySelector(".input");
+let tabAnswer = new Array(tabWordsTransform.length);
+let check = false;
 
-// const goodLetters = [];
-// const triedLetters = [];
-// const error = 0;
+let announcement = document.querySelector(".announcement");
 
-const announcement = document.querySelector(".announcement");
+// FUNCTION
+
+function searchGoodLetters() {
+  for (let i = 0; i < tabWordsTransform.length; i++) {
+    if (letter == tabWordsTransform[i]) {
+      tabAnswer[i] = letter;
+      console.log(tabAnswer);
+      answer.textContent = tabAnswer.toString("");
+      announcement.textContent = "Bonne reponse";
+      check = true;
+    }
+  }
+  if (check == false) {
+    announcement.textContent = "Essaye encore";
+    error++;
+  }
+
+  if (tabWordsTransform.toString() == tabAnswer.toString()) {
+    console.log("Gagné");
+    announcement.textContent = "Gagné";
+    input.disabled = true;
+  }
+
+  if (error >= 12) {
+     announcement.textContent = "Perdu";
+    input.disabled = true;
+  }
+
+  check = false;
+}
 
 // EVENT
 
 input.addEventListener("keypress", (event) => {
   letter = event.key;
-  
-  console.log(letter);
-  
+  console.log(input.value);
+
+  input.value = "";
+
+  //console.log(letter);
+
   if (!letter.match(/^[a-zA-Z]$/)) {
-    announcement.textContent = "écrit une lettre entre a et z";
+    announcement.textContent = "ecrit une lettre entre a et z";
 
     return;
   }
@@ -86,22 +120,6 @@ input.addEventListener("keypress", (event) => {
   searchGoodLetters();
 });
 
-// FUNCTION
-
-function searchGoodLetters() {
-
-for (let i = 0; i < tabWordsTransform.length; i++) {
-   
-if (letter == [i]){
-
-}
-console.log([i]);
-
-}
-
-    
- 
-}
 //   })
 
 // }
@@ -115,7 +133,11 @@ console.log([i]);
 
 // 📓 NOTES:
 
+// toString
+// La méthode toString() renvoie une chaîne de caractères représentant l'objet.
+
 // Verifier la longueur du mot en tableau peu importe sa taille avec lenght
 // console.log(answer[2]);
 // console.log(answer.length);
+
 // 💡❔ Spread operator ❔💡
