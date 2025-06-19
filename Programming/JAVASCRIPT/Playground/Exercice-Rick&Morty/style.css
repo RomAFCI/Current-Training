@@ -5,7 +5,7 @@ body {
     padding: 0.5em;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-
+background-color: rgb(49, 49, 49);
 } 
 
 .cards {
@@ -14,4 +14,10 @@ background-color: black;
     border: 2px black solid;
     color: white;
     overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.cards:hover {
+    border: 2px grey solid;
+    background-color: grey;
 }
