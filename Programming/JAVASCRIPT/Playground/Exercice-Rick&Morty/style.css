@@ -1,7 +1,14 @@
-.cards {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blue;
-    border: 3px solid red;
+body {
+    display: flex; 
+    flex-wrap: wrap; 
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+     padding: 1em;
+    gap: 1em; 
+} 
+
+/* .cards {
     width: 300px;
     height: 350px;
-}
+    border: 2px black solid;
+    color: red;
+} */
