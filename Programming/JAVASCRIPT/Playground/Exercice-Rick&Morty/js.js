@@ -11,7 +11,8 @@ let cards = document.querySelector(".cards");
 fetch("https://rickandmortyapi.com/api/character")
 .then((response) => response.json())
 .then((data) => {
-    let page = data.info.pages;
+    console.log(data.info.pages);
+     
 
     for (let index = 1; index <= data.info.pages; index++){
 
