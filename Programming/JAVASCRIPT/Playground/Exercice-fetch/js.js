@@ -35,3 +35,21 @@ exoFetch();
 //     const pText = document.createTextNode(word); // Création du texte
 //     p.appendChild(pText); // Ajout du texte dans le <p>
 //     document.body.appendChild(p); // Ajout du <p> dans la page
+
+// --> n'affiche pas le mot 
+// autre exemple pour affcicher le mot en HTML :
+
+//   fetch("https://trouve-mot.fr/api/startwith/A")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       // data est un tableau de mots
+//       data.forEach((mot) => {
+//         let p = document.createElement("p");
+//         p.textContent = mot; // plus simple que createTextNode
+//         document.body.appendChild(p);
+//       });
+
+//       console.log(data);
+//     });
+
+
