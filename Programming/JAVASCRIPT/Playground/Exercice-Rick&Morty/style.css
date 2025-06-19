@@ -1,9 +1,9 @@
 body {
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-     padding: 1em;
-    gap: 1em; 
+
 } 
 
 /* .cards {

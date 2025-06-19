@@ -21,12 +21,11 @@ fetch("https://rickandmortyapi.com/api/character")
     //   div.appendChild(cards);
 
       let p = document.createElement("p");
-      let img = document.createElement("img");
-
       p.textContent = perso.name;
-      img.src = perso.image;
-
       body.appendChild(p);
+
+      let img = document.createElement("img");
+      img.src = perso.image;
       body.appendChild(img);
     });
   });
