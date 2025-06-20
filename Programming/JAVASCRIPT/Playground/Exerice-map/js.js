@@ -29,6 +29,7 @@ map.addEventListener("click", (e) => {
 
   console.log(lattitude);
   console.log(longitude);
+    info.textContent(city)
 
   fetch(
     `https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`
@@ -37,11 +38,13 @@ map.addEventListener("click", (e) => {
     .then((data) => {
         console.log(data.features[0].properties.geocoding.city);
         city = data.features[0].properties.geocoding.city;
+        info.textContent(city)
       
         fetch(`https://goweather.xyz/weather/${city}`)
           .then(response => response.json())
           .then(data => {
             console.log(data);
+             info.textContent(city)
           });
         
     });
