@@ -44,7 +44,7 @@ map.addEventListener("click", (e) => {
           .then(response => response.json())
           .then(data => {
             console.log(data);
-             info.textContent = `la ville est ` + (city) + " la météo est" + (data); 
+             info.textContent = `la ville est ` + (city) + " la météo est" + (data.temperature); 
           });
         
     });
