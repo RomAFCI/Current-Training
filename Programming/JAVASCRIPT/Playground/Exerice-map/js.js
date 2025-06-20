@@ -9,7 +9,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-console.log(map);
+// console.log(map);
 
 let lattitude;
 let longitude;
@@ -21,12 +21,17 @@ map.addEventListener("click", (e) => {
 
   console.log(lattitude);
   console.log(longitude);
+  
+  fetch(`https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`)
+  .then(response => response.json())
+  .then(data => {
+      city = data.features[0].properties.geocoding.city;
+      console.log(data.features[0].properties.geocoding.city)
+      fetch(`https://goweather.xyz/weather/${city}`)
+      .then (response => response.json)
+      .then (data => {
+        console.log(data);
+      })
+      
+    });
 });
-
-fetch(
-  "https://nominatim.openstreetmap.org/reverse?lat=<value>&lon=<value>&<params>"
-)
-  .then((response) => response.json)
-  .then((data) => {
-    console.log(data);
-  });
