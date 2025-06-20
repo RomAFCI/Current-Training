@@ -39,17 +39,3 @@ map.addEventListener("click", (e) => {
     });
 });
 
-// fetch (`https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`)
-//         .then(response => response.json())
-//         .then (data => {
-//             console.log(data.features[0].properties.geocoding.city)
-//             city=data.features[0].properties.geocoding.city;
-//              {
-//                 fetch(`https://goweather.xyz/weather/${city}`)
-//                 .then(response => response.json())
-//                 .then (data => {
-//                     console.log(data)
-//                 })
-//             }
-//         })
-// });
