@@ -1,10 +1,17 @@
 var map = L.map("map", {
   center: [47, 2],
   zoom: 6,
+    maxBounds: [
+    [-85, -180],
+    [85, 180]
+  ],
+maxBoundsViscosity: 1.0 
 });
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
+      maxZoom: 19,
+    minZoom: 3,
+     noWrap: true,
   attribution:
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
@@ -14,6 +21,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 let lattitude;
 let longitude;
 let city;
+let info = document.querySelector(".info");
 
 map.addEventListener("click", (e) => {
   lattitude = e.latlng.lat;
@@ -29,13 +37,13 @@ map.addEventListener("click", (e) => {
     .then((data) => {
         console.log(data.features[0].properties.geocoding.city);
         city = data.features[0].properties.geocoding.city;
-      {
+      
         fetch(`https://goweather.xyz/weather/${city}`)
           .then(response => response.json())
           .then(data => {
             console.log(data);
           });
-        }
+        
     });
 });
 
