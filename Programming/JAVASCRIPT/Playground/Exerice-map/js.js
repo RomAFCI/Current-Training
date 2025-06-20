@@ -21,17 +21,35 @@ map.addEventListener("click", (e) => {
 
   console.log(lattitude);
   console.log(longitude);
-  
-  fetch(`https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`)
-  .then(response => response.json())
-  .then(data => {
-      city = data.features[0].properties.geocoding.city;
-      console.log(data.features[0].properties.geocoding.city)
-      fetch(`https://goweather.xyz/weather/${city}`)
-      .then (response => response.json)
-      .then (data => {
-        console.log(data);
-      })
-      
+
+  fetch(
+    `https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data.features[0].properties.geocoding.city);
+        city = data.features[0].properties.geocoding.city;
+      {
+        fetch(`https://goweather.xyz/weather/${city}`)
+          .then(response => response.json())
+          .then(data => {
+            console.log(data);
+          });
+        }
     });
 });
+
+// fetch (`https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`)
+//         .then(response => response.json())
+//         .then (data => {
+//             console.log(data.features[0].properties.geocoding.city)
+//             city=data.features[0].properties.geocoding.city;
+//              {
+//                 fetch(`https://goweather.xyz/weather/${city}`)
+//                 .then(response => response.json())
+//                 .then (data => {
+//                     console.log(data)
+//                 })
+//             }
+//         })
+// });
