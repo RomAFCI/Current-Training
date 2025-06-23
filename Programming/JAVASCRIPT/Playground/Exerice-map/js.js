@@ -9,7 +9,7 @@ maxBoundsViscosity: 1.0
 });
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
+      maxZoom: 19, //cou
     minZoom: 3,
      noWrap: true,
   attribution:
@@ -44,7 +44,7 @@ map.addEventListener("click", (e) => {
           .then(response => response.json())
           .then(data => {
             console.log(data);
-             info.textContent = `la ville est ` + (city) + " la météo est de " + (data.temperature); 
+             info.textContent = `la ville est ` + (city) + " la météo est " + (data.temperature); 
           });
         
     });
