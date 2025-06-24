@@ -25,3 +25,4 @@ form.addEventListener("submit", (event) => {
       alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
     });
 });
+

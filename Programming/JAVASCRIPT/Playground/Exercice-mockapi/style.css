@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #121212;
+}
+
+form {
+    width: 400px;
+    height: 300px;
+    background-color: #171717;
+    padding: 1em;
+    border-radius: 1em;
+    border: solid #292929 1px;
+}
+
+.btn {
+    background-color: #025A35;
+    color: white;
+    border-radius: 1em;
+    border: none;
+    padding: 0.25em 0.5em;
+}
