@@ -1,12 +1,10 @@
 let form = document.querySelector("form");
-
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
+let text = document.querySelector(".text");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
 
-    console.log(value);
+    console.log(text.value);
     
 })
+
