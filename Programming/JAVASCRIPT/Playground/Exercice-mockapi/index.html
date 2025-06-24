@@ -8,9 +8,31 @@
 </head>
 <body>
     <form>
-        <input class="text" type="text" value="">
+        <input class="text" type="text" value="" placeholder="écrivez ici">
         <input type="submit">
     </form>
     <script src="js.js"></script>
 </body>
 </html>
+
+
+
+<!-- exemple :   
+ 
+fetch('https://685a52c59f6ef9611155e0fe.mockapi.io/demo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      prenom: firstName,
+      nom: lastName
+    })
+  })
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
+  })
+}); -->
