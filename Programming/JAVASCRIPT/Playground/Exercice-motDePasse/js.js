@@ -1,7 +1,9 @@
 let range = document.querySelector(".range");
 let info = document.querySelector(".info");
 
-let btnSubmit = document.querySelector(".btnSubmit")
+let check = false;
+
+let btnSubmit = document.querySelector(".btnSubmit");
 
 let min = document.querySelector(".min");
 let maj = document.querySelector(".maj");
@@ -17,7 +19,10 @@ range.addEventListener("input", () => {
 function chooseLetterNumberSymbol() {
   min.addEventListener("click", () => {
     min.style.backgroundColor = "white";
-
+    check = true;
+    if (check == false) {
+      min.style.backgroundColor = "red";
+    }
   });
 
   maj.addEventListener("click", () => {
@@ -36,9 +41,5 @@ function chooseLetterNumberSymbol() {
 chooseLetterNumberSymbol();
 
 btnSubmit.addEventListener("click", (e) => {
-    e.preventDefault();
-
-
-})
-
-
+  e.preventDefault();
+});
