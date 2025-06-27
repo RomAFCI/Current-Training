@@ -1,5 +1,6 @@
 let range = document.querySelector(".range");
 let info = document.querySelector(".info");
+let annoucement = document.querySelector(".annoucement")
 
 // récupére les input checked
 let boxChecked = document.querySelectorAll(".boxChecked");
