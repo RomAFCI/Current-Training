@@ -70,15 +70,16 @@ let nbrTab = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let symTab = ["!", "@", "#", "$", "%"];
 
 let btnSubmit = document.querySelector(".btnSubmit");
+let passwordCreated = "";
 
-// RANGE affichage html
+// RANGE affichage html définition du nombre de caractére dans le mot
 range.addEventListener("input", () => {
   console.log(range.value);
 
   info.textContent = range.value;
 });
 
-// Ajout de donne dans un tableu pour tout les caractere avec les boxchecked
+// Ajout de donnée dans un tableu pour tout les caractere avec les boxchecked
 
 boxChecked.forEach((element) => {
   element.addEventListener("input", () => {
@@ -103,12 +104,20 @@ boxChecked.forEach((element) => {
         dataTab.push(element);
       });
     }
-
     console.log(dataTab);
+    return dataTab;
   });
 });
 
-// BTN envoi requete MDP random
+// bouton d'envoi pour la génération de mot de passe
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
+  passwordCreated = "";
+
+  for (let index = 0; index < range.value; index++) {
+    let letterPassword = Math.floor(Math.random() * dataTab.length);
+    passwordCreated += dataTab[letterPassword];
+  }
+
+  console.log(passwordCreated);
 });
