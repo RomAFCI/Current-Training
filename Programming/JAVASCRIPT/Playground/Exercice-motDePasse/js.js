@@ -11,60 +11,9 @@ let sym = document.querySelector(".sym");
 
 let dataTab = [];
 let minTab = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+  "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
 let majTab = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
+  "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
 ];
 let nbrTab = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let symTab = ["!", "@", "#", "$", "%"];
@@ -118,6 +67,8 @@ btnSubmit.addEventListener("click", (e) => {
     let letterPassword = Math.floor(Math.random() * dataTab.length);
     passwordCreated += dataTab[letterPassword];
   }
+
+  // if ? -> si le mot de passe ne comporte pas les caractères demandé ⁉️
 
   console.log(passwordCreated);
 });
