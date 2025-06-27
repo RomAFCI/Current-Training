@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form {
@@ -34,11 +34,9 @@ form {
   gap: 0.5em;
 }
 
-
 .checkboxContainer {
   width: 650px;
   height: 75px;
-  
 }
 
 .btnSubmit {
@@ -56,7 +54,7 @@ form {
 }
 
 .bubble {
-   padding: 1.5em;
+  padding: 1.5em;
   background-color: rgb(44, 81, 184);
   clip-path: circle(1.5em);
 }
